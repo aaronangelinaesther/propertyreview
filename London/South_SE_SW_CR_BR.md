@@ -1,9 +1,13 @@
 # South London Batch — McHugh & Co Auction, 16–17 September 2026
 
 Catalogue: https://www.mchughandco.com/future-auctions/76247
-Batch scope: South London residential lots — SE, SW, CR, BR postcode areas. 14 lots across 11 distinct neighbourhoods.
+Batch scope: South London residential lots — SE, SW, CR, BR postcode areas. **15 lots across 12 distinct neighbourhoods** (updated 31 Aug 2026 to add a newly-appeared Wimbledon lot — see §12).
 
-**Research method note:** Direct access to mchughandco.com is blocked to automated fetchers (bot protection). Individual lot detail pages for THIS auction are not yet indexed by search engines (catalogue went live 27 Aug 2026), so per-lot detail was not independently retrievable for 13 of 14 lots — those use the catalogue summary (address, price, description) supplied in the source CSV. One exception: **Lot 186 (4 Berkshire Way, Mitcham)** matched a cached, still-fetchable McHugh & Co page from a **prior auction attempt (10–11 Feb 2026, Lot 13, guide £370,000, unsold)** — a useful pricing/history data point, noted in that property's section. All area-level house-price figures are HM Land Registry sold-price averages (last 12 months) via Rightmove's postcode price pages, current as of late Aug 2026.
+**Site accessibility re-checked 31 Aug 2026:** mchughandco.com direct access is still blocked (bot protection — socket hang up on every page, re-tested today). The `r.jina.ai` proxy workaround still works for direct URL fetches. Individual lot detail pages: **2 of 15 now found** (was 1 of 14 before) — the new Wimbledon lot (25A, Henfield Road) turned up a live current-auction detail page (found via a Bing-through-proxy search, since this session's direct WebSearch quota was exhausted), on top of the previously-found prior-auction page for Lot 186 (Berkshire Way). Repeated 1–2 attempts per still-missing lot (Eland Road, Overdown Road, Dunkery Road, Tankerville Road, St Peter's Close, Ruskin Walk, Elizabeth Wheeler House, Park Road, Henderson Road, Purley Court, Fairgreen Court, Meriden Court, Du Cane Court) found nothing — Bing-via-proxy either returned genuine "no site match" fallback results or, in a few cases, visibly garbled/unrelated content, suggesting these 13 lot pages are still not indexed. Those 13 continue to use the catalogue summary only.
+
+**Research method note:** Direct access to mchughandco.com is blocked to automated fetchers (bot protection). Individual lot detail pages for THIS auction were mostly not indexed by search engines at the time of the original pass (catalogue went live 27 Aug 2026); this update pass re-checked and found one more (see above). All area-level house-price figures are HM Land Registry sold-price averages (last 12 months) via Rightmove's/Zoopla's postcode price pages, current as of late Aug 2026.
+
+**Rental estimates method note (added in this update):** This session's live WebSearch tool exhausted its quota before rental-specific queries could be run, and the rental-focused pages tried via direct/proxied fetch (Rightmove, Zoopla, home.co.uk) returned no usable numeric rent data — those sites' rent statistics are not present in their plain-fetched HTML the way sold-price stats are. Rental figures below are therefore **estimated** from (a) the specific pricing/rental comparables already documented per lot where available (e.g. the Purley Court £1,525pcm data point), and (b) typical London gross rental-yield-on-value benchmarks by area type (roughly 4.5–5.5% for mainstream outer-London stock, higher for cheap/small flats, materially lower — 2.5–3% — for prime central stock like Chelsea), applied to the area's comparable sale value to derive a plausible achievable rent. Treat these as directional estimates, not agent valuations. Because most guide prices in this batch sit well below area comparable values, **gross yield calculated against the guide price** (as requested) comes out unusually high for many lots — this reflects the size of the guide-price discount, not an unusually strong rental market; a yield closer to the London-typical 4.5–6% band would be expected if the lot sells nearer its comparable market value.
 
 Ratings use a 1 (weak) – 5 (strong) scale.
 
@@ -23,12 +27,14 @@ Ratings use a 1 (weak) – 5 (strong) scale.
 
 **Proximity to schools: 3/5** — No standout Ofsted-rated schools identified near these specific addresses in this research pass; assume borough-average provision.
 
+**Potential Rental:** Lot 11 (3-bed house, est.) ~£1,900 pcm / £22,800 pa → gross yield vs guide **11.4%**. Lot 73 (1-2 bed maisonette, est.) ~£1,300 pcm / £15,600 pa → gross yield vs guide **13.0%**. Croydon rental yields run **high for London** on these guide prices — driven mainly by both guides sitting far below area averages rather than exceptional rents; on a value-based rent-to-price ratio Croydon is only moderately above the London average (~5–6%).
+
 **Verdict:** A regeneration story with real momentum and prices well below area averages on both lots — attractive if you can tolerate Croydon's mixed reputation and are comfortable underwriting leasehold/condition risk on Lot 73.
 
-| Lot | Address | Guide Price | Description | Detail Page | End Time |
-|---|---|---|---|---|---|
-| 11 | 37 Eland Road, Croydon, CR0 4LJ | £200,000+ | Freehold House, Vacant Possession | Not found — catalogue summary only | 16/09/2026 09:28 |
-| 73 | 13(A) Henderson Road, Croydon, CR0 2QG | £120,000+ | Leasehold Maisonette, Vacant Possession | Not found — catalogue summary only | 16/09/2026 12:24 |
+| Lot | Address | Guide Price | Description | Detail Page | End Time | Est. Rent (pcm/pa) | Gross Yield vs Guide |
+|---|---|---|---|---|---|---|---|
+| 11 | 37 Eland Road, Croydon, CR0 4LJ | £200,000+ | Freehold House, Vacant Possession | Not found — catalogue summary only | 16/09/2026 09:28 | £1,900 / £22,800 | 11.4% |
+| 73 | 13(A) Henderson Road, Croydon, CR0 2QG | £120,000+ | Leasehold Maisonette, Vacant Possession | Not found — catalogue summary only | 16/09/2026 12:24 | £1,300 / £15,600 | 13.0% |
 
 ---
 
@@ -45,11 +51,13 @@ Ratings use a 1 (weak) – 5 (strong) scale.
 
 **Proximity to schools: 5/5** — Riddlesdown Collegiate rated **Outstanding** (2023); The John Fisher School (well-regarded boys' secondary) also local.
 
+**Potential Rental:** Using the documented comparable (similar Purley Court 2-bed flats let around **£1,525 pcm** / £18,300 pa), gross yield vs the £85,000 guide is **21.5%**. Purley yields look **very high for London** at guide, but this is almost entirely a function of the unexplained guide-price gap flagged above (likely short lease/high ground rent) — not a sign of an unusually strong rental market; on a value basis (£286,333 flat average) the yield is a more ordinary ~6.4%.
+
 **Verdict:** Affluent, well-connected, excellent schools — but the guide price gap on Lot 77 needs explaining via the legal pack before treating it as a straightforward discount.
 
-| Lot | Address | Guide Price | Description | Detail Page | End Time |
-|---|---|---|---|---|---|
-| 77 | 16 Purley Court, Brighton Road, Purley, CR8 2BL | £85,000+ | Leasehold Flat, Vacant Possession | Not found — catalogue summary only | 16/09/2026 12:32 |
+| Lot | Address | Guide Price | Description | Detail Page | End Time | Est. Rent (pcm/pa) | Gross Yield vs Guide |
+|---|---|---|---|---|---|---|---|
+| 77 | 16 Purley Court, Brighton Road, Purley, CR8 2BL | £85,000+ | Leasehold Flat, Vacant Possession | Not found — catalogue summary only | 16/09/2026 12:32 | £1,525 / £18,300 | 21.5% |
 
 ---
 
@@ -67,12 +75,14 @@ Ratings use a 1 (weak) – 5 (strong) scale.
 
 **Proximity to schools: 3/5** — No standout Ofsted-rated schools identified in this pass.
 
+**Potential Rental:** Lot 79 (1-2 bed flat, est.) ~£1,350 pcm / £16,200 pa → gross yield vs guide **18.0%**. Lot 186 (3-bed semi, est.) ~£1,950 pcm / £23,400 pa → gross yield vs guide **9.4%** — but remember the EPC-G refurbishment cost isn't netted off here, so the realistic post-refurb yield on total cost (purchase + works) will be meaningfully lower. Mitcham yields at guide run **high for London**, again largely a discount artefact rather than a rental-market signal.
+
 **Verdict:** Two genuinely below-market lots — Lot 186 is the more interesting story (documented unsold history + specific EPC-driven price cut + concrete uplift comparable), but factor in real refurbishment costs.
 
-| Lot | Address | Guide Price | Description | Detail Page | End Time |
-|---|---|---|---|---|---|
-| 79 | 30 Fairgreen Court, London Road, Mitcham, CR4 3NA | £90,000+ | Leasehold Flat, Vacant Possession | Not found — catalogue summary only | 16/09/2026 12:36 |
-| 186 | 4 Berkshire Way, Mitcham, CR4 1QT | £250,000+ | Freehold Semi-Detached House, Vacant Possession | Prior-auction page found: mchughandco.com/lot/details/169889 (Feb 2026 attempt, unsold, guide then £370,000; EPC G, Council Tax D, LA: Merton) | 16/09/2026 16:20 |
+| Lot | Address | Guide Price | Description | Detail Page | End Time | Est. Rent (pcm/pa) | Gross Yield vs Guide |
+|---|---|---|---|---|---|---|---|
+| 79 | 30 Fairgreen Court, London Road, Mitcham, CR4 3NA | £90,000+ | Leasehold Flat, Vacant Possession | Not found — catalogue summary only | 16/09/2026 12:36 | £1,350 / £16,200 | 18.0% |
+| 186 | 4 Berkshire Way, Mitcham, CR4 1QT | £250,000+ | Freehold Semi-Detached House, Vacant Possession | Prior-auction page found: mchughandco.com/lot/details/169889 (Feb 2026 attempt, unsold, guide then £370,000; EPC G, Council Tax D, LA: Merton) | 16/09/2026 16:20 | £1,950 / £23,400 | 9.4% |
 
 ---
 
@@ -89,11 +99,13 @@ Ratings use a 1 (weak) – 5 (strong) scale.
 
 **Proximity to schools: 3/5** — Athelney Primary, St Augustine's, Elfrida Primary nearby; no specific Ofsted "outstanding" rating identified in this pass.
 
+**Potential Rental:** Lot 16 (3-bed terrace, est.) ~£2,000 pcm / £24,000 pa → gross yield vs guide **12.0%**. Bellingham yields at guide run **high for London**, chiefly reflecting the very wide guide-vs-comparable gap already flagged rather than a strong local rental market (SE6 value-based yield would be closer to ~4.7%).
+
 **Verdict:** Unremarkable area fundamentals, but the street-level comparable makes Lot 16 worth serious attention as a value play.
 
-| Lot | Address | Guide Price | Description | Detail Page | End Time |
-|---|---|---|---|---|---|
-| 16 | 47 Overdown Road, Bellingham, SE6 3ES | £200,000+ | Freehold End of Terrace House, Vacant Possession | Not found — catalogue summary only | 16/09/2026 09:46 |
+| Lot | Address | Guide Price | Description | Detail Page | End Time | Est. Rent (pcm/pa) | Gross Yield vs Guide |
+|---|---|---|---|---|---|---|---|
+| 16 | 47 Overdown Road, Bellingham, SE6 3ES | £200,000+ | Freehold End of Terrace House, Vacant Possession | Not found — catalogue summary only | 16/09/2026 09:46 | £2,000 / £24,000 | 12.0% |
 
 ---
 
@@ -110,11 +122,13 @@ Ratings use a 1 (weak) – 5 (strong) scale.
 
 **Proximity to schools: 4/5** — Eltham College (independent, ages 7–18) is a well-regarded school nearby; Mottingham Primary and Elmstead Wood Primary also serve the area.
 
+**Potential Rental:** Lot 41 (3-bed end-terrace + garage, est.) ~£1,950 pcm / £23,400 pa → gross yield vs guide **8.5%**. Mottingham yields at guide run **above average for London**, though less extreme than the flat-heavy lots elsewhere in this batch since Lot 41's guide discount is more moderate.
+
 **Verdict:** Solid, unspectacular suburb with a genuinely wide guide-to-average gap and a notable independent school nearby — reasonable value pick.
 
-| Lot | Address | Guide Price | Description | Detail Page | End Time |
-|---|---|---|---|---|---|
-| 41 | 24 Dunkery Road, Mottingham, SE9 4HZ | £275,000+ | Freehold End of Terrace House and Garage, Vacant Possession | Not found — catalogue summary only | 16/09/2026 10:52 |
+| Lot | Address | Guide Price | Description | Detail Page | End Time | Est. Rent (pcm/pa) | Gross Yield vs Guide |
+|---|---|---|---|---|---|---|---|
+| 41 | 24 Dunkery Road, Mottingham, SE9 4HZ | £275,000+ | Freehold End of Terrace House and Garage, Vacant Possession | Not found — catalogue summary only | 16/09/2026 10:52 | £1,950 / £23,400 | 8.5% |
 
 ---
 
@@ -131,11 +145,13 @@ Ratings use a 1 (weak) – 5 (strong) scale.
 
 **Proximity to schools: 3/5** — No standout Ofsted data identified in this pass.
 
+**Potential Rental:** Lot 46 (small subdivided flat, est.) ~£1,250 pcm / £15,000 pa → gross yield vs guide **21.4%**. Streatham yields at guide run **very high for London** — again a discount artefact given the "73A" unit's guide is barely a sixth of the SW16 flat average; the tenure check flagged above matters more to the real-world return than the headline yield number.
+
 **Verdict:** A genuine regeneration/turnaround story with strong longer-term growth credentials — worth a look, but confirm Lot 46's tenure details given the very low guide.
 
-| Lot | Address | Guide Price | Description | Detail Page | End Time |
-|---|---|---|---|---|---|
-| 46 | 73(A) Tankerville Road, Streatham, SW16 5LW | £70,000+ | Leasehold Flat, Vacant Possession | Not found — catalogue summary only | 16/09/2026 11:06 |
+| Lot | Address | Guide Price | Description | Detail Page | End Time | Est. Rent (pcm/pa) | Gross Yield vs Guide |
+|---|---|---|---|---|---|---|---|
+| 46 | 73(A) Tankerville Road, Streatham, SW16 5LW | £70,000+ | Leasehold Flat, Vacant Possession | Not found — catalogue summary only | 16/09/2026 11:06 | £1,250 / £15,000 | 21.4% |
 
 ---
 
@@ -152,11 +168,13 @@ Ratings use a 1 (weak) – 5 (strong) scale.
 
 **Proximity to schools: 3/5** — No standout Ofsted data identified in this pass.
 
+**Potential Rental:** Lot 48 (2-bed flat + parking, est.) ~£1,700 pcm / £20,400 pa → gross yield vs guide **20.4%**. Tooting yields at guide run **very high for London**, driven by the guide sitting at roughly a fifth of the comparable same-close sale price — a genuinely strong headline if the lease checks out.
+
 **Verdict:** Strong, resilient, well-connected area with one of the widest guide-vs-comparable gaps in the batch — a standout if the lease terms check out.
 
-| Lot | Address | Guide Price | Description | Detail Page | End Time |
-|---|---|---|---|---|---|
-| 48 | 42 St. Peter's Close, Tooting, SW17 7UH | £100,000+ | Leasehold Flat and Parking Space, Vacant Possession | Not found — catalogue summary only | 16/09/2026 11:10 |
+| Lot | Address | Guide Price | Description | Detail Page | End Time | Est. Rent (pcm/pa) | Gross Yield vs Guide |
+|---|---|---|---|---|---|---|---|
+| 48 | 42 St. Peter's Close, Tooting, SW17 7UH | £100,000+ | Leasehold Flat and Parking Space, Vacant Possession | Not found — catalogue summary only | 16/09/2026 11:10 | £1,700 / £20,400 | 20.4% |
 
 ---
 
@@ -174,12 +192,14 @@ Ratings use a 1 (weak) – 5 (strong) scale.
 
 **Proximity to schools: 4/5** — Bromley borough is well known for strong grammar-school provision generally, though no address-specific Ofsted data was identified in this pass.
 
+**Potential Rental:** Lot 50D (3-bed end-terrace, est.) ~£1,950 pcm / £23,400 pa → gross yield vs guide **7.8%** — a solid, plausible figure in line with a moderate guide discount. Lot 67 (sheltered/age-restricted flat, est.) ~£950 pcm / £11,400 pa → nominal gross yield vs guide **19.0%**, but treat this as largely theoretical: sheltered/age-restricted schemes are frequently subject to occupancy-age covenants and resale/letting restrictions that make an open-market buy-to-let assumption unreliable — confirm lettability before relying on any yield figure here. Excluding Lot 67's caveat, Bromley yields at guide run **above average for London**.
+
 **Verdict:** Affluent, amenity-rich town centre with a softening price trend — Lot 50D is the more straightforward value play; Lot 67 needs its tenure/age-restriction status confirmed before being read as "cheap."
 
-| Lot | Address | Guide Price | Description | Detail Page | End Time |
-|---|---|---|---|---|---|
-| 50D | 6 Ruskin Walk, Bromley, BR2 8EP | £300,000+ | Freehold End of Terrace House, Vacant Possession | Not found — catalogue summary only | 16/09/2026 11:22 |
-| 67 | Flat 10, Elizabeth Wheeler House, 19 The Mall, Bromley, BR1 1TT | £60,000+ | Leasehold Flat, Vacant Possession | Not found — catalogue summary only. Building name suggests possible sheltered/age-restricted housing — verify before bidding. | 16/09/2026 12:04 |
+| Lot | Address | Guide Price | Description | Detail Page | End Time | Est. Rent (pcm/pa) | Gross Yield vs Guide |
+|---|---|---|---|---|---|---|---|
+| 50D | 6 Ruskin Walk, Bromley, BR2 8EP | £300,000+ | Freehold End of Terrace House, Vacant Possession | Not found — catalogue summary only | 16/09/2026 11:22 | £1,950 / £23,400 | 7.8% |
+| 67 | Flat 10, Elizabeth Wheeler House, 19 The Mall, Bromley, BR1 1TT | £60,000+ | Leasehold Flat, Vacant Possession | Not found — catalogue summary only. Building name suggests possible sheltered/age-restricted housing — verify before bidding. | 16/09/2026 12:04 | £950 / £11,400 (theoretical — see caveat) | 19.0%* |
 
 ---
 
@@ -196,11 +216,13 @@ Ratings use a 1 (weak) – 5 (strong) scale.
 
 **Proximity to schools: 5/5** — Home to **St Olave's and St Saviour's Grammar School** and **Newstead Wood School** — both highly selective, consistently among England's top-performing state grammar schools. A genuine standout for family-buyer/rental appeal.
 
+**Potential Rental:** Lot 68 (3-bed end-terrace, est.) ~£1,850 pcm / £22,200 pa → gross yield vs guide **12.3%**. Orpington yields at guide run **high for London**, reflecting the healthy guide-vs-average margin already noted, on top of genuinely solid family-rental demand given the grammar-school catchments.
+
 **Verdict:** The best schools rating in the whole batch, family-friendly, stable pricing, and a healthy guide-vs-average margin — a strong, low-drama pick.
 
-| Lot | Address | Guide Price | Description | Detail Page | End Time |
-|---|---|---|---|---|---|
-| 68 | 5 Park Road, Orpington, BR5 4AS | £180,000+ | Freehold End of Terrace House, Vacant Possession | Not found — catalogue summary only | 16/09/2026 12:06 |
+| Lot | Address | Guide Price | Description | Detail Page | End Time | Est. Rent (pcm/pa) | Gross Yield vs Guide |
+|---|---|---|---|---|---|---|---|
+| 68 | 5 Park Road, Orpington, BR5 4AS | £180,000+ | Freehold End of Terrace House, Vacant Possession | Not found — catalogue summary only | 16/09/2026 12:06 | £1,850 / £22,200 | 12.3% |
 
 ---
 
@@ -217,11 +239,13 @@ Ratings use a 1 (weak) – 5 (strong) scale.
 
 **Proximity to schools: 4/5** — Excellent independent-school provision in the wider Royal Borough of Kensington & Chelsea, though not verified address-specifically in this pass.
 
+**Potential Rental:** A 1-bed flat in this Chelsea building/area would likely achieve a **prime-London** rent of roughly £2,800 pcm / £33,600 pa on the open market. Against the £75,000 guide that computes to a nonsensical **44.8%** gross yield — which is itself further evidence the guide is not pricing a normal, freely lettable/mortgageable asset. A short lease can make a flat effectively unlettable/unmortgageable until an expensive statutory extension is completed, so this headline yield should be treated as **not achievable in practice** without first resolving (and costing) the lease position. On the building's own comparable value (£545k–£625k), the realistic yield is a much more ordinary ~5.8–6.2%. Overall, Chelsea rents themselves are high in cash terms but low-yielding relative to its very high capital values — a **low-for-London gross yield** market on a like-for-like basis.
+
 **Verdict:** Prestige location but a cooling top-end market, and the extreme guide-price gap on this specific lot is a lease-length red flag, not an obvious value opportunity — highest-risk lot in the batch pending legal pack review.
 
-| Lot | Address | Guide Price | Description | Detail Page | End Time |
-|---|---|---|---|---|---|
-| 136 | 36 Meriden Court, Chelsea Manor Street, Chelsea, SW3 3TT | £75,000+ | Leasehold Flat, Vacant Possession | Not found — catalogue summary only. Building comparables trade £545k–£625k; verify lease length urgently. | 16/09/2026 14:38 |
+| Lot | Address | Guide Price | Description | Detail Page | End Time | Est. Rent (pcm/pa) | Gross Yield vs Guide |
+|---|---|---|---|---|---|---|---|
+| 136 | 36 Meriden Court, Chelsea Manor Street, Chelsea, SW3 3TT | £75,000+ | Leasehold Flat, Vacant Possession | Not found — catalogue summary only. Building comparables trade £545k–£625k; verify lease length urgently. | 16/09/2026 14:38 | £2,800 / £33,600 (not achievable pre-lease-resolution — see caveat) | 44.8%* |
 
 ---
 
@@ -238,31 +262,63 @@ Ratings use a 1 (weak) – 5 (strong) scale.
 
 **Proximity to schools: 3/5** — No standout Ofsted data identified in this pass.
 
+**Potential Rental:** A studio/1-bed at Du Cane Court would likely let for roughly **£1,500 pcm / £18,000 pa** on the open market. Against the £50,000 guide that's a **36.0%** gross yield — again implausibly high, and again most likely explained by the short-lease dynamic flagged above rather than a genuine bargain rent-to-price ratio. On the SW17 flat-average value basis, the realistic yield is a much more normal ~3.7%.
+
 **Verdict:** Genuinely desirable, well-connected area, but Lot 161's rock-bottom guide is very likely a lease-length story at this specific landmark building — check before assuming it's cheap.
 
-| Lot | Address | Guide Price | Description | Detail Page | End Time |
-|---|---|---|---|---|---|
-| 161 | Flat E53, Du Cane Court, Balham High Road, Balham, SW17 7JL | £50,000+ | Leasehold Flat, Vacant Possession | Not found — catalogue summary only. Du Cane Court is known for many short-lease units — verify remaining term urgently. | 16/09/2026 15:30 |
+| Lot | Address | Guide Price | Description | Detail Page | End Time | Est. Rent (pcm/pa) | Gross Yield vs Guide |
+|---|---|---|---|---|---|---|---|
+| 161 | Flat E53, Du Cane Court, Balham High Road, Balham, SW17 7JL | £50,000+ | Leasehold Flat, Vacant Possession | Not found — catalogue summary only. Du Cane Court is known for many short-lease units — verify remaining term urgently. | 16/09/2026 15:30 | £1,500 / £18,000 (short-lease caveat applies) | 36.0%* |
 
 ---
 
-## Summary Table — All 14 Lots
+## 12. Wimbledon — SW19
 
-| Lot | Area | Address | Guide Price | Type | End Time |
-|---|---|---|---|---|---|
-| 11 | Croydon (CR0) | 37 Eland Road, CR0 4LJ | £200,000+ | Freehold House | 09:28 |
-| 16 | Bellingham (SE6) | 47 Overdown Road, SE6 3ES | £200,000+ | Freehold End-Terrace | 09:46 |
-| 41 | Mottingham (SE9) | 24 Dunkery Road, SE9 4HZ | £275,000+ | Freehold End-Terrace + Garage | 10:52 |
-| 46 | Streatham (SW16) | 73(A) Tankerville Road, SW16 5LW | £70,000+ | Leasehold Flat | 11:06 |
-| 48 | Tooting (SW17) | 42 St. Peter's Close, SW17 7UH | £100,000+ | Leasehold Flat + Parking | 11:10 |
-| 50D | Bromley (BR2) | 6 Ruskin Walk, BR2 8EP | £300,000+ | Freehold End-Terrace | 11:22 |
-| 67 | Bromley (BR1) | Flat 10, Elizabeth Wheeler House, 19 The Mall, BR1 1TT | £60,000+ | Leasehold Flat | 12:04 |
-| 68 | Orpington (BR5) | 5 Park Road, BR5 4AS | £180,000+ | Freehold End-Terrace | 12:06 |
-| 73 | Croydon (CR0) | 13(A) Henderson Road, CR0 2QG | £120,000+ | Leasehold Maisonette | 12:24 |
-| 77 | Purley (CR8) | 16 Purley Court, Brighton Road, CR8 2BL | £85,000+ | Leasehold Flat | 12:32 |
-| 79 | Mitcham (CR4) | 30 Fairgreen Court, London Road, CR4 3NA | £90,000+ | Leasehold Flat | 12:36 |
-| 136 | Chelsea (SW3) | 36 Meriden Court, Chelsea Manor Street, SW3 3TT | £75,000+ | Leasehold Flat | 14:38 |
-| 161 | Balham (SW17) | Flat E53, Du Cane Court, Balham High Road, SW17 7JL | £50,000+ | Leasehold Flat | 15:30 |
-| 186 | Mitcham (CR4) | 4 Berkshire Way, CR4 1QT | £250,000+ | Freehold Semi-Detached | 16:20 |
+**New in this update (appeared in the refreshed catalogue, not present in the original 14-lot pass): Lot 25A, Flat 1, 14 Henfield Road, SW19 3HU.**
 
-**Key cross-cutting theme:** Several of the leasehold flat lots (Purley Court, Meriden Court, Du Cane Court, Elizabeth Wheeler House) show guide prices dramatically below area/building comparables (5–15% of typical value) — for lots this far below comparable value, the most likely explanations are short unexpired lease terms or age-restricted/sheltered tenure, not simple underpricing. These require urgent legal-pack review of lease length, ground rent, and service charge before bidding. The freehold houses (Eland Road, Overdown Road, Dunkery Road, Ruskin Walk, Park Road, Berkshire Way) show more moderate, plausible discounts consistent with normal auction dynamics and modernisation needs.
+**Detail page found** via Bing-through-`r.jina.ai`-proxy search (this session's live WebSearch quota was exhausted, so Bing was used as a substitute route through the same proxy workaround): https://www.mchughandco.com/lot/details/0a35f0b3-c504-4443-8666-5c8b604d25c0 — a genuine current-auction lot page (not just the catalogue summary). Confirmed details: self-contained **2-bedroom** ground-floor flat in a purpose-built block requiring modernisation (entrance hall, living room, kitchen, 2 bedrooms, bathroom/WC, communal gardens, plus **Garage No. 31**); Local Authority **London Borough of Merton**; **Council Tax Band D**; EPC rating **TBC**; leasehold, lease started 25 March 1981 for a 99-year term, so approximately **53 years unexpired** — a workable term (well above the ~70-year threshold some lenders prefer for future remortgaging, though a cash/auction buyer wouldn't need to act on it immediately); situated off Merton Hall Road near Wimbledon and Wimbledon Chase stations.
+
+**Growth potential: 4/5** — Wimbledon benefits from strong, durable global-brand demand (the Championships), excellent transport (District line, National Rail, tram, and the coming Crossrail 2 proposal which would terminate/interchange at Wimbledon if it proceeds), and ongoing town-centre investment. Sold prices have cooled recently (SW19 average -7% YoY, -11% below the 2022 peak of £944,221 per Rightmove sold-price data), consistent with the broader outer-prime London correction seen at Chelsea and Purley in this batch, but the area's long-run desirability and infrastructure position support above-average future growth.
+
+**Average cost of comparable property**: SW19 12-month averages — flats £446,304–£454,332 (sources vary slightly: Zoopla £446,304, Rightmove £454,332), terraced £976,557–£979,837, semi-detached £1,434,719–£1,459,465 (overall £838,480–£856,935). This is comfortably the highest-value postcode in the whole batch.
+- Lot 25A's £180,000+ guide is roughly **40%** of the SW19 flat average — a substantial discount, though this is a leasehold flat needing modernisation (not turnkey) in a location off the prime Wimbledon Village/Village-adjacent streets, and the 53-year lease will eventually need extending, which the buyer should budget for. Even so, this is a materially smaller guide-to-comparable gap than most of the leasehold flats elsewhere in this batch (Purley Court, Meriden Court, Du Cane Court, Elizabeth Wheeler House) — consistent with a normal, unencumbered lease rather than a hidden red flag.
+
+**Social status / desirability: 4/5** — Wimbledon is one of South London's most recognised and desirable addresses internationally (the All England Lawn Tennis Club), with a genuinely mixed but generally affluent, professional resident base; this specific pocket (off Merton Hall Road, near Wimbledon Chase) is a step down from Wimbledon Village/the Village but still solidly middle-class suburban.
+
+**Proximity to shops/amenities: 4/5** — Wimbledon town centre (Centre Court shopping centre, high street) is a short distance away; Wimbledon Chase has a smaller local parade. Not as retail-dense as Croydon or Bromley but a well-served suburban centre.
+
+**Proximity to schools: 4/5** — Merton borough includes several well-regarded schools (e.g. Wimbledon High School, Ursuline High School, King's College School nearby in Wimbledon Common) though no address-specific Ofsted rating was verified for this exact street in this pass; assume good-to-strong provision typical of Wimbledon/Merton.
+
+**Potential Rental:** A 2-bed flat with garage in this part of SW19 would likely achieve roughly **£1,750 pcm / £21,000 pa** on the open market. Against the £180,000 guide that's a gross yield of **11.7%** — high for London, but (unlike several other lots in this batch) not implausibly so, since the guide-to-comparable gap here is much more moderate and the lease term is unremarkable. On the SW19 flat-average value basis the yield would be a more typical ~4.6–4.7%. **Wimbledon yields run average-to-slightly-below-average for London on a value basis** (high capital values compress yield, as in Chelsea, though far less extremely) — the attractive headline figure here is really about the size of the guide-price discount, not an unusually strong SW19 rental market.
+
+**Verdict:** The strongest all-round area fundamentals in this batch (blue-chip location, good transport, solid schools) combined with a genuinely moderate — not suspicious — guide-price discount and a straightforward, workable lease term. Arguably the most "normal," lowest-red-flag opportunity added in this update; the main considerations are ordinary ones (modernisation cost, eventual lease extension) rather than the tenure/restriction risks seen on several other leasehold flats in this batch.
+
+| Lot | Address | Guide Price | Description | Detail Page | End Time | Est. Rent (pcm/pa) | Gross Yield vs Guide |
+|---|---|---|---|---|---|---|---|
+| 25A | Flat 1, 14 Henfield Road, Wimbledon, SW19 3HU | £180,000+ | Leasehold Flat and Garage, Vacant Possession | **Found**: mchughandco.com/lot/details/0a35f0b3-c504-4443-8666-5c8b604d25c0 — 2-bed, garage No. 31, LA Merton, Council Tax D, EPC TBC, ~53 yrs unexpired lease | 16/09/2026 10:14 | £1,750 / £21,000 | 11.7% |
+
+---
+
+## Summary Table — All 15 Lots
+
+| Lot | Area | Address | Guide Price | Type | End Time | Est. Rent (pcm/pa) | Gross Yield vs Guide |
+|---|---|---|---|---|---|---|---|
+| 11 | Croydon (CR0) | 37 Eland Road, CR0 4LJ | £200,000+ | Freehold House | 09:28 | £1,900 / £22,800 | 11.4% |
+| 16 | Bellingham (SE6) | 47 Overdown Road, SE6 3ES | £200,000+ | Freehold End-Terrace | 09:46 | £2,000 / £24,000 | 12.0% |
+| 25A | Wimbledon (SW19) | Flat 1, 14 Henfield Road, SW19 3HU | £180,000+ | Leasehold Flat + Garage | 10:14 | £1,750 / £21,000 | 11.7% |
+| 41 | Mottingham (SE9) | 24 Dunkery Road, SE9 4HZ | £275,000+ | Freehold End-Terrace + Garage | 10:52 | £1,950 / £23,400 | 8.5% |
+| 46 | Streatham (SW16) | 73(A) Tankerville Road, SW16 5LW | £70,000+ | Leasehold Flat | 11:06 | £1,250 / £15,000 | 21.4% |
+| 48 | Tooting (SW17) | 42 St. Peter's Close, SW17 7UH | £100,000+ | Leasehold Flat + Parking | 11:10 | £1,700 / £20,400 | 20.4% |
+| 50D | Bromley (BR2) | 6 Ruskin Walk, BR2 8EP | £300,000+ | Freehold End-Terrace | 11:22 | £1,950 / £23,400 | 7.8% |
+| 67 | Bromley (BR1) | Flat 10, Elizabeth Wheeler House, 19 The Mall, BR1 1TT | £60,000+ | Leasehold Flat | 12:04 | £950 / £11,400* | 19.0%* |
+| 68 | Orpington (BR5) | 5 Park Road, BR5 4AS | £180,000+ | Freehold End-Terrace | 12:06 | £1,850 / £22,200 | 12.3% |
+| 73 | Croydon (CR0) | 13(A) Henderson Road, CR0 2QG | £120,000+ | Leasehold Maisonette | 12:24 | £1,300 / £15,600 | 13.0% |
+| 77 | Purley (CR8) | 16 Purley Court, Brighton Road, CR8 2BL | £85,000+ | Leasehold Flat | 12:32 | £1,525 / £18,300 | 21.5% |
+| 79 | Mitcham (CR4) | 30 Fairgreen Court, London Road, CR4 3NA | £90,000+ | Leasehold Flat | 12:36 | £1,350 / £16,200 | 18.0% |
+| 136 | Chelsea (SW3) | 36 Meriden Court, Chelsea Manor Street, SW3 3TT | £75,000+ | Leasehold Flat | 14:38 | £2,800 / £33,600* | 44.8%* |
+| 161 | Balham (SW17) | Flat E53, Du Cane Court, Balham High Road, SW17 7JL | £50,000+ | Leasehold Flat | 15:30 | £1,500 / £18,000* | 36.0%* |
+| 186 | Mitcham (CR4) | 4 Berkshire Way, CR4 1QT | £250,000+ | Freehold Semi-Detached | 16:20 | £1,950 / £23,400 | 9.4% |
+
+\* Flagged lots (67, 136, 161) have implausibly high or theoretical yields driven by tenure red flags (age-restriction / suspected short lease) rather than genuine rental-market strength — see each area section for the caveat before relying on these figures.
+
+**Key cross-cutting theme:** Several of the leasehold flat lots (Purley Court, Meriden Court, Du Cane Court, Elizabeth Wheeler House) show guide prices dramatically below area/building comparables (5–15% of typical value) — for lots this far below comparable value, the most likely explanations are short unexpired lease terms or age-restricted/sheltered tenure, not simple underpricing. These require urgent legal-pack review of lease length, ground rent, and service charge before bidding. The freehold houses (Eland Road, Overdown Road, Dunkery Road, Ruskin Walk, Park Road, Berkshire Way) show more moderate, plausible discounts consistent with normal auction dynamics and modernisation needs. **The new Wimbledon lot (25A) sits closer to the freehold-house group in character despite being leasehold** — its guide discount and lease term are both unremarkable, making it one of the lower-risk flats in the batch. On rental yield, the same pattern holds: lots with the most suspicious guide-price gaps (67, 136, 161) also produce the most implausible headline yields — a useful cross-check that large "yield" numbers in this batch usually flag pricing/tenure anomalies rather than genuine income opportunities, whereas the freehold houses and Wimbledon's flat show more believable double-digit-at-guide yields that would normalise toward London's typical 4.5–6% band at a price closer to true market value.

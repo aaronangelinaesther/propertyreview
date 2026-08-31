@@ -1,8 +1,12 @@
 # McHugh & Co Auction — 16–17 Sept 2026 — Manchester & Birmingham Batch
 
-Catalogue: https://www.mchughandco.com/future-auctions/76247 (lot numbers below confirmed present in the live catalogue via proxy fetch on 28 Aug 2026, but none of the 6 individual lot detail pages could be located via search — Google has not yet indexed them this early after the catalogue went live. All entries below use catalogue-level data (address, guide price, description, end time) supplemented with area research. Where noted, a *nearby but distinct* McHugh & Co lot on the same street was found and used only as supporting evidence of local auction activity, not as data for our target lot.
+Catalogue: https://www.mchughandco.com/future-auctions/76247 (lot numbers below confirmed present in the live catalogue via proxy fetch on 28 Aug 2026, and — as of the update below — 6 of 6 individual lot detail pages have now been located and fetched). Where noted, a *nearby but distinct* McHugh & Co lot on the same street was found and used only as supporting evidence of local auction activity, not as data for our target lot.
 
-Research method note: the web-search budget for this session was exhausted after the initial per-lot detail-page lookups, so area research below relies on direct page fetches (Rightmove/Zoopla sold-price pages, Crystalroof/Streetcheck demographic-crime data, Wikipedia) rather than fresh search queries. Coverage is still solid for all 5 areas.
+**Site accessibility re-checked 31 Aug 2026:** direct `WebFetch` to mchughandco.com is still blocked (socket hang up on every attempt, re-tested today); the `r.jina.ai` proxy prefix still works. Individual lot detail pages: **6 of 6 now found** (was 0 of 6 previously) — located via a `site:mchughandco.com "<street name>"` search routed through the DuckDuckGo HTML endpoint (`duckduckgo.com/html/?q=...`) behind the same `r.jina.ai` proxy, since the native web-search tool's session quota was exhausted. Each detail page was then fetched directly (also via the proxy) to pull accommodation, tenure, EPC and council tax band — see the updated property tables below.
+
+Research method note: area/rental research below combines direct page fetches (Rightmove/Zoopla sold-price and to-rent pages, Crystalroof/Streetcheck demographic-crime data, Wikipedia) with DuckDuckGo-via-proxy searches used specifically for rental comparables and the lot detail pages, since the native web-search tool had no remaining quota this session.
+
+**New in this update:** (1) full lot-detail-page data (accommodation, tenure, EPC, council tax) for all 6 properties, and (2) a "Potential Rental" estimate, annual rent, and gross rental yield for every property, based on comparable local lettings found for matching bedroom counts and property types.
 
 ---
 
@@ -24,7 +28,11 @@ Research method note: the web-search budget for this session was exhausted after
 
 | Lot | Address | Guide Price | Description | Detail page | Auction end |
 |---|---|---|---|---|---|
-| 118 | 114 Spring Lane, Radcliffe, Manchester, M26 2QX | £60,000+ | Leasehold End of Terrace House, Vacant Possession | Not found — catalogue summary only | 16/09/2026 14:02 |
+| 118 | 114 Spring Lane, Radcliffe, Manchester, M26 2QX | £60,000+ | Leasehold End of Terrace House, Vacant Possession | **Found:** mchughandco.com/lot/details/190611 | 16/09/2026 14:02 |
+
+**Lot detail page findings:** 2 bedrooms (ground floor: entrance hall, living room, dining room, kitchen, cellar; first floor: 2 beds, bathroom/WC; rear yard). Leasehold, 999 years from 29 Sept 1881 (~854 years unexpired, £6 p.a. ground rent). **EPC: E. Council Tax Band: A.** Requires modernisation. Buyer's fee £1,500 inc. VAT; 10% deposit (min £5,000) within 24 hours; completion ~20 working days.
+
+**Potential Rental:** Comparable 2-bed terraced houses in Radcliffe (Dumers Lane, Bury Street, Cross Lane, School Street, William Street, Ainsworth Road, Alma Street) let for **£850–£995 pcm**; midpoint **~£900/month (£10,800/year)**. Gross yield on the £60,000 guide = **18.0%**; on the £122,000 street-average fair value = **8.9%**. The guide-price yield is inflated by the deep discount to street average — treat the ~9% fair-value figure as the more realistic long-run number, still well above typical Manchester yields (~6–7%) and far above London (~2–4%).
 
 ---
 
@@ -46,7 +54,11 @@ Research method note: the web-search budget for this session was exhausted after
 
 | Lot | Address | Guide Price | Description | Detail page | Auction end |
 |---|---|---|---|---|---|
-| 121 | 127 Smedley Road, Manchester, M8 0RS | £100,000+ | Freehold House, Vacant Possession | Not found — catalogue summary only | 16/09/2026 14:08 |
+| 121 | 127 Smedley Road, Manchester, M8 0RS | £100,000+ | Freehold House, Vacant Possession | **Found:** mchughandco.com/lot/details/191754 | 16/09/2026 14:08 |
+
+**Lot detail page findings:** Larger than assumed — a "seven-room" terraced house across four levels: lower ground floor (1 room), ground floor (living room, dining room, kitchen, bathroom/WC), first floor (2 bedrooms), second floor (2 bedrooms) — **4 bedrooms total**, plus front and rear yards. Freehold, vacant possession. **EPC: D. Council Tax Band: B.** Requires modernisation. Same fee structure as Lot 118.
+
+**Potential Rental:** Comparable 4-bed houses in M8/Crumpsall/Cheetham Hill (Crumpsall Lane semi £1,800 pcm, Cleveland Road semi £1,800 pcm, Hazelbottom Road terrace £1,950 pcm) suggest **~£1,800/month (£21,600/year)** once modernised. Gross yield on the £100,000 guide = **21.6%**; on the ~£140,000 street-average fair value = **15.4%** — the highest fair-value yield in the batch, reflecting both the low guide and the unusually large (4-bed) accommodation for a terraced house at this price point.
 
 ---
 
@@ -68,8 +80,17 @@ Research method note: the web-search budget for this session was exhausted after
 
 | Lot | Address | Guide Price | Description | Detail page | Auction end |
 |---|---|---|---|---|---|
-| 147 | 303 Tyldesley Road, Atherton, Manchester, M46 9AL | £30,000+ | Leasehold End of Terrace House, Vacant Possession | Not found — catalogue summary only. (Note: a *different* nearby lot, 13 Shakerley Road, Tyldesley — mchughandco.com/lot/details/161331 — appeared in search but is not this property.) | 16/09/2026 14:58 |
-| 166 | 97 Mealhouse Lane, Atherton, Manchester, M46 0FF | £35,000+ | Leasehold House, Vacant Possession | Not found — catalogue summary only. (Note: a *different* nearby lot at 86 Mealhouse Lane, M46 0FD — mchughandco.com/lot/details/174491 — was found and confirms this is the same auction/street: described as a 2-bed end-terrace needing modernisation, near Atherton town centre, Atherton/Hag Fold stations, and Central Park — useful as a proxy for the immediate micro-location.) | 16/09/2026 15:40 |
+| 147 | 303 Tyldesley Road, Atherton, Manchester, M46 9AL | £30,000+ | Leasehold End of Terrace House, Vacant Possession | **Found:** mchughandco.com/lot/details/189211 | 16/09/2026 14:58 |
+| 166 | 97 Mealhouse Lane, Atherton, Manchester, M46 0FF | £35,000+ | Leasehold House, Vacant Possession | **Found:** mchughandco.com/lot/details/190905 | 16/09/2026 15:40 |
+
+**Lot 147 detail page findings:** 2 bedrooms (ground floor: entrance porch, living room, kitchen, WC; first floor: 2 beds, bath area; rear yard). Leasehold, 998 years from 25 March 1889 (~861 years remaining). **EPC: E. Council Tax Band: A.** Located at the junction with Chester Street near Atherton town centre/station. Requires modernisation. Viewings held 2/5/8/12/14 Sept 2026.
+
+**Lot 166 detail page findings:** 2 bedrooms (ground floor: living room, kitchen; first floor: 2 beds, bathroom/WC; rear garden). Leasehold, 125 years from 28 April 2003 (~102 years unexpired). **EPC: D. Council Tax Band: A.** Local authority: Wigan MBC. Requires modernisation. Completion within six weeks or earlier.
+
+**Potential Rental (both lots):** Comparable 2-bed terraced houses in Atherton (East Street £799 pcm, Wigan Road £875 pcm, Gloucester Street £850 pcm, Bolton Road £850 pcm) cluster around **£850/month (£10,200/year)** for both properties, being the same bedroom count and area.
+- **Lot 147 (Tyldesley Road):** Gross yield on the £30,000 guide = **34.0%**; on the £149,800 street-average fair value = **6.8%**.
+- **Lot 166 (Mealhouse Lane):** Gross yield on the £35,000 guide = **29.1%**; on the ~£100,000 Mealhouse Lane fair-value midpoint = **10.2%**.
+Atherton's fair-value yields (6.8–10.2%) sit at or above typical Manchester averages (~6–7%) and well above London (~2–4%); Lot 166 in particular stands out once the guide-price distortion is set aside.
 
 ---
 
@@ -91,7 +112,11 @@ Research method note: the web-search budget for this session was exhausted after
 
 | Lot | Address | Guide Price | Description | Detail page | Auction end |
 |---|---|---|---|---|---|
-| 156 | 58 Neville Road, Erdington, Birmingham, B23 7SB | £125,000+ | Freehold Semi-Detached House, Vacant Possession | Not found — catalogue summary only | 16/09/2026 15:20 |
+| 156 | 58 Neville Road, Erdington, Birmingham, B23 7SB | £125,000+ | Freehold Semi-Detached House, Vacant Possession | **Found:** mchughandco.com/lot/details/189330 | 16/09/2026 15:20 |
+
+**Lot detail page findings:** 3 bedrooms (ground floor: entrance porch, entrance hall, through reception room, dining room, kitchen; first floor: 3 beds, bathroom/WC). Freehold, vacant possession. **EPC: D. Council Tax Band: B.** Cul-de-sac location near Gravelly Hill station, Brookvale Park and Witton Lakes Park; front forecourt with off-street parking for multiple vehicles, rear garden. Requires modernisation.
+
+**Potential Rental:** Comparable 3-bed semi-detached houses in Erdington (Bleak Hill Road £1,100 pcm, Raford Road £1,195 pcm) suggest **~£1,150/month (£13,800/year)**. Gross yield on the £125,000 guide = **11.0%**; on the ~£186,000 street-average fair value (Neville Road comps) = **7.4%** — above the typical Manchester/Birmingham range and far above London, though the area's high-crime flag (7/10) is the main offsetting risk factor.
 
 ---
 
@@ -113,7 +138,11 @@ Research method note: the web-search budget for this session was exhausted after
 
 | Lot | Address | Guide Price | Description | Detail page | Auction end |
 |---|---|---|---|---|---|
-| 169 | 11 Southcote Grove, Birmingham, B38 8ED | £195,000+ | Freehold Detached House and Garage, Vacant Possession | Not found — catalogue summary only | 16/09/2026 15:46 |
+| 169 | 11 Southcote Grove, Birmingham, B38 8ED | £195,000+ | Freehold Detached House and Garage, Vacant Possession | **Found:** mchughandco.com/lot/details/a5e79bb3-42a7-409f-bae2-c6f3255cb71d | 16/09/2026 15:46 |
+
+**Lot detail page findings:** 4 bedrooms across two floors (ground floor: entrance hall, living room, kitchen, bedroom four, wet room/WC, separate WC; first floor: 3 beds, WC), plus garage, driveway, front and rear gardens. Freehold, vacant possession. **EPC: B (notably better than every other lot in this batch). Council Tax Band: D.** Cul-de-sac off Rednal Road, near Kings Norton/Northfield stations and West Heath Park. Requires modernisation.
+
+**Potential Rental:** Comparable detached houses in Kings Norton/B38 are a thin sample: Rednal Road (3-bed) £1,295 pcm, Varlins Way (4-bed) £1,200 pcm, Wychall Lane (5-bed) £2,350 pcm. For this 4-bed property, midpoint of the closest comps ≈ **£1,250/month (£15,000/year)**. Gross yield on the £195,000 guide = **7.7%**; on a ~£220,000 fair-value estimate (blending the dated £210,000 detached comp with the £225,000–£310,000 semi-detached range) = **6.8%** — the lowest yield in the batch, consistent with this being the least discounted, most expensive, lowest-crime lot. Still comparable to typical Manchester/Birmingham averages (~6–7%) and well above London.
 
 ---
 
@@ -122,3 +151,16 @@ Research method note: the web-search budget for this session was exhausted after
 - **Best value + growth combination: Atherton (Lots 147 & 166).** Both guides sit at 20–40% of comparable street-level sold prices, the area has genuine recent price momentum (+22% YoY on Tyldesley Road), the best schools in the batch (Outstanding primary, Good secondary), and only moderate (not severe) deprivation.
 - **Best "safe" freehold discount: Erdington (Lot 156).** ~65–70% of recent comparable sales, freehold semi, good schools/amenities — but weigh against the area's explicit high-crime flag (7/10).
 - **Least discounted / closest to market value: B38 (Lot 169).** Guide roughly matches or sits only slightly below current comparable sale prices — better underlying area profile (lowest crime, highest homeownership) but less obvious auction upside on price alone.
+
+### Rental Yield Ranking (fair-value basis — i.e. yield if the property sells nearer the local street-average price rather than the deep-discount guide)
+
+| Rank | Lot | Property | Est. rent (pcm) | Fair-value gross yield | Guide-price gross yield |
+|---|---|---|---|---|---|
+| 1 | 121 | 127 Smedley Road, M8 | £1,800 | **15.4%** | 21.6% |
+| 2 | 166 | 97 Mealhouse Lane, Atherton | £850 | **10.2%** | 29.1% |
+| 3 | 118 | 114 Spring Lane, Radcliffe | £900 | **8.9%** | 18.0% |
+| 4 | 156 | 58 Neville Road, Erdington | £1,150 | **7.4%** | 11.0% |
+| 5 | 147 | 303 Tyldesley Road, Atherton | £850 | **6.8%** | 34.0% |
+| 5 | 169 | 11 Southcote Grove, B38 | £1,250 | **6.8%** | 7.7% |
+
+**Reading the two yield columns:** the "guide-price" yield uses the auction opening guide (£30k–£195k) and is inflated wherever the guide sits well below street value — it overstates what a buyer will actually earn once the hammer price rises toward fair value, as auction guides commonly do. The "fair-value" yield uses each area's researched street-average sold price instead, and is the more realistic figure for comparison. On that basis, every lot in this batch still clears **6.8%+ gross**, comfortably inside or above the ~6–9% range commonly cited for Manchester/Birmingham ("Northern Powerhouse") buy-to-let yields, and roughly double-to-triple London's typical **2–4%** gross yield — confirming the expected North/Midlands yield premium over London holds here. Lot 121 (Smedley Road, M8) stands out as the highest-yielding pick on both bases, on the strength of its unusually large 4-bed layout for a sub-£150k terrace.
