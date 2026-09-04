@@ -90,20 +90,20 @@ Batch scope: North London residential lots — N and NW postcode areas. **14 lot
 | Metric | Rating | Notes |
 |---|---|---|
 | Growth potential | 3/5 | Desirable, stable N2; Northern line (East Finchley). No major regeneration scheme — this is a "quality already priced in" area rather than a growth-catalyst one. |
-| Avg. cost of comparable property | — | East Finchley terraced average **£936,783**; flats average £434,482. **Lot 45 is a freehold mid-terrace arranged as three self-contained flats, tenanted, guided at £950,000** — i.e. roughly the price of a *single* terraced house, but with three income-producing units. The multi-unit income, not a discount to bricks-and-mortar, is the value here. |
+| Avg. cost of comparable property | — | East Finchley terraced average **£936,783**; flats average £434,482. **Lot 45 is a freehold mid-terrace (2,060 sq ft) arranged as three self-contained flats, all let, guided at £950,000** — i.e. roughly the price of a *single* terraced house, but with three income-producing units. The multi-unit income plus a reversion angle, not a discount to bricks-and-mortar, is the value here. |
 | Social status / desirability | 4/5 | Affluent, leafy, family/professional; Phoenix Cinema, High Road. |
 | Proximity to shops/amenities | 4/5 | East Finchley High Road, Tesco, Cherry Tree Wood. |
 | Proximity to schools | 4/5 | Strong Barnet schools. |
 
-**Verdict:** The most reliable income lot in the North batch — a **tenanted, freehold, three-flat building** in a blue-chip suburb. Yield looks modest in headline terms but it is real, diversified across three tenancies, and in an area with durable capital values. Confirm the passing rents and tenancy types in the legal pack.
+**Verdict:** A tenanted, freehold, three-flat building in a blue-chip suburb — but the confirmed numbers are more modest than first estimated: **£50,700/yr total = 5.3% gross on the £950,000 guide**, not the ~6.8% earlier assumed. The real angle is the **regulated tenancy on the ground-floor flat** (passing £875 pcm, well below a ~£1,500 market rent for a N2 1-bed with en-suite): whenever that tenant leaves, the vacant flat is worth roughly £425,000–£475,000 and the building's value and income step up. The two upper flats are on periodic tenancies at near-market rents and can be regeared or vacated on notice. Treat this as a **reversionary hold**, not a high-income lot. Get the regulated tenant's age/length of tenancy and the registered fair rent from the legal pack.
 
 ### Property
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 45 | 4 Huntingdon Road, East Finchley, London, N2 9DU | £950,000 | Freehold mid-terrace, 3 × self-contained flats | Not fetched — catalogue index only | **Tenanted** (passing rents not stated in the index) |
+| 45 | 4 Huntingdon Road, East Finchley, London, N2 9DU | £950,000 | **Freehold** mid-terrace, 2,060 sq ft, 3 × self-contained flats, "reasonable decorative order". GF: reception, kitchen/diner, bedroom w/ en-suite, WC, utility. 1st: reception, kitchen/diner, bedroom, bathroom/WC. 2nd: kitchen/diner, bedroom, bathroom/WC. EPC not shown (legal pack). | **Confirmed** via Savills account (…-24838), 4 Sept 2026 | **Fully let** — GF **regulated tenancy £875 pcm**, 1st **periodic £1,600 pcm**, 2nd **periodic £1,750 pcm** = **£50,700/yr** |
 
-**Potential Rental:** three flats (assume roughly one 1-bed and two 2-beds) at East Finchley rents ≈ **£1,600 + £1,900 + £1,900 = £5,400 pcm (£64,800/yr)** if all at market. Gross yield on the £950,000 guide = **6.8%**; fair value for the building is similar, so the yield holds around **6.5–6.8%** — a genuine, if unspectacular, income figure and the batch's steadiest.
+**Potential Rental:** passing rent is confirmed at **£50,700/yr**. Gross yield on the £950,000 guide = **5.34%**. If the two periodic tenancies were re-let at full market (~£1,650–£1,750 each) and the regulated GF flat eventually reverts to ~£1,500, total market rent would be ~£58,000–£60,000/yr → ~6.1–6.3% on guide, plus the capital uplift on the GF reversion. The steadiest *income* lot in the North batch, but the headline yield is ~5%, not ~7%.
 
 ---
 
@@ -163,18 +163,18 @@ Batch scope: North London residential lots — N and NW postcode areas. **14 lot
 | Metric | Rating | Notes |
 |---|---|---|
 | Growth potential | 3/5 | Kensal Green / Kensal Rise has gentrified steadily off the back of Queen's Park's rise; Bakerloo line + Overground. The Harrow Road end (this lot) is the least prime part. |
-| Avg. cost of comparable property | — | NW10 2-bed flat asking average ~£416,000; a 1-bed here normally **£320,000–£380,000**. This is **Flat C above 772–774 Harrow Road** — a flat over commercial premises on a busy road. **£170,000 guide ≈ 45–50% of a normal 1-bed** — points to a short lease and/or the above-shop position. Flag. |
+| Avg. cost of comparable property | — | NW10 2-bed flat asking average ~£416,000; a 1-bed here normally **£320,000–£380,000**. This is **Flat C above 772–774 Harrow Road** — a flat over commercial premises on a busy road. **£170,000 guide ≈ 45–50% of a normal 1-bed** — but the detail page (viewed 4 Sept 2026) shows a **new 125-year lease with a peppercorn ground rent**, so a short lease is *not* the reason. The discount reflects the above-commercial position on the Harrow Road, plus modernisation. |
 | Social status / desirability | 3/5 | Mixed; improving from a low base. |
 | Proximity to shops/amenities | 3/5 | Harrow Road shops, Sainsbury's; Portobello/Golborne Road within reach. |
 | Proximity to schools | 3/5 | Average. |
 
-**Verdict:** Cheapest way into NW10 in this batch, but "above shops on the Harrow Road" plus a sub-half guide means the discount is doing a job — verify lease and any commercial-use issues.
+**Verdict:** Cheapest way into NW10 in this batch, and — now the lease is confirmed fresh and long — a more interesting one than first read. The discount is "above shops on the Harrow Road" plus refurbishment cost, not a hidden tenure trap. Check the lease's commercial-use / buildings-insurance provisions and whether there is a service charge to the commercial block.
 
 ### Property
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 96 | Flat C, 772-774 Harrow Road, Kensal Green, London, NW10 5LB | £170,000 | One-bedroom flat, leasehold | Not fetched — catalogue index only | Vacant |
+| 96 | Flat C, 772-774 Harrow Road, Kensal Green, London, NW10 5LB | £170,000 | One-bedroom first-floor flat; **new 125-year lease, peppercorn ground rent**; needs modernisation | **Confirmed** via Savills account, 4 Sept 2026 | Vacant possession |
 
 **Potential Rental:** ~**£1,500 pcm (£18,000/yr)**. Gross yield on the £170,000 guide = **10.6%**; on a ~£350,000 fair value = **5.1%**.
 
@@ -187,7 +187,7 @@ Batch scope: North London residential lots — N and NW postcode areas. **14 lot
 | Metric | Rating | Notes |
 |---|---|---|
 | Growth potential | 3/5 | Swiss Cottage (Jubilee line). The **O2 Centre / Finchley Road redevelopment** (Landsec, ~1,800 homes, new public realm) is directly opposite Centre Heights — a genuine medium-term uplift catalyst. Offsetting: NW3 is high-value and the top end has cooled. |
-| Avg. cost of comparable property | — | 2-bed flats *in Centre Heights itself* currently list around **£380,000** (larger duplexes have gone to £595,000). **Lot 98's £310,000 guide is ~80% of the building's own comparable** — a moderate discount. But Centre Heights is a tall 1960s block: **service charges are heavy and a cladding/EWS1 question is possible** — both must be checked. |
+| Avg. cost of comparable property | — | 2-bed flats *in Centre Heights itself* currently list around **£380,000** (larger duplexes have gone to £595,000). **Lot 98's £310,000 guide is ~80% of the building's own comparable** — a moderate discount. The detail page (viewed 4 Sept 2026) confirms a **~955-year lease** (lease length is a non-issue), ~**774 sq ft**, split-level, "reasonable decorative order" (not a gut job). The only remaining risks are the ones that matter on any tall 1960s block: **heavy service charges and a possible cladding/EWS1 remediation liability** — both must be checked. |
 | Social status / desirability | 4/5 | Hampstead-adjacent, strong address — though the block is a busy-road tower rather than a period conversion. |
 | Proximity to shops/amenities | 5/5 | Finchley Road (O2 Centre, Waitrose), Swiss Cottage library/leisure centre, Hampstead village a short walk. |
 | Proximity to schools | 4/5 | Camden; good provision. |
@@ -198,7 +198,7 @@ Batch scope: North London residential lots — N and NW postcode areas. **14 lot
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 98 | Flat 24 Centre Heights, 137 Finchley Road, Hampstead, London, NW3 6JG | £310,000 | Two-bedroom flat, leasehold | Not fetched — catalogue index only | Vacant |
+| 98 | Flat 24 Centre Heights, 137 Finchley Road, Hampstead, London, NW3 6JG | £310,000 | Two-bedroom split-level flat, ~774 sq ft, **~955-year lease**, reasonable decorative order | **Confirmed** via Savills account, 4 Sept 2026 | Vacant possession |
 
 **Potential Rental:** 2-bed flats in Centre Heights ask ~**£3,098 pcm** inclusive of bills — net of bills call it **~£2,600 pcm (£31,200/yr)**. Gross yield on the £310,000 guide = **10.1%**; on the £380,000 building comparable = **8.2%**. **Net of a likely £4,000–£6,000/yr service charge** the real yield is closer to **6–7% on guide** and ~5–6% on resale value.
 
@@ -331,12 +331,12 @@ Batch scope: North London residential lots — N and NW postcode areas. **14 lot
 | 3 | Ponders End EN3 | 6 Grove Gardens, EN3 5PG | £310,000 | Freehold 3-bed semi | £1,950 / £23,400 | 7.5% | Meridian Water upside |
 | 27 | North Finchley N12 | Flat B, 9 Gainsborough Rd, N12 8AA | £270,000 | 2-bed flat | £1,900 / £22,800 | 8.4% | Check tenure/lease |
 | 29 | Bounds Green N11 | Flat 22 Parkdale, N11 2HB | £175,000 | 1-bed flat | £1,450 / £17,400 | 9.9% | Guide ~55% of value — lease? |
-| 45 | East Finchley N2 | 4 Huntingdon Rd, N2 9DU | £950,000 | Freehold, 3 flats, tenanted | £5,400 / £64,800 | 6.8% | Best reliable income |
+| 45 | East Finchley N2 | 4 Huntingdon Rd, N2 9DU | £950,000 | Freehold, 3 flats, fully let | **£50,700 pa (confirmed)** | **5.3%** | Regulated tenancy on GF flat (£875 pcm) — reversionary hold |
 | 49 | Tufnell Park N19 | Flat B, 1 Wyndham Cres, N19 5QJ | £220,000 | Leasehold flat | £1,750 / £21,000 | 9.5% | ~50% of value — short lease likely |
 | 58 | Tufnell Park N19 | Flat C, 1 Wyndham Cres, N19 5QJ | £225,000 | Leasehold 1-bed | £1,750 / £21,000 | 9.3% | ~50% of value — short lease likely |
 | 90 | Highbury N5 | Flat D, 11 Aubert Park, N5 1TL | £175,000 | 1-bed flat | £2,050 / £24,600 | 14.1%* | ~35% of value — short lease near-certain |
-| 96 | Kensal Green NW10 | Flat C, 772-774 Harrow Rd, NW10 5LB | £170,000 | Leasehold 1-bed | £1,500 / £18,000 | 10.6% | ~45–50% of value; above shops |
-| 98 | Swiss Cottage NW3 | Flat 24 Centre Heights, NW3 6JG | £310,000 | Leasehold 2-bed | £2,600 / £31,200 | 10.1% (gross) | Heavy service charge / EWS1 check; O2 upside |
+| 96 | Kensal Green NW10 | Flat C, 772-774 Harrow Rd, NW10 5LB | £170,000 | 1-bed, **new 125-yr lease, peppercorn GR** | £1,500 / £18,000 | 10.6% | Lease clean — discount is above-shops position |
+| 98 | Swiss Cottage NW3 | Flat 24 Centre Heights, NW3 6JG | £310,000 | 2-bed, **~955-yr lease**, ~774 sq ft | £2,600 / £31,200 | 10.1% (gross) | Lease clean — heavy service charge / EWS1 check; O2 upside |
 | 100 | Highbury & Islington N1 | Flat A, 204 St Pauls Rd, N1 2LL | £390,000 | Leasehold 2-bed | £2,750 / £33,000 | 8.5% | ~55–60% of value; main road |
 | 101 | Willesden NW10 | 17 Cobbold Rd, NW10 9SU | £290,000 | Freehold 3-bed house, tenanted | £900–£2,600 / — | 4.3–10.3% | Likely regulated tenancy — reversionary play |
 | 110 | South Tottenham N15 | GF Flat, 20 Hillside Rd, N15 6NB | £270,000 | 1-bed GF flat | £1,550 / £18,600 | 6.9% | "Normal" modest discount |
@@ -347,10 +347,11 @@ Batch scope: North London residential lots — N and NW postcode areas. **14 lot
 
 ## Top picks (North batch)
 
-1. **Lot 45, East Finchley (£950,000)** — tenanted freehold three-flat building in a blue-chip suburb; ~6.8% on guide is real, diversified income with durable capital values. Steadiest lot in the batch.
+1. **Lot 45, East Finchley (£950,000)** — freehold three-flat building in a blue-chip suburb, fully let at a **confirmed £50,700/yr (5.3% gross)**. Lower headline income than first thought, but the **regulated ground-floor tenancy (£875 pcm, well below market)** is a genuine reversionary value angle. A hold-for-reversion lot, not a high-yield one.
 2. **Lot 3, Ponders End (£310,000)** — sensible discount on a freehold 3-bed semi right beside the funded, building-now Meridian Water regeneration. Best growth optionality.
-3. **Lot 133, Stamford Hill (£460,000)** — modest discount, tenanted, park-side; a clean ~5–6% hold if the passing rent is near market.
-4. **Lot 98, Swiss Cottage (£310,000)** — only ~20% below the building's own resale prices with the O2 redevelopment opposite — *conditional* on the service charge and any cladding position being acceptable.
-5. **Lots 49 & 58, Tufnell Park** — genuinely strong area; upgrade to "buy" only if the legal packs show long leases.
+3. **Lot 98, Swiss Cottage (£310,000)** — lease now confirmed a non-issue (~955 years), ~774 sq ft, reasonable order, ~20% below the building's own resale prices with the O2 redevelopment opposite. Decision now rests purely on the **service charge and any cladding/EWS1 liability** — get those, then it's a strong buy.
+4. **Lot 96, Kensal Green (£170,000)** — *upgraded from "handle with caution":* confirmed **new 125-year lease, peppercorn ground rent**, so the sub-half guide is the above-shops Harrow Road position and refurb cost, not a lease trap. Cheapest NW10 entry in the batch.
+5. **Lot 133, Stamford Hill (£460,000)** — modest discount, tenanted, park-side; a clean ~5–6% hold if the passing rent is near market.
+6. **Lots 49 & 58, Tufnell Park** — genuinely strong area; upgrade to "buy" only if the legal packs show long leases.
 
-**Handle with caution:** Lots 90 (Highbury), 130 (Stoke Newington), 100 (Highbury & Islington), 29 (Bounds Green), 96 (Kensal Green) — all guide far enough below local value that a short lease is the most likely explanation. Lot 101 (Willesden) is almost certainly a regulated-tenancy reversionary play, not the cheap freehold house it looks like.
+**Handle with caution:** Lots 90 (Highbury), 130 (Stoke Newington), 100 (Highbury & Islington), 29 (Bounds Green) — all guide far enough below local value that a short lease is the most likely explanation (none of these four confirmed yet). Lot 101 (Willesden) is almost certainly a regulated-tenancy reversionary play, not the cheap freehold house it looks like.

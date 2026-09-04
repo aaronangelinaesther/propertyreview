@@ -2,9 +2,9 @@
 
 Catalogue: https://auctions.savills.co.uk/auctions/15--16-september-2026-242 — UK-wide sale, ~188 residential lots (Lots 1–188) plus a commercial section (Lots 201–300, offered 16 September). This batch covers the **7 residential lots in Greater Manchester and Birmingham**; the ~60 Greater London lots are in the four `London_*.md` files.
 
-**Scope note:** "Greater Manchester" here follows the same loose definition used in the McHugh & Co review in the repo root — the ten metropolitan boroughs, so Leigh (Wigan MBC), Altrincham (Trafford), Bury, Failsworth (Oldham MBC) and Farnworth (Bolton MBC) all count, not just City of Manchester postcodes. "Birmingham" = City of Birmingham only (the single B-postcode lot here is in Great Barr/Oscott); Walsall (Lot 112, WS2) and other Black Country lots are excluded, as in the earlier review.
+**Scope note:** "Greater Manchester" here follows the same loose definition used in the [McHugh & Co review](../McHugh_16-17_Sept_2026/README.md) — the ten metropolitan boroughs, so Leigh (Wigan MBC), Altrincham (Trafford), Bury, Failsworth (Oldham MBC) and Farnworth (Bolton MBC) all count, not just City of Manchester postcodes. "Birmingham" = City of Birmingham only (the single B-postcode lot here is in Great Barr/Oscott); Walsall (Lot 112, WS2) and other Black Country lots are excluded, as in the earlier review.
 
-**Site accessibility:** the Savills auction catalogue pages render fine for automated fetching (unlike mchughandco.com, which needed a proxy in the earlier review). Individual Savills lot detail pages were **not reliably reachable** this pass — the catalogue index gives lot number, address, property type, guide price, tenure and vacant/tenanted status, and that is what each lot table below is built from, supplemented with independent area/sold-price/rental research (Zoopla/Rightmove/OnTheMarket house-price pages, council regeneration pages, Ofsted, and web search for rental comparables).
+**Site accessibility:** the Savills auction catalogue pages render fine for automated fetching (unlike mchughandco.com, which needed a proxy in the earlier review). Individual Savills lot detail pages were not reachable via the plain research tools on the first pass but **are reachable through the user's signed-in Savills account** — **Lots 28 (Leigh), 93 (Deansgate Square) and 104 (Farnworth) have since been verified that way (4 Sept 2026)**, and the fuller catalogue text was re-read for Lot 30 (Altrincham). Those rows carry confirmed tenure / accommodation / EPC / passing rent; Lots 53, 87 and 149 still rely on the catalogue index plus independent area research (Zoopla/Rightmove/OnTheMarket house-price pages, council regeneration pages, Ofsted, web search for rental comparables).
 
 **Rental method:** gross yield is annual rent ÷ **guide price** (as in the earlier review), plus a second **fair-value** yield against the researched local comparable price. Guide prices are sellers' minimums and auction lots typically sell above guide, so treat the guide-price yield as an upper bound. Ratings use a 1 (weak) – 5 (strong) scale.
 
@@ -17,20 +17,20 @@ Catalogue: https://auctions.savills.co.uk/auctions/15--16-september-2026-242 —
 | Metric | Rating | Notes |
 |---|---|---|
 | Growth potential | 3/5 | Leigh has just been awarded **£32m+ of regeneration funding** — ~£12m over 2026–28 (UK Shared Prosperity Fund / Levelling Up) plus a further £20m over the decade via the "Pride in Place" Neighbourhood Board (2026–2036), covering public realm, a shopfront grant scheme and a Leigh Market refurbishment. Greater Manchester has also approved a **mayoral development zone** for Leigh. Offsetting this: Leigh is the **largest town in England with no railway station** — the Guided Busway to Manchester is the only fast public-transport link — and the town-centre retail offer has thinned. Long-run price growth in the borough has been steady rather than fast. |
-| Avg. cost of comparable property | — | Priestfields sold prices are mixed (the block contains larger units — one WN7 2RG postcode averages £342k) but **2-bed flats in Priestfields specifically list around £95,000–£100,000**. **Lot 28's £50,000 guide is roughly half** a realistic 2-bed flat value — a large apparent discount, though sub-£60k flat guides in post-industrial Greater Manchester towns are often deliberately low openers and can carry service-charge/leasehold issues. |
+| Avg. cost of comparable property | — | Priestfields sold prices are mixed (the block contains larger units — one WN7 2RG postcode averages £342k) but **2-bed flats in Priestfields specifically list around £95,000–£100,000**. **Lot 28's £50,000 guide is roughly half** a realistic 2-bed flat value. **The detail page (viewed in the user's Savills account, 4 Sept 2026) rules out the usual explanation** — the lease is *long* (199 years from 1 Jan 2006, ~178 years unexpired) and the EPC is **B**, so this is not a short-lease or run-down-fabric discount. The remaining candidates are (a) modernisation cost, (b) Leigh's weak flat market, and (c) **a service-charge / building-safety issue on the block** — the legal pack includes a Fire Risk Assessment and a ground-rent demand but, on the document list visible, **no service-charge accounts**, which is exactly the figure to insist on before bidding. |
 | Social status / desirability | 2/5 | Post-industrial Wigan-borough town; central Leigh wards carry above-average deprivation and a weak-ish town centre. Predominantly White British, owner-occupier/social-rent mix. |
-| Proximity to shops/amenities | 3/5 | Leigh town centre (Spinning Gate shopping centre, Leigh Market, Leisure Centre) is walkable/short-bus; adequate but not a major centre, and the subject of the refurbishment funding above. |
+| Proximity to shops/amenities | 3/5 | Leigh town centre (Spinning Gate shopping centre, Leigh Market, Leisure Centre) is walkable/short-bus; adequate but not a major centre, and the subject of the refurbishment funding above. Savills' own local note lists gyms, community centres, cafés and shops nearby, plus Pennington Flash nature reserve and Leigh Sports Village; **nearest station is Atherton** (Northern line), confirming Leigh itself has none. |
 | Proximity to schools | 3/5 | Several primaries within ~1 mile; secondary provision (e.g. Bedford High, Fred Longworth in nearby Tyldesley) is mixed "Good"/unrated in available data. |
 
-**Verdict:** A deprived but newly cash-injected town with a genuine 10-year regeneration programme starting now — the main structural drag is the complete absence of a train station. Lot 28's guide is very cheap even for a 2-bed flat here; the low headline is the attraction and the risk (check lease length, ground rent and service charge in the legal pack).
+**Verdict:** A deprived but newly cash-injected town with a genuine 10-year regeneration programme starting now — the main structural drag is the complete absence of a train station. With the lease confirmed long and the EPC at B, Lot 28's £50,000 guide is a genuine discount rather than a lease trap — but a modern (2006) purpose-built block guiding at half value, with a Fire Risk Assessment in the pack and no service-charge accounts shown, points at a building-safety or service-charge liability. Get the last three years of service-charge accounts and any remediation/major-works notices before treating the yield below as real.
 
 ### Property
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 28 | Apartment 11, 80 Priestfields, Leigh, WN7 2RX | £50,000 | Two-bedroom purpose-built flat | Not fetched — catalogue index only | Vacant |
+| 28 | Apartment 11, 80 Priestfields, Leigh, WN7 2RX | £50,000 | Two-bed second-floor flat in a purpose-built (2006) block; lounge, kitchen/diner, bathroom/WC. Rooms: bed 1 3.34×2.96m, bed 2 3.34×2.35m, lounge 4.49×3.38m, kitchen/diner 2.37×4.58m. **Leasehold, 199 yrs from 1 Jan 2006 (~178 yrs unexpired); EPC B.** Needs modernisation. | **Confirmed** via Savills account (auctions.savills.co.uk/…/…-24580), 4 Sept 2026 | Vacant — auction **Tue 15 Sept 2026, 9:00am** |
 
-**Potential Rental:** a 2-bed flat in Priestfields lets for about **£750 pcm (£9,000/yr)**. Gross yield on the £50,000 guide = **18.0%**; on a ~£90,000 fair value = **10.0%**. Both sit above the ~6–7% typical for Greater Manchester and well above London's 2–4% — but the fair-value figure is the realistic one, and any leasehold flat this cheap needs its service charge and lease term checked before the yield is trusted.
+**Potential Rental:** a 2-bed flat in Priestfields lets for about **£750 pcm (£9,000/yr)**. Gross yield on the £50,000 guide = **18.0%**; on a ~£90,000 fair value = **10.0%**. Both sit above the ~6–7% typical for Greater Manchester and well above London's 2–4%. The lease is not the problem here — but the **service charge on this block is unquantified**, and on a 2006 flat guiding at half value it could be substantial; net yield is unknowable until those accounts are seen.
 
 ---
 
@@ -41,20 +41,20 @@ Catalogue: https://auctions.savills.co.uk/auctions/15--16-september-2026-242 —
 | Metric | Rating | Notes |
 |---|---|---|
 | Growth potential | 4/5 | Altrincham has had one of Greater Manchester's strongest suburban turnarounds — **Altrincham Market / Market House is widely credited with reviving the town centre**, and Altrincham has repeatedly featured near the top of "best place to live" surveys. Excellent transport: **Metrolink tram terminus** (direct to Manchester city centre), plus National Rail (Mid-Cheshire line) and the interchange bus station. Trafford is a high-demand, high-price borough. |
-| Avg. cost of comparable property | — | Urban Drive recent sales: **£360,000 (Aug 2024), £380,000 (Jan 2023)** — but those are 3-bed period houses. A **2-bed bungalow** on the same street would realistically sit lower, roughly **£300,000–£340,000**. **Lot 30's guide is "TBA"** in the catalogue, so no guide-price yield can be calculated yet — the lot needs its guide confirmed before it can be assessed properly. |
+| Avg. cost of comparable property | — | Urban Drive recent sales: **£360,000 (Aug 2024), £380,000 (Jan 2023)** — but those are 3-bed period houses. A **2-bed detached bungalow** on the same street would realistically sit lower, roughly **£300,000–£340,000**. **The guide is now published at £265,000** (was "TBA" on the first pass) — ~78–88% of that comparable, a modest modernisation discount rather than a bargain, consistent with an affluent Trafford address where guides sit close to value. |
 | Social status / desirability | 5/5 | One of the most desirable addresses in Greater Manchester outside central Manchester — affluent, professional, strong high-street and dining scene. |
 | Proximity to shops/amenities | 5/5 | Altrincham town centre (Market House, Stamford Quarter, independents) within walking distance of WA15 8HX. |
 | Proximity to schools | 5/5 | **Altrincham Grammar School for Girls and Altrincham Grammar School for Boys** — both selective and Ofsted "Outstanding" — plus well-regarded primaries. The best schools profile in this batch. |
 
-**Verdict:** Much the strongest area fundamentals in the Manchester/Birmingham batch — blue-chip Trafford suburb, tram terminus, Outstanding grammar schools. The catch is that the yield can't be judged until the guide is published; at a plausible £280k–£320k guide the yield would be an ordinary ~4.5–5% (Altrincham's high capital values compress yield, the same pattern as prime London), so this lot is a **capital-growth / quality-of-area play, not an income play**.
+**Verdict:** Much the strongest area fundamentals in the Manchester/Birmingham batch — blue-chip Trafford suburb, tram terminus, Outstanding grammar schools. With the **£265,000 guide** now published, this is a low-yield lot (~5.4% on guide, ~4.5% on fair value) — a **capital-growth / quality-of-area / owner-occupier play, not an income play**. Altrincham's high capital values compress yield, the same pattern as prime London.
 
 ### Property
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 30 | 31 Urban Drive, Altrincham, WA15 8HX | **TBA** | Two-bedroom bungalow | Not fetched — catalogue index only | Vacant |
+| 30 | 31 Urban Drive, Altrincham, WA15 8HX | **£265,000** | Two-bedroom detached bungalow; rear patio garden; needs modernisation; near Stamford Park | Catalogue text only | Vacant |
 
-**Potential Rental:** a 2-bed bungalow in this part of Altrincham would likely let for roughly **£1,150–£1,300 pcm (~£14,400/yr)**. Against a plausible £300,000 sale value that is a **~4.8% gross yield** — low for Greater Manchester, typical for affluent Trafford. Yield figures here are provisional pending the guide price.
+**Potential Rental:** a 2-bed bungalow in this part of Altrincham would likely let for roughly **£1,150–£1,300 pcm (~£14,400/yr)**. Gross yield on the **£265,000 guide = 5.4%**; on a ~£310,000 fair value = **~4.6%** — low for Greater Manchester, typical for affluent Trafford.
 
 ---
 
@@ -113,20 +113,20 @@ Catalogue: https://auctions.savills.co.uk/auctions/15--16-september-2026-242 —
 | Metric | Rating | Notes |
 |---|---|---|
 | Growth potential | 4/5 | **Deansgate Square** is the landmark four-tower scheme at the southern edge of Manchester city centre, within the wider **Great Jackson Street / First Street** cluster of high-rise towers still under construction — one of the most concentrated regeneration corridors in the UK. City-centre Manchester has seen ~60%+ price growth over the past decade and continues to attract strong professional-renter demand. Walk to Deansgate–Castlefield tram/rail, Deansgate station and the office core. |
-| Avg. cost of comparable property | — | 2-bed flats at Deansgate Square recently **list for sale around £385,000** and **let for £1,940–£2,500 pcm**. **Lot 93's £314,000 guide is roughly 80–85% of resale value** — a moderate discount, not a distressed one; this is a premium new-build unit, not a cheap terrace. |
+| Avg. cost of comparable property | — | 2-bed flats at Deansgate Square recently **list for sale around £385,000** and **let for £1,940–£2,500 pcm**. **Lot 93's £314,000 guide is roughly 80–85% of resale value** — a moderate discount, not a distressed one; this is a premium new-build unit (2-bed, 2-bath, with pool / gym / sauna / tennis / 24-hr concierge), not a cheap terrace. **It is confirmed as an investment let producing £36,000 per annum** — a strong ~£3,000 pcm, consistent with a high floor. |
 | Social status / desirability | 4/5 | Premium address for the city-centre rental market — concierge, gym, pool, residents' facilities. Aimed squarely at young professionals and corporate lets. |
 | Proximity to shops/amenities | 5/5 | Full city-centre amenity — Deansgate, Spinningfields, Castlefield all within a short walk. |
 | Proximity to schools | 3/5 | Not a family-schooling location; city-centre primary provision is limited, though this stock is overwhelmingly let to childless professionals. |
 
-**Verdict:** The one "prime" lot in the batch — a tenanted 2-bed in Manchester's flagship tower cluster at a modest (~15–20%) discount to resale. The headline yield looks strong, **but service charges on these towers are high (commonly £3,500–£5,000+ per year)** and must be netted off — the real net yield is materially below the gross figures below. A capital-growth-led hold with income attached, rather than a pure yield play.
+**Verdict:** The one "prime" lot in the batch — an **investment-let 2-bed in Manchester's flagship tower cluster, producing a confirmed £36,000/yr**, at a modest (~15–20%) discount to resale. That is a genuinely strong gross yield (**11.5% on guide**), well above what these towers usually show — but **service charges on Deansgate Square are heavy (commonly £4,000–£6,000+ per year)** and must be netted off, and ground rent applies. On a net basis the yield is more like **~9.5% on guide / ~7.5% on resale value** — still one of the better income lots in the whole review, with city-centre capital growth attached. Get the service-charge schedule and the tenancy terms.
 
 ### Property
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 93 | Flat B2308, Deansgate Square, 9 Owen Street, Manchester, M15 4UD | £314,000 | Two-bedroom flat, **leasehold** | Not fetched — catalogue index only | **Tenanted** (passing rent not stated in the index — estimate used below) |
+| 93 | Flat B2308, Deansgate Square, 9 Owen Street, Manchester, M15 4UD | £314,000 | Two-bed, two-bath flat; pool, sauna/steam, basketball & tennis, 24-hr concierge. **Leasehold.** | Catalogue text only | **Investment let — £36,000 per annum** |
 
-**Potential Rental:** ~**£2,150 pcm (£25,800/yr)** gross. Gross yield on the £314,000 guide = **8.2%**; on ~£385,000 resale value = **6.7%**. **Net of a ~£4,000/yr service charge**, the yield on guide drops to roughly **6.9%** and on resale value to ~**5.6%** — still respectable for prime city-centre stock, but not the outsized number the gross figure implies.
+**Potential Rental:** **confirmed £36,000/yr** gross. Gross yield on the £314,000 guide = **11.5%**; on ~£385,000 resale value = **9.4%**. **Net of a ~£5,000/yr service charge (plus ground rent)** the yield on guide is roughly **9.5%** and on resale value ~**7.5%** — a strong, real income figure by the standards of this stock.
 
 ---
 
@@ -148,9 +148,9 @@ Catalogue: https://auctions.savills.co.uk/auctions/15--16-september-2026-242 —
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 104 | 11 St Peters Terrace, Farnworth, Bolton, BL4 9AZ | £75,000 | Three-bedroom terrace house | Not fetched — catalogue index only | Vacant |
+| 104 | 11 St Peters Terrace, Farnworth, Bolton, BL4 9AZ | £75,000 | Three-bedroom terrace — GF: kitchen/diner, lounge; 1st: 3 beds, bathroom, WC; rear garden. **Leasehold, but a new 999-year lease granted on completion** (≈ freehold). **EPC E.** Needs modernisation. | **Confirmed** via Savills account (…-24722), 4 Sept 2026 | Vacant — auction **Tue 15 Sept 2026, 9:00am** |
 
-**Potential Rental:** 3-bed terraces in BL4 let for about **£800–£905 pcm** — call it **£850 pcm (£10,200/yr)**. Gross yield on the £75,000 guide = **13.6%**; on a ~£120,000 fair value = **8.5%**. A clean mid-8% fair-value yield with regeneration optionality on top.
+**Potential Rental:** 3-bed terraces in BL4 let for about **£800–£905 pcm** — call it **£850 pcm (£10,200/yr)**. Gross yield on the £75,000 guide = **13.6%**; on a ~£120,000 fair value = **8.5%**. A clean mid-8% fair-value yield — the 999-year lease on completion removes any leasehold concern — with regeneration optionality on top. EPC E means budget for insulation/heating as part of the refurbishment.
 
 ---
 
@@ -183,20 +183,20 @@ Catalogue: https://auctions.savills.co.uk/auctions/15--16-september-2026-242 —
 - **Best value + growth combination: Farnworth (Lot 104).** ~35–40% below fair value, funded £50m town-centre regeneration just starting, clean ~8.5% fair-value yield, freehold house type.
 - **Best "clean" freehold yield: Bury (Lot 53).** ~7% fair-value yield with no lease/service-charge drag, tram terminus and a genuinely strong market/retail centre.
 - **Lowest risk: Great Barr B44 (Lot 149).** Settled owner-occupier semi, decent schools, ~one-third discount to a live street comparable — accept a lower (~6%) yield for the most straightforward profile.
-- **Quality-of-area / capital play: Altrincham (Lot 30)** — Outstanding grammar schools and a tram terminus, but yield can't be judged until the guide is published, and will be low (~5%) when it is.
-- **Highest headline yield, most caveats: Leigh (Lot 28)** — 18% on guide / 10% on fair value, but a sub-£60k leasehold flat needs its lease term and service charge verified before any of that is real, and Leigh has no railway station.
-- **Prime but service-charge-heavy: Deansgate Square (Lot 93)** — strong gross yield collapses toward ~5.6–6.9% once the tower's service charge is netted off; treat as a city-centre capital-growth hold with income attached.
+- **Quality-of-area / capital play: Altrincham (Lot 30)** — Outstanding grammar schools and a tram terminus; the guide is now published at **£265,000**, which makes it a low-yield (~5%) owner-occupier / growth lot, not an income lot.
+- **Highest headline yield: Leigh (Lot 28)** — 18% on guide / 10% on fair value. Detail page confirms the lease is *long* (199 yrs from 2006) and EPC B — so not a lease trap — but a 2006 block guiding at half value, with a Fire Risk Assessment in the pack and **no service-charge accounts shown**, points to a building-safety / service-charge liability. Get those accounts.
+- **Strong confirmed income: Deansgate Square (Lot 93)** — **investment-let at £36,000/yr = 11.5% gross on guide**; net of a ~£5,000 service charge still ~9.5% on guide / ~7.5% on resale value. One of the better income lots in the whole review, with city-centre capital growth attached.
 
 ### Rental Yield Ranking (fair-value basis)
 
-| Rank | Lot | Property | Est. rent (pcm) | Fair-value gross yield | Guide-price gross yield |
+| Rank | Lot | Property | Rent (pcm) | Fair-value gross yield | Guide-price gross yield |
 |---|---|---|---|---|---|
-| 1 | 28 | Priestfields flat, Leigh | £750 | **10.0%** | 18.0% |
-| 2 | 104 | St Peters Terrace, Farnworth | £850 | **8.5%** | 13.6% |
-| 3 | 87 | Clive Road, Failsworth | £825 | **7.9%** | 11.6% |
-| 4 | 53 | Hornby Street, Bury | £825 | **7.1%** | 13.2% |
-| 5 | 93 | Deansgate Square, M15 | £2,150 | **6.7% gross / ~5.6% net of service charge** | 8.2% |
+| 1 | 93 | Deansgate Square, M15 | £3,000 (**confirmed let**) | **9.4% gross / ~7.5% net of service charge** | 11.5% |
+| 2 | 28 | Priestfields flat, Leigh | £750 | **10.0%** (service charge unverified) | 18.0% |
+| 3 | 104 | St Peters Terrace, Farnworth | £850 | **8.5%** | 13.6% |
+| 4 | 87 | Clive Road, Failsworth | £825 | **7.9%** | 11.6% |
+| 5 | 53 | Hornby Street, Bury | £825 | **7.1%** | 13.2% |
 | 6 | 149 | Fairbourne Avenue, Great Barr B44 | £1,150 | **5.9%** | 9.2% |
-| 7 | 30 | Urban Drive, Altrincham | ~£1,200 | **~4.8%** (provisional) | n/a — guide TBA |
+| 7 | 30 | Urban Drive, Altrincham | ~£1,200 | **~4.6%** | 5.4% |
 
-**Reading the two yield columns:** the guide-price column uses the auction opening guide and is inflated wherever the guide sits well below street value; the fair-value column uses each area's researched comparable price and is the more realistic figure. On that basis every freehold-house lot in this batch (53, 87, 104, 149) clears ~6% gross and the northern terraces clear ~7–8.5%, consistent with the 6–9% range commonly cited for Manchester/Birmingham buy-to-let and roughly double London's typical 2–4%. The two leasehold flats (28, 93) need their service charges verified before their yields are trusted, and Altrincham (30) is a low-yield quality-of-area lot pending its guide price.
+**Reading the two yield columns:** the guide-price column uses the auction opening guide and is inflated wherever the guide sits well below street value; the fair-value column uses each area's researched comparable price and is the more realistic figure. On that basis every freehold-house lot in this batch (53, 87, 104, 149) clears ~6% gross and the northern terraces clear ~7–8.5%, consistent with the 6–9% range commonly cited for Manchester/Birmingham buy-to-let and roughly double London's typical 2–4%. Deansgate Square (93) is the standout on the confirmed £36,000 passing rent even after service charge; Leigh (28) still needs its service-charge accounts; Altrincham (30) is a low-yield quality-of-area lot at its published £265k guide.

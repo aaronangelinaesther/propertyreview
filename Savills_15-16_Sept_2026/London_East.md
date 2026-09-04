@@ -3,13 +3,13 @@
 Catalogue: https://auctions.savills.co.uk/auctions/15--16-september-2026-242
 Batch scope: East London residential lots — E postcode area. **16 lots across 9 neighbourhoods** (East Ham, Leyton, Wapping, Hackney/Dalston, Manor Park, Leytonstone, Bethnal Green, Stratford, Walthamstow).
 
-**Site accessibility / method:** as with the other batches — built from the Savills catalogue index plus independent area research (Land Registry / Zoopla / Rightmove sold-price and rent pages, council regeneration pages, web search for rental comparables). Individual Savills lot detail pages were not reliably reachable this pass. Gross yield = annual rent ÷ **guide price** (upper bound); a second **fair-value** yield is given against the local comparable. Ratings 1 (weak) – 5 (strong).
+**Site accessibility / method:** built from the Savills catalogue index plus independent area research (Land Registry / Zoopla / Rightmove sold-price and rent pages, council regeneration pages, web search for rental comparables). **Lots 1, 7, 23 and 63 have since been verified against their Savills detail pages** (signed-in account, 4 Sept 2026) — those rows carry confirmed tenure / accommodation / EPC; the rest still rely on the index plus inference. Gross yield = annual rent ÷ **guide price** (upper bound); a second **fair-value** yield is given against the local comparable. Ratings 1 (weak) – 5 (strong).
 
 **Cross-cutting flags for this batch:**
 - **Confirmed short lease:** Lot 63, Morieux Road, Leyton — **44 years unexpired** (catalogue-stated). Below 80 years, so marriage value applies and a statutory extension is expensive.
 - **Guides at 40–55% of local value** (Lots 10, 15, 59, 70, 126, 150, 170) — almost always a short lease, ex-local-authority (right-to-buy) tenure, cladding/service-charge problem on a 2000s block, or a shared-ownership/Section 106 restriction. Verify in the legal pack before trusting any yield.
-- **The Leyton freehold two-flat lots (7 and 23)** are the opposite — both vacant, freehold, priced roughly at single-house value but delivering two lettable units. These are the batch's genuine value plays.
-- **Lot 7 is auctioned on Monday 14 September**, a day before the main sale — diarise separately.
+- **The Leyton freehold two-flat lots (7 and 23)** are the opposite — both vacant, freehold, priced roughly at single-house value but delivering two lettable units. These are the batch's genuine value plays. Note Lot 23 is confirmed as **two one-bedroom flats** (not the mixed 1-bed/2-bed first assumed), which lowers its yield to ~7.6%.
+- **Lot 7's auction date is stated inconsistently by Savills** — the lot listing says "Tuesday 14 September" (14 Sept 2026 is a Monday) while the detail-page header says Tuesday 15 September, 9:00am. **Confirm the date directly before relying on it.**
 
 ---
 
@@ -31,12 +31,12 @@ Batch scope: East London residential lots — E postcode area. **16 lots across 
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 1 | 187 Charlemont Road, East Ham, London, E6 6AG | £250,000 | Five-room end-of-terrace house; modernisation needed, loft-extension potential | Not fetched — catalogue index only | Vacant |
+| 1 | 187 Charlemont Road, East Ham, London, E6 6AG | £250,000 | **Freehold** two-storey end-of-terrace; 3 bed (one en-suite), **two reception rooms and two kitchens** across the two floors, rear access. Modernisation needed; loft-extension potential. EPC not shown (legal pack). | **Confirmed** via Savills account (…-24117), 4 Sept 2026 | Vacant |
 | 120 | 230 Barking Road, East Ham, London, E6 3BB | £315,000 | Two-bedroom property (Barking Road / A124 frontage) | Not fetched — catalogue index only | Vacant |
 | 129 | 24 Central Park Road, East Ham, London, E6 3DY | £245,000 | Maisonette | Not fetched — catalogue index only | Vacant |
 
 **Potential Rental:**
-- **Lot 1** — refurb 3-bed house lets ~£2,100–£2,300 pcm (£26,400/yr). Yield on the £250,000 guide = **10.6%**; on a ~£420,000 post-refurb fair value = **6.3%**. Guide is ~55% of the E6 terraced average — the biggest East Ham discount, with a loft extension as extra upside.
+- **Lot 1** — refurb 3-bed house lets ~£2,100–£2,300 pcm (£26,400/yr). Yield on the £250,000 guide = **10.6%**; on a ~£420,000 post-refurb fair value = **6.3%**. Guide is ~55% of the E6 terraced average — the biggest East Ham discount, with a loft extension as extra upside. The confirmed **two-kitchen / two-reception layout** means it is already set up for (or easily converted to) two units / an HMO — extra optionality on the exit.
 - **Lot 120** — 2-bed ~£1,800 pcm (£21,600/yr). Yield on the £315,000 guide = **6.9%**. Main-road position; if it is a 2-bed house rather than a flat, £315k is a fair-to-modest discount; if a flat, it is roughly at market.
 - **Lot 129** — maisonette ~£1,700 pcm (£20,400/yr). Yield on the £245,000 guide = **8.3%**; on a ~£340,000 fair value = **6.0%**. Clean ~72%-of-value discount, no obvious red flag.
 
@@ -54,20 +54,20 @@ Batch scope: East London residential lots — E postcode area. **16 lots across 
 | Proximity to shops/amenities | 3/5 | Leyton High Road parades, Westfield Stratford one stop away, Lea Bridge Road retail. |
 | Proximity to schools | 3/5 | Waltham Forest schools generally "Good"; several strong primaries. |
 
-**Verdict:** Strong-fundamentals East London area. **Lots 7 and 23 are the batch's stand-out value** — freehold buildings arranged as two self-contained flats, all units vacant, priced near single-house value. Lots 63 and 85 are cheaper but each carries a specific tenure problem (a confirmed 44-year lease; a probable ex-local-authority block).
+**Verdict:** Strong-fundamentals East London area. **Lot 7 is the batch's stand-out value** — a freehold semi-detached house arranged as two vacant self-contained flats (a 2-bed and a 3-bed), priced near single-house value. **Lot 23 is a similar idea but smaller** — a freehold terrace as **two one-bedroom flats** (confirmed on the detail page — not the 2-bed-plus-1-bed first assumed), which pulls its yield down. Lots 63 and 85 are cheaper but each carries a specific tenure problem (a confirmed 44-year lease; a probable ex-local-authority block).
 
 ### Properties
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 7 | Flats 1 & 2, 3 Scotts Road, Leyton, London, E10 6LN | £650,000 | **Freehold** building, 3-bed flat + 2-bed flat | Not fetched — catalogue index only | Both vacant — **auctioned Mon 14 Sept** |
-| 23 | Flat A & B, 10 Colchester Road, Leyton, London, E10 6HA | £490,000 | **Freehold** terraced building, 2 flats | Not fetched — catalogue index only | Both vacant |
-| 63 | 35 Morieux Road, Leyton, London, E10 7LJ | £200,000 | Two-bedroom ground-floor flat, **leasehold — 44 years unexpired** | Not fetched — catalogue index only | Vacant |
+| 7 | Flats 1 & 2, 3 Scotts Road, Leyton, London, E10 6LN | £650,000 | **Freehold semi-detached house**, two self-contained flats. Flat A (GF): **2-bed** — dining room, kitchen, utility, bathroom/WC, rear garden. Flat B (1st/2nd): **3-bed** — dining room, kitchen, bathroom/WC, sep WC. **EPC C.** | **Confirmed** via Savills account (…-24816), 4 Sept 2026 | Both vacant. Listing says "offered Tuesday 14 September"; detail-page header says Tue 15 Sept 9:00am — **date is inconsistent in Savills' own text; verify** |
+| 23 | Flat A & B, 10 Colchester Road, Leyton, London, E10 6HA | £490,000 | **Freehold** terrace, **two one-bedroom flats** (GF and 1st, each: reception, 1 bed, kitchen, bathroom/WC), rear garden, need modernisation. Leyton Midland Road station ~300 m. EPC not shown (legal pack). | **Confirmed** via Savills account (…-24509), 4 Sept 2026 | Both vacant |
+| 63 | 35 Morieux Road, Leyton, London, E10 7LJ | £200,000 | Two-bedroom ground-floor flat, **leasehold — 44 years unexpired**; part of a mid-terrace; part of the garden | **Confirmed** via Savills account (…-24862), 4 Sept 2026 | Vacant |
 | 85 | Flat 47 Bridge Court, Lea Bridge Road, Leyton, London, E10 7JS | £195,000 | Two-bedroom flat, "long lease" (block fronts Lea Bridge Road) | Not fetched — catalogue index only | Vacant |
 
 **Potential Rental:**
-- **Lot 7** — 3-bed ~£2,400 + 2-bed ~£1,900 = **£4,300 pcm (£51,600/yr)**. Yield on the £650,000 guide = **7.9%**. You are buying a whole freehold building with two lettable flats for roughly the price of one Leyton terrace — the best risk-adjusted value in the East batch.
-- **Lot 23** — 2-bed ~£1,900 + 1-bed ~£1,550 = **£3,450 pcm (£41,400/yr)**. Yield on the £490,000 guide = **8.4%**. Same logic as Lot 7 at a lower entry price; ~85% of the building's likely vacant value.
+- **Lot 7** — 3-bed ~£2,400 + 2-bed ~£1,900 = **£4,300 pcm (£51,600/yr)**. Yield on the £650,000 guide = **7.9%**. You are buying a whole freehold house with two lettable flats for roughly the price of one Leyton terrace — still the best risk-adjusted value in the East batch. Confirm which auction day it actually falls on.
+- **Lot 23** — **two 1-beds** ~£1,550 each = **£3,100 pcm (£37,200/yr)**. Yield on the £490,000 guide = **7.6%** (down from the 8.4% first estimated, now that both flats are confirmed as one-beds); on a ~£560,000 vacant-building fair value = ~**6.6%**. Still a sound freehold-two-flat play, just a lower-yielding one than Lot 7.
 - **Lot 63** — 2-bed ~£1,700 pcm (£20,400/yr). Yield on the £200,000 guide = **10.2%**, *but* the 44-year lease needs a statutory extension costing an estimated £40,000–£70,000 (marriage value applies). All-in ~£260,000 pushes the real yield to ~**7.5%**. The low guide is fully explained by the lease.
 - **Lot 85** — 2-bed ~£1,650 pcm (£19,800/yr). Yield on the £195,000 guide = **10.2%**; on a ~£330,000 fair value = **6.0%**. "Long lease" removes the short-lease worry, but a Lea Bridge Road block at ~57% of value strongly suggests **ex-local-authority tenure** — check for right-to-buy resale restrictions and pending major-works bills.
 
@@ -272,11 +272,11 @@ Batch scope: East London residential lots — E postcode area. **16 lots across 
 
 | Lot | Area | Address | Guide | Type | Est. rent (pcm/pa) | Gross yield vs guide | Flag |
 |---|---|---|---|---|---|---|---|
-| 1 | East Ham E6 | 187 Charlemont Rd, E6 6AG | £250,000 | End-terrace house | £2,150 / £26,400 | 10.6% | ~55% of terraced avg; refurb + loft upside |
-| 7 | Leyton E10 | Flats 1 & 2, 3 Scotts Rd, E10 6LN | £650,000 | Freehold, 2 flats, both vacant | £4,300 / £51,600 | 7.9% | **Top value**; auction Mon 14 Sept |
+| 1 | East Ham E6 | 187 Charlemont Rd, E6 6AG | £250,000 | Freehold end-terrace, 3-bed, 2 kitchens/2 receptions | £2,150 / £26,400 | 10.6% | ~55% of terraced avg; refurb + loft + split-unit upside |
+| 7 | Leyton E10 | Flats 1 & 2, 3 Scotts Rd, E10 6LN | £650,000 | Freehold house, 2-bed + 3-bed flats, both vacant, EPC C | £4,300 / £51,600 | 7.9% | **Top value**; auction date inconsistent (14 vs 15 Sept) — verify |
 | 10 | Wapping E1W | Flat 20, 74 Wapping High St, E1W 2NP | £190,000 | 1-bed flat | £1,950 / £23,400 | 12.3%* | ~40% of value — short lease likely |
 | 15 | Hackney E8 | Flat B, 76 Lenthall Rd, E8 3JN | £270,000 | 1-bed flat | £2,100 / £25,200 | 9.3% | ~50–55% of value — short lease likely |
-| 23 | Leyton E10 | Flat A & B, 10 Colchester Rd, E10 6HA | £490,000 | Freehold, 2 flats, both vacant | £3,450 / £41,400 | 8.4% | **Top value** |
+| 23 | Leyton E10 | Flat A & B, 10 Colchester Rd, E10 6HA | £490,000 | Freehold, **two 1-bed flats** (confirmed), both vacant | £3,100 / £37,200 | **7.6%** | Solid freehold-two-flat play (lower-yielding than Lot 7) |
 | 59 | Manor Park E12 | 9B East Avenue, E12 6SG | £120,000 | 1-bed flat | £1,375 / £16,500 | 13.75%* | ~42% of value — short lease / ex-LA |
 | 63 | Leyton E10 | 35 Morieux Rd, E10 7LJ | £200,000 | 2-bed flat, **44-yr lease** | £1,700 / £20,400 | 10.2% | Confirmed short lease; ~£50k extension |
 | 70 | Leytonstone E11 | Flat B, 55 Colworth Rd, E11 1JA | £225,000 | 2-bed flat | £1,900 / £22,800 | 10.1% | ~50% of value — short lease likely |
@@ -293,9 +293,9 @@ Batch scope: East London residential lots — E postcode area. **16 lots across 
 
 ## Top picks (East batch)
 
-1. **Lot 7, Leyton — Flats 1 & 2, 3 Scotts Road (£650,000).** Freehold building, two vacant self-contained flats (3-bed + 2-bed), ~7.9% gross on guide, in a strong-growth Waltham Forest location. Cleanest value/income combination in the batch. *(Auction Monday 14 September.)*
-2. **Lot 23, Leyton — 10 Colchester Road (£490,000).** Same freehold-two-flats logic at a lower entry price; ~8.4% gross on guide, ~85% of vacant building value.
-3. **Lot 1, East Ham — 187 Charlemont Road (£250,000).** ~55% of the E6 terraced average, vacant, with a stated loft-extension angle — the best straightforward refurb play.
+1. **Lot 7, Leyton — Flats 1 & 2, 3 Scotts Road (£650,000).** Freehold semi-detached house, two vacant self-contained flats (2-bed + 3-bed), EPC C, ~7.9% gross on guide, in a strong-growth Waltham Forest location. Cleanest value/income combination in the batch. *(Savills' text gives the auction date as both 14 and 15 September — confirm which.)*
+2. **Lot 23, Leyton — 10 Colchester Road (£490,000).** Same freehold-two-flats logic, but the detail page confirms **two one-bedroom flats**, so the yield is ~**7.6%** gross (not the 8.4% first estimated) and ~£560k of vacant-building value. Still sound, just lower-yielding than Lot 7.
+3. **Lot 1, East Ham — 187 Charlemont Road (£250,000).** ~55% of the E6 terraced average, freehold, vacant, loft-extension angle *and* an existing two-kitchen/two-reception layout that suits a split into two units — the best straightforward refurb play.
 4. **Lot 129, East Ham — 24 Central Park Road (£245,000).** A rare "clean" discount (~72% of value) with no obvious tenure red flag; ~8.3% on guide.
 5. **Lot 63, Leyton — 35 Morieux Road (£200,000).** Only if you are comfortable running the lease-extension process — the ~44-year lease is disclosed up front, and the all-in cost still leaves a ~7.5% yield in a strong area.
 

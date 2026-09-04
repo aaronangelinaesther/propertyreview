@@ -44,20 +44,20 @@ Batch scope: South London residential lots — SE, SW, CR and SM (Sutton) postco
 | Metric | Rating | Notes |
 |---|---|---|
 | Growth potential | 4/5 | Forest Hill — Overground + Southern, Horniman Museum, gentrified strongly off the back of neighbouring Dulwich. A Bakerloo line extension via the area has been mooted but is not funded. |
-| Avg. cost of comparable property | — | SE23 1-bed flats normally **£300,000–£350,000**. **Lot 8's £150,000 guide is ~45–48% of that — yet the catalogue states "long leasehold, peppercorn ground rent"**, i.e. the tenure is *good*. That combination (clean long lease, very low guide) is unusual: the likely explanation is a very small unit or poor condition, not a lease problem. Worth close inspection precisely because the tenure red flag that usually explains a guide this low is absent. |
+| Avg. cost of comparable property | — | SE23 1-bed flats normally **£300,000–£350,000**. **Lot 8's £150,000 guide is ~45–48% of that.** The detail page (viewed 4 Sept 2026) confirms the tenure is *excellent* — a **new lease running 17 Nov 2023 to 5 Sept 2205 (~181 years unexpired), peppercorn ground rent** — and that it is "presented in good decorative order" with "fantastic views", in a **detached building**. So neither the lease nor condition explains the low guide. The one thing still not disclosed is **floor area**: it is a first-floor 1-bed with a combined **"kitchen/reception room"**, which hints at a compact flat. That is now the only open question. |
 | Social status / desirability | 4/5 | Desirable, family/professional; villagey town centre. |
 | Proximity to shops/amenities | 4/5 | Forest Hill town centre (Dartmouth Road / London Road), Horniman Gardens. |
 | Proximity to schools | 4/5 | Several "Good" primaries; Lewisham/Southwark border provision. |
 
-**Verdict:** Potentially the most genuinely interesting cheap lot in the South batch — a long-lease, peppercorn-ground-rent 1-bed in a strong area at under half local value. Confirm floor area and condition; if it is a normal-sized flat, this is a bargain, not a trap.
+**Verdict:** The most genuinely interesting cheap lot in the South batch, and the detail page strengthens the case — a **fresh 181-year lease, peppercorn ground rent, good decorative order, views**, at under half local 1-bed value. The lease-trap that usually explains a guide this low simply isn't there. Confirm the floor area (the open-plan kitchen/reception suggests it is small); if it is a normal-sized 1-bed, this is a real bargain.
 
 ### Property
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 8 | Flat 3, 31 Ewelme Road, Forest Hill, London, SE23 3BQ | £150,000 | One-bedroom first-floor flat; long leasehold, **peppercorn ground rent** | Not fetched — catalogue index only | Vacant |
+| 8 | Flat 3, 31 Ewelme Road, Forest Hill, London, SE23 3BQ | £150,000 | First-floor 1-bed in a detached building; kitchen/reception room, bedroom, bathroom/WC. **Leasehold 17 Nov 2023 – 5 Sept 2205 (~181 yrs), peppercorn ground rent.** Good decorative order; "fantastic views". Floor area not disclosed. | **Confirmed** via Savills account (…-23958), 4 Sept 2026 | Vacant |
 
-**Potential Rental:** ~£1,425 pcm (£17,100/yr). Yield on the £150,000 guide = **11.4%**; on a ~£320,000 fair value = **5.3%**.
+**Potential Rental:** ~£1,425 pcm (£17,100/yr) — lower if the flat is compact. Yield on the £150,000 guide = **11.4%**; on a ~£320,000 fair value = **5.3%**.
 
 ---
 
@@ -97,15 +97,15 @@ Batch scope: South London residential lots — SE, SW, CR and SM (Sutton) postco
 | Proximity to shops/amenities | 5/5 | Balham centre (Hildreth Street market, restaurants), Waitrose, Tooting Bec Common. |
 | Proximity to schools | 3/5 | Wandsworth mixed. |
 
-**Verdict:** The review's biggest cheque. Only worth it if the legal pack confirms a **lawfully established HMO** with a current licence — Wandsworth operates an Article 4 direction removing permitted-development rights for small HMOs across much of the borough, so an unlicensed or unestablished HMO could be un-monetisable at this price. As a plain single-family let the numbers do not work.
+**Verdict:** The review's biggest cheque, and a planning bet more than a property bet. At 13 bedrooms this is a **large (sui generis) HMO** — it needs full planning permission for that use regardless of Article 4, and the catalogue's twice-repeated "subject to consents" suggests the current use is not lawfully established. If a large-HMO consent and licence can be secured it is a ~9–10% gross building; if not, it reverts to a single dwelling / small-flats conversion (also "subject to consents") on a busy main road, and £1.4m looks full. Only for a buyer who will underwrite the planning risk.
 
 ### Property
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 12 | 187 Balham High Road, Balham, London, SW12 9BE | £1,400,000 | Semi-detached house in HMO use | Not fetched — catalogue index only | Vacant |
+| 12 | 187 Balham High Road, Balham, London, SW12 9BE | £1,400,000 | Substantial **four-storey** semi-detached building, **~398 sq m (4,279 sq ft)**, **arranged as 13 bedrooms with shared facilities**, ~150 m from Balham stations. "Potential for conversion to self-contained flats **subject to consents**"; "currently well suited to shared / HMO use **subject to consents**". | Catalogue text only | Vacant |
 
-**Potential Rental:** as a licensed HMO (~7–8 rooms at £950–£1,100) ≈ **£7,500 pcm (£90,000/yr)** → yield on the £1,400,000 guide = **6.4%**. As a single-family let (~£4,500 pcm / £54,000/yr) → **3.9%**. The ~2.5-point spread *is* the HMO-consent risk.
+**Potential Rental:** as a licensed 13-room HMO (~£800–£950 per room) ≈ **£10,500–£12,000 pcm (£126,000–£144,000/yr)** → yield on the £1,400,000 guide = **9–10% gross**. As a single-family let (~£5,500 pcm / £66,000/yr) → **4.7%**. The catalogue's repeated "**subject to consents**" wording strongly implies the HMO use is **not currently established or licensed** — so the 9–10% figure is contingent on winning that consent under Wandsworth's Article 4 regime. Get the planning history and any existing HMO licence before valuing it as an HMO.
 
 ---
 
@@ -164,20 +164,20 @@ Batch scope: South London residential lots — SE, SW, CR and SM (Sutton) postco
 | Metric | Rating | Notes |
 |---|---|---|
 | Growth potential | 4/5 | Peckham — Overground + rail to London Bridge, Rye Lane, Bussey Building, Peckham Levels; the Old Kent Road Opportunity Area and safeguarded Bakerloo extension are close. Heavily gentrified, still rising. |
-| Avg. cost of comparable property | — | SE15 2-bed maisonettes normally **£450,000–£525,000** (Fenwick Road is near prime Bellenden Road). **Lot 46's £250,000 guide is ~50% of that** — short lease likely. Flag. |
+| Avg. cost of comparable property | — | The catalogue's fuller text confirms this is a **one-bedroom** split-level maisonette (not the 2-bed first assumed). A 1-bed maisonette in this pocket (near prime Bellenden Road) is normally **£375,000–£450,000**. **Lot 46's £250,000 guide is ~55–65% of that** — a large but not extreme gap; a shorter lease is still the most likely explanation, so treat as a legal-pack check. Flag. |
 | Social status / desirability | 4/5 | Very desirable; young-professional heartland. |
 | Proximity to shops/amenities | 5/5 | Rye Lane, Bellenden Road, Peckham Rye Park. |
 | Proximity to schools | 3/5 | Southwark mixed. |
 
-**Verdict:** Prime-Peckham maisonette at half price — location excellent, discount is the lease warning. Buy only once the legal pack proves a long lease.
+**Verdict:** A one-bed prime-Peckham maisonette at ~40% off — location excellent; check the lease length before assuming the discount is a bargain rather than a lease-extension bill.
 
 ### Property
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 46 | 9B Fenwick Road, Peckham, London, SE15 4HS | £250,000 | Split-level maisonette, leasehold | Not fetched — catalogue index only | Vacant |
+| 46 | 9B Fenwick Road, Peckham, London, SE15 4HS | £250,000 | **One-bedroom** split-level maisonette, leasehold; some modernisation | Catalogue text only (detail page not opened) | Vacant |
 
-**Potential Rental:** ~£2,150 pcm (£25,800/yr). Yield on the £250,000 guide = **10.3%**; on a ~£490,000 fair value = **5.3%**.
+**Potential Rental:** 1-bed ~£1,600 pcm (£19,200/yr). Yield on the £250,000 guide = **7.7%**; on a ~£410,000 fair value = **4.7%**.
 
 ---
 
@@ -212,18 +212,18 @@ Batch scope: South London residential lots — SE, SW, CR and SM (Sutton) postco
 | Metric | Rating | Notes |
 |---|---|---|
 | Growth potential | 4/5 | Nunhead — rail to London Bridge / Victoria, gentrified alongside Peckham; Nunhead Green, Nunhead Cemetery, Telegraph Hill. |
-| Avg. cost of comparable property | — | SE15 2-bed flats normally **£450,000–£525,000**. **Lot 71's £325,000 guide is ~65–70% of that** — a moderate, "normal" discount rather than a red-flag gap. |
+| Avg. cost of comparable property | — | SE15 2-bed flats normally **£450,000–£525,000**. **Lot 71's £325,000 guide is ~65–70% of that** — a moderate, "normal" discount rather than a red-flag gap. The detail page (viewed 4 Sept 2026) confirms a good **84 sq m (901 sq ft)** — a genuinely large 2-bed — over the first and second floors. **Tenure is leasehold but the unexpired term is not disclosed** on the listing, so that still needs the legal pack. |
 | Social status / desirability | 4/5 | Desirable, villagey. |
 | Proximity to shops/amenities | 3/5 | Nunhead Green, Evelina Road parade; Peckham Rye nearby. |
 | Proximity to schools | 3/5 | Southwark mixed. |
 
-**Verdict:** One of the cleaner South lots — a self-contained 2-bed in a strong area at a believable ~30–35% discount, ~7.6% on guide. Fewer legal-pack landmines than most of the batch.
+**Verdict:** One of the cleaner South lots — a large (901 sq ft) self-contained 2-bed in a strong area at a believable ~30–35% discount, ~7.6% on guide. Lighter on red flags than most of the batch, but with the **lease length undisclosed**, confirm it before assuming there is no extension cost.
 
 ### Property
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 71 | 29B Rye Hill Park, Nunhead, London, SE15 3JN | £325,000 | Two-bedroom self-contained flat | Not fetched — catalogue index only | Vacant |
+| 71 | 29B Rye Hill Park, Nunhead, London, SE15 3JN | £325,000 | Self-contained flat over 1st/2nd floors — 1st: reception, kitchen; 2nd: **2 bedrooms**, bathroom/WC. **84 sq m (901 sq ft).** Leasehold, term not disclosed. Needs modernisation. | **Confirmed** via Savills account (…-24876), 4 Sept 2026 | Vacant |
 
 **Potential Rental:** ~£2,050 pcm (£24,600/yr). Yield on the £325,000 guide = **7.6%**; on a ~£475,000 fair value = **5.2%**.
 
@@ -448,14 +448,14 @@ Batch scope: South London residential lots — SE, SW, CR and SM (Sutton) postco
 | Lot | Area | Address | Guide | Type | Est. rent (pcm/pa) | Gross yield vs guide | Flag |
 |---|---|---|---|---|---|---|---|
 | 2 | Sutton SM1 | 11 Benwood Court, SM1 3SS | £190,000 | 2-bed PB flat | £1,575 / £18,900 | 9.9% | Check lease / service charge; superb schools |
-| 8 | Forest Hill SE23 | Flat 3, 31 Ewelme Rd, SE23 3BQ | £150,000 | 1-bed flat, long lease, peppercorn GR | £1,425 / £17,100 | 11.4% | Tenure clean — check size/condition; possible genuine bargain |
+| 8 | Forest Hill SE23 | Flat 3, 31 Ewelme Rd, SE23 3BQ | £150,000 | 1-bed, **fresh 181-yr lease, peppercorn GR**, good order, views | £1,425 / £17,100 | 11.4% | Tenure + condition confirmed good — only open Q is floor area (likely compact) |
 | 11 | East Dulwich SE22 | 25b Friern Rd, SE22 0AU | £230,000 | 2-bed split-level flat | £2,000 / £24,000 | 10.4% | ~45% of value — short lease likely |
-| 12 | Balham SW12 | 187 Balham High Rd, SW12 9BE | £1,400,000 | Semi-detached HMO | £7,500 / £90,000 | 6.4% | HMO consent / Article 4 / licence — decisive |
+| 12 | Balham SW12 | 187 Balham High Rd, SW12 9BE | £1,400,000 | 4-storey building, 4,279 sq ft, **13 bedrooms** | £11,000 / £132,000 (if consented) | 9–10% (if consented) | Large-HMO planning + licence "subject to consents" — decisive |
 | 19 | South Croydon CR2 | 2 Brambledown Rd, CR2 0BL | £450,000 | 3-bed bungalow | £2,000 / £24,000 | 5.3% | Family-home / modernisation play, low yield |
 | 44 | Lewisham SE13 | 15C Manor Park, SE13 5QZ | £185,000 | 1-bed flat | £1,550 / £18,600 | 10.1% | Lease / ex-LA check; Gateway regen |
-| 46 | Peckham SE15 | 9B Fenwick Rd, SE15 4HS | £250,000 | Maisonette | £2,150 / £25,800 | 10.3% | ~50% of value — short lease likely |
+| 46 | Peckham SE15 | 9B Fenwick Rd, SE15 4HS | £250,000 | **1-bed** split-level maisonette | £1,600 / £19,200 | 7.7% | ~55–65% of value — check lease length |
 | 69 | Tulse Hill SE21 | 6 Peabody Hill, SE21 8LD | £190,000 | 2-bed GF flat (Peabody) | £1,750 / £21,000 | 11.1% | Ex-Peabody — service charge / restrictions |
-| 71 | Nunhead SE15 | 29B Rye Hill Park, SE15 3JN | £325,000 | 2-bed self-contained flat | £2,050 / £24,600 | 7.6% | Clean ~65–70%-of-value discount |
+| 71 | Nunhead SE15 | 29B Rye Hill Park, SE15 3JN | £325,000 | 2-bed self-contained flat, **901 sq ft** | £2,050 / £24,600 | 7.6% | ~65–70%-of-value discount; **lease term undisclosed — check** |
 | 73 | Croydon CR0 | Flat 4, 93 Outram Rd, CR0 6XJ | £90,000 | 1-bed flat | £1,300 / £15,600 | 17.3%* | ~40–45% of value — lease / ex-LA |
 | 88 | Battersea SW11 | 89a Plough Rd, SW11 2BJ | £325,000 | 1-bed GF flat | £1,875 / £22,500 | 6.9% | Relatively "normal" discount |
 | 89 | Walworth SE17 | Flat 11, Block H, Peabody Est, SE17 1BN | £160,000 | 1-bed flat (Peabody) | £1,725 / £20,700 | 12.9%* | Ex-Peabody — major-works / restriction risk |
@@ -470,12 +470,12 @@ Batch scope: South London residential lots — SE, SW, CR and SM (Sutton) postco
 
 ## Top picks (South batch)
 
-1. **Lot 71, Nunhead — 29B Rye Hill Park (£325,000).** The cleanest lot in the batch: self-contained 2-bed, strong area, believable ~30–35% discount, ~7.6% on guide, few legal-pack landmines.
-2. **Lot 91, Peckham / Old Kent Road — 60A Asylum Road (£425,000).** Largest flat here (3-bed), ~30% discount, ~7.9% on guide, sitting on the Old Kent Road regeneration for long-term capital upside.
-3. **Lot 8, Forest Hill — Flat 3, 31 Ewelme Road (£150,000).** The one sub-half-value lot where the tenure is explicitly *good* (long lease, peppercorn ground rent) — if the floor area and condition are normal, this is a real bargain rather than a lease trap. Inspect before deciding.
+1. **Lot 71, Nunhead — 29B Rye Hill Park (£325,000).** A large **901 sq ft** self-contained 2-bed, strong area, believable ~30–35% discount, ~7.6% on guide, lighter on red flags than most of the batch — *but* the detail page does not disclose the lease term, so confirm that first.
+2. **Lot 8, Forest Hill — Flat 3, 31 Ewelme Road (£150,000).** The detail page *strengthens* this one: a confirmed **fresh 181-year lease, peppercorn ground rent, good decorative order, views**, at under half local 1-bed value. The lease trap that usually explains a guide this low is genuinely absent — the only open question is floor area (the open-plan kitchen/reception hints at a compact flat). Inspect, then it may be the standout bargain of the review.
+3. **Lot 91, Peckham / Old Kent Road — 60A Asylum Road (£425,000).** Largest flat here (3-bed), ~30% discount, ~7.9% on guide, sitting on the Old Kent Road regeneration for long-term capital upside.
 4. **Lot 44, Lewisham — 15C Manor Park (£185,000).** Regeneration town, ~40% discount, ~10% on guide / ~6% fair value; only a moderate lease/ex-LA check needed.
 5. **Lot 113, Merton Park — 7A Merton Park Parade (£180,000).** For a buyer who wants a project: ~£230k all-in for a ~£430k finished flat in a strong SW19 pocket.
 
-**Large-ticket, single-issue:** **Lot 12, Balham (£1.4m)** — the whole case rests on a lawfully established, licensable HMO; get that answered first or leave it.
+**Large-ticket, single-issue:** **Lot 12, Balham (£1.4m)** — a 4,279 sq ft, 13-bedroom building whose ~9–10% gross HMO case rests entirely on winning a large-HMO planning consent and licence ("subject to consents" in the catalogue). Underwrite the planning risk or leave it.
 
 **Handle with caution (guide far below local value — lease / ex-social-landlord / condition):** Lots 11 (East Dulwich), 46 (Peckham), 69 (Tulse Hill/Peabody), 73 (Croydon), 89 (Walworth/Peabody), 99 (South Croydon), 119 (Sydenham), 162 (Upper Norwood).
