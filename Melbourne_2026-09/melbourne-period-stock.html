@@ -1,0 +1,826 @@
+<title>Six-Pack &amp; Terrace</title>
+<style>
+  :root {
+    --bg: #eceee8;
+    --surface: #f8f9f4;
+    --surface-alt: #e2e5dd;
+    --border: #cbcfc3;
+    --text: #1c2420;
+    --text-muted: #5a655a;
+    --accent: #93692a;
+    --accent-strong: #6f4f1f;
+    --accent-soft: #eee0c4;
+    --positive: #3d6a55;
+    --positive-bg: #dfebe3;
+    --warning: #99711d;
+    --warning-bg: #f0e2bd;
+    --neutral-tag: #6b7268;
+    --neutral-tag-bg: #e2e5dd;
+    --focus-ring: #2f6f8a;
+    --chip-bg: #f8f9f4;
+    --map-line: #b9c0ae;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14181a;
+      --surface: #1b211f;
+      --surface-alt: #222a27;
+      --border: #34403a;
+      --text: #e6e6dd;
+      --text-muted: #9aa69c;
+      --accent: #d2a75c;
+      --accent-strong: #e7c184;
+      --accent-soft: #35291a;
+      --positive: #7cb79b;
+      --positive-bg: #1c2c26;
+      --warning: #d7ac60;
+      --warning-bg: #332a18;
+      --neutral-tag: #9aa69c;
+      --neutral-tag-bg: #232b27;
+      --focus-ring: #6fb2d1;
+      --chip-bg: #1b211f;
+      --map-line: #3a453e;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14181a;
+    --surface: #1b211f;
+    --surface-alt: #222a27;
+    --border: #34403a;
+    --text: #e6e6dd;
+    --text-muted: #9aa69c;
+    --accent: #d2a75c;
+    --accent-strong: #e7c184;
+    --accent-soft: #35291a;
+    --positive: #7cb79b;
+    --positive-bg: #1c2c26;
+    --warning: #d7ac60;
+    --warning-bg: #332a18;
+    --neutral-tag: #9aa69c;
+    --neutral-tag-bg: #232b27;
+    --focus-ring: #6fb2d1;
+    --chip-bg: #1b211f;
+    --map-line: #3a453e;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  ::selection { background: var(--accent-soft); }
+  :focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+  h1, h2 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
+    font-weight: 700;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .mono {
+    font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", Consolas, monospace;
+  }
+
+  .wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 24px 64px;
+  }
+
+  header.page {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 28px;
+  }
+  .eyebrow {
+    font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", Consolas, monospace;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  h1 { font-size: clamp(32px, 5vw, 48px); }
+  .dek {
+    max-width: 64ch;
+    color: var(--text-muted);
+    font-size: 16px;
+  }
+  .meta-line {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .offline-note {
+    font-size: 12px;
+    color: var(--text-muted);
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+  }
+  .offline-note .dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--positive);
+    flex-shrink: 0;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 28px;
+  }
+  .stat {
+    background: var(--surface);
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .stat .label {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+  .stat .value {
+    font-variant-numeric: tabular-nums;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .stat .sub {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .view-tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+  }
+  .view-tab {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 4px;
+    margin-bottom: -1px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: none;
+    color: var(--text-muted);
+    cursor: pointer;
+  }
+  .view-tab + .view-tab { margin-left: 18px; }
+  .view-tab:hover { color: var(--text); }
+  .view-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  .control-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+  }
+  .control-label {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-right: 4px;
+  }
+  .chip {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--chip-bg);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: background 0.12s, color 0.12s, border-color 0.12s;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--text); }
+  .chip[aria-pressed="true"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--surface);
+  }
+  input[type="search"] {
+    font-size: 13px;
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    min-width: 200px;
+    font-family: inherit;
+  }
+  input[type="search"]::placeholder { color: var(--text-muted); }
+  .reset-btn {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px 4px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .result-count {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+
+  .table-scroll {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface);
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 1120px;
+  }
+  thead th {
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 600;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface-alt);
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+  }
+  thead th.sortable { cursor: pointer; user-select: none; }
+  thead th.sortable:hover { color: var(--text); }
+  thead th .arrow { font-size: 10px; margin-left: 3px; opacity: 0.6; }
+  thead th[aria-sort="ascending"], thead th[aria-sort="descending"] { color: var(--accent); }
+
+  tbody tr { border-bottom: 1px solid var(--border); }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: var(--surface-alt); }
+  td {
+    padding: 12px 14px;
+    font-size: 13.5px;
+    vertical-align: top;
+  }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+  .addr {
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .addr:hover { color: var(--accent); text-decoration: underline; }
+  .addr-suburb { display: block; font-size: 12px; color: var(--text-muted); font-weight: 400; margin-top: 1px; }
+  .no-link { color: var(--text-muted); font-style: italic; font-size: 11px; }
+  .era-badge {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 10.5px;
+    letter-spacing: 0.04em;
+    padding: 2px 7px;
+    border-radius: 5px;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    font-weight: 600;
+  }
+  .era-badge.non-target {
+    background: var(--neutral-tag-bg);
+    color: var(--neutral-tag);
+  }
+  .type-badge {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 2px 7px;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .amenity-text { color: var(--text); font-size: 12.5px; }
+
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 6px;
+  }
+  .badge.low { background: var(--positive-bg); color: var(--positive); }
+  .badge.moderate { background: var(--warning-bg); color: var(--warning); }
+
+  .yield-cell { font-weight: 700; }
+
+  /* Map view */
+  .map-wrap {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface);
+    padding: 18px;
+    margin-bottom: 18px;
+  }
+  .map-caption {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin: 0 0 12px;
+  }
+  svg.suburb-map { width: 100%; height: auto; display: block; }
+  .map-node circle { cursor: pointer; transition: r 0.1s, opacity 0.1s; }
+  .map-node:hover circle { opacity: 0.85; }
+  .map-node text { pointer-events: none; }
+  .map-node .node-label {
+    font-size: 12.5px;
+    font-weight: 700;
+    fill: var(--text);
+  }
+  .map-node .node-count {
+    font-size: 10px;
+    fill: var(--text-muted);
+  }
+  .map-cbd circle { fill: var(--text); }
+  .map-cbd text { font-size: 10px; fill: var(--text-muted); letter-spacing: 0.06em; text-transform: uppercase; }
+  .map-detail {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .map-detail strong { color: var(--text); }
+
+  footer.page {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 12.5px;
+    color: var(--text-muted);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 80ch;
+  }
+  footer.page strong { color: var(--text); }
+  footer.page a { color: var(--accent); }
+
+  [hidden] { display: none !important; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 24px 14px 48px; }
+    .stats { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="page">
+    <div class="eyebrow">Melbourne property research</div>
+    <h1>Six-Pack &amp; Terrace</h1>
+    <p class="dek">Older-build units and Victorian terraces across thirteen Melbourne suburbs — interwar walk-ups, postwar &ldquo;six-packs&rdquo; and period terraces — compared side by side on price, transport, schools, shops, estimated rental yield and area safety.</p>
+    <p class="meta-line">58 listings pulled from realestate.com.au, 18&ndash;21 September 2026 &middot; desk research, not verified figures &mdash; see methodology below</p>
+    <span class="offline-note"><span class="dot"></span>Self-contained page &mdash; no external fonts, scripts or map tiles. Save this file locally and it works with no internet connection.</span>
+  </header>
+
+  <section class="stats" id="stats"></section>
+
+  <div class="view-tabs">
+    <button class="view-tab active" id="tab-list" type="button">List</button>
+    <button class="view-tab" id="tab-map" type="button">Map</button>
+  </div>
+
+  <div class="controls">
+    <div class="control-group">
+      <span class="control-label">Suburb</span>
+      <div id="suburb-chips"></div>
+    </div>
+    <div class="control-group">
+      <span class="control-label">Type</span>
+      <div id="type-chips"></div>
+    </div>
+    <div class="control-group">
+      <span class="control-label">Era</span>
+      <div id="era-chips"></div>
+    </div>
+    <div class="control-group">
+      <input type="search" id="search" placeholder="Search address or suburb&hellip;">
+    </div>
+    <button class="reset-btn" id="reset">Reset filters</button>
+  </div>
+
+  <p class="result-count" id="result-count"></p>
+
+  <div id="view-list">
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th style="min-width:190px;">Property</th>
+            <th class="sortable" data-key="price" style="min-width:100px;">Price</th>
+            <th style="min-width:80px;">Beds/Bath</th>
+            <th style="min-width:220px;">Transport</th>
+            <th style="min-width:200px;">Nearby school</th>
+            <th style="min-width:170px;">Shops</th>
+            <th class="sortable" data-key="rent" style="min-width:90px;">Est. rent</th>
+            <th class="sortable" data-key="yield" style="min-width:90px;">Est. yield</th>
+            <th style="min-width:90px;">Area safety</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="view-map" hidden>
+    <div class="map-wrap">
+      <p class="map-caption">Schematic diagram, not to scale &mdash; suburbs positioned by approximate compass bearing and distance from the CBD. Circle size = number of listings in this dataset. Click a suburb to filter the list below.</p>
+      <svg class="suburb-map" viewBox="0 0 700 620" role="img" aria-label="Schematic map of Melbourne suburbs covered in this comparison">
+        <g id="map-lines" stroke="var(--map-line)" stroke-width="1.5" fill="none"></g>
+        <g id="map-nodes"></g>
+      </svg>
+      <div class="map-detail" id="map-detail">Hover or click a suburb above for a quick summary.</div>
+    </div>
+  </div>
+
+  <footer class="page">
+    <p><strong>Methodology.</strong> Prices are the midpoint of each listing's price guide as shown on realestate.com.au (18&ndash;21 Sept 2026); a single figure means it was quoted as a fixed price. &ldquo;Era&rdquo; tags older-build candidates by proxy signals only &mdash; small block size, low unit numbers, modest floor areas &mdash; not a confirmed construction year; portals don't reliably state build year. Several suburbs' current listings skew toward newer mid-rise stock rather than genuine six-packs &mdash; those are honestly tagged &ldquo;Newer build (non-target)&rdquo; rather than mislabelled as older stock. Treat every era tag as an informed guess, not a fact, and check each listing's own description or a title search for the real figure.</p>
+    <p><strong>Estimated rent</strong> is a rough weekly figure from general knowledge of each suburb's rental band for that dwelling type and bedroom count &mdash; not a rent appraisal. <strong>Estimated yield</strong> is simply (rent &times; 52) &divide; price, the same guide-price-style upper-bound calculation used across this project's UK auction reviews: treat it as a starting point for comparison, not a return you're likely to actually clear once agent fees, vacancy, land tax, owners corporation fees and maintenance are counted.</p>
+    <p><strong>Area safety</strong> reflects general reputation and this researcher's background knowledge of each suburb, not official crime data. For verified, LGA-level figures, check the Crime Statistics Agency Victoria at <a href="https://www.crimestatistics.vic.gov.au" target="_blank" rel="noopener">crimestatistics.vic.gov.au</a> before treating any suburb as safer or riskier than another. The <strong>suburb map</strong> is a hand-placed schematic for orientation only, not a geocoded or surveyed map &mdash; distances and bearings are approximate.</p>
+    <p>Desk-based screening only &mdash; not a valuation, rental appraisal or investment advice. Verify every figure independently (agent, building/strata search, school zone confirmation) before acting on anything here.</p>
+  </footer>
+
+</div>
+
+<script>
+  const properties = [
+    // St Kilda 3182 — interwar/Art Deco pocket. Transport: trams 3a/16/67/79 along St Kilda Rd/Fitzroy St; Balaclava stn (Sandringham line) ~1km. Safety: moderate — lively Fitzroy St/Grey St nightlife strip.
+    { suburb: "St Kilda", addr: "117/135 Inkerman Street", url: "https://www.realestate.com.au/property-apartment-vic-st+kilda-150534756", price: 500000, priceLabel: "$500,000", type: "Unit", era: "Interwar/Art Deco pocket", beds: 2, baths: 1, transport: "Trams 3a/16/67/79 (Inkerman St) &middot; Balaclava stn ~1.0km", school: "St Kilda Park Primary (public, zoned) &middot; St Michael's Grammar (private, well-regarded)", shops: "Carlisle St strip, 350m", rent: 480, safety: "Moderate" },
+    { suburb: "St Kilda", addr: "9/43 Dalgety Street", url: "https://www.realestate.com.au/property-unit-vic-st+kilda-152119984", price: 600000, priceLabel: "$575k&ndash;$625k", type: "Unit", era: "Interwar/Art Deco pocket", beds: 1, baths: 1, transport: "Tram 3a (Dalgety St) &middot; Balaclava stn ~0.9km", school: "St Kilda Park Primary &middot; St Michael's Grammar", shops: "Carlisle St / Acland St, 500m", rent: 420, safety: "Moderate" },
+    { suburb: "St Kilda", addr: "8/352 Canterbury Road", url: "https://www.realestate.com.au/property-apartment-vic-st+kilda-150675960", price: 460000, priceLabel: "$445k&ndash;$475k", type: "Unit", era: "Interwar/Art Deco pocket", beds: 1, baths: 1, transport: "Tram 3a/67 (Barkly St) ~350m &middot; Balaclava stn ~1.1km", school: "St Kilda Park Primary &middot; Elwood College (secondary)", shops: "Carlisle St, 700m", rent: 410, safety: "Moderate" },
+    { suburb: "St Kilda", addr: "4/25 Herbert Street", url: "https://www.realestate.com.au/property-apartment-vic-st+kilda-151827936", price: 629000, priceLabel: "$629,000", type: "Unit", era: "Interwar/Art Deco pocket", beds: 2, baths: 1, transport: "Trams 3a/16/67 (Barkly St/St Kilda Rd) ~400m", school: "St Kilda Park Primary &middot; St Michael's Grammar", shops: "Fitzroy St, 600m", rent: 520, safety: "Moderate" },
+    { suburb: "St Kilda", addr: "207/7 Belford Street", url: "https://www.realestate.com.au/property-apartment-vic-st+kilda-152105504", price: 495000, priceLabel: "$495,000", type: "Unit", era: "Interwar/Art Deco pocket", beds: 2, baths: 2, transport: "Tram 96 (Barkly St) ~450m", school: "St Kilda Park Primary &middot; Elwood College", shops: "Carlisle St, 600m", rent: 500, safety: "Moderate" },
+
+    // Elwood 3184 — interwar/Art Deco, quiet beachside.
+    { suburb: "Elwood", addr: "2/27 Bendigo Avenue", url: "https://www.realestate.com.au/property-unit-vic-elwood-151981704", price: 870000, priceLabel: "$850k&ndash;$890k", type: "Unit", era: "Interwar/Art Deco pocket", beds: 2, baths: 1, transport: "Tram 67 (Glen Huntly Rd) ~350m &middot; Elsternwick stn ~1.4km", school: "Elwood Primary (public) &middot; Elwood College (public secondary)", shops: "Ormond Rd, 400m", rent: 600, safety: "Low" },
+    { suburb: "Elwood", addr: "7/88 Addison Street", url: "https://www.realestate.com.au/property-apartment-vic-elwood-152091404", price: 687500, priceLabel: "$675k&ndash;$700k", type: "Unit", era: "Interwar/Art Deco pocket", beds: 2, baths: 1, transport: "Tram 96 (Barkly St) ~500m", school: "Elwood Primary &middot; Elwood College", shops: "Ormond Rd, 550m", rent: 560, safety: "Low" },
+    { suburb: "Elwood", addr: "7/25 Byron Street", url: "https://www.realestate.com.au/property-unit-vic-elwood-152376972", price: 300000, priceLabel: "$290k&ndash;$310k", type: "Unit", era: "Interwar/Art Deco pocket", beds: 1, baths: 1, transport: "Tram 67 (Glen Huntly Rd) ~600m", school: "Elwood Primary &middot; Elwood College", shops: "Ormond Rd, 700m", rent: 380, safety: "Low" },
+    { suburb: "Elwood", addr: "3/9 Poets Grove", url: "https://www.realestate.com.au/property-apartment-vic-elwood-143668148", price: 640000, priceLabel: "$620k&ndash;$660k", type: "Unit", era: "Interwar/Art Deco pocket", beds: 2, baths: 1, transport: "Tram 67 ~700m", school: "Elwood Primary &middot; Elwood College", shops: "Ormond Rd, 750m", rent: 530, safety: "Low" },
+
+    // Balaclava 3183 — interwar/Art Deco, adjoining St Kilda/Ripponlea.
+    { suburb: "Balaclava", addr: "10/2B Hawsleigh Avenue", url: "https://www.realestate.com.au/property-apartment-vic-balaclava-151747924", price: 549000, priceLabel: "$549,000", type: "Unit", era: "Postwar six-pack (small block)", beds: 2, baths: 1, transport: "Balaclava stn (Sandringham line) ~500m &middot; trams 3/16/67", school: "St Kilda Park Primary &middot; Caulfield Junior College", shops: "Carlisle St, 450m", rent: 530, safety: "Moderate" },
+    { suburb: "Balaclava", addr: "4/38-40A Brighton Road", url: "https://www.realestate.com.au/property-apartment-vic-balaclava-152316356", price: 605000, priceLabel: "$590k&ndash;$620k", type: "Unit", era: "Postwar six-pack (small block)", beds: 2, baths: 2, transport: "Balaclava stn ~700m &middot; tram 3/3a", school: "St Kilda Park Primary", shops: "Carlisle St, 600m", rent: 580, safety: "Moderate" },
+    { suburb: "Balaclava", addr: "G08/48 Blenheim Street", url: "https://www.realestate.com.au/property-apartment-vic-balaclava-149663356", price: 579000, priceLabel: "$579,000", type: "Unit", era: "Boutique block (era uncertain)", beds: 2, baths: 1, transport: "Balaclava stn ~600m &middot; tram 67", school: "St Kilda Park Primary", shops: "Carlisle St, 500m", rent: 550, safety: "Moderate" },
+    { suburb: "Balaclava", addr: "101/105 Westbury Street", url: "https://www.realestate.com.au/property-apartment-vic-balaclava-152338412", price: 472500, priceLabel: "$450k&ndash;$495k", type: "Unit", era: "Newer build (non-target)", beds: 1, baths: 1, transport: "Balaclava stn ~450m &middot; tram 67", school: "St Kilda Park Primary", shops: "Carlisle St, 400m", rent: 430, safety: "Moderate" },
+    { suburb: "Balaclava", addr: "202/78 Westbury Street", url: "https://www.realestate.com.au/property-apartment-vic-balaclava-151783636", price: 665000, priceLabel: "$645k&ndash;$685k", type: "Unit", era: "Newer build (non-target)", beds: 2, baths: 2, transport: "Balaclava stn ~450m &middot; tram 67", school: "St Kilda Park Primary", shops: "Carlisle St, 400m", rent: 600, safety: "Moderate" },
+
+    // Caulfield 3162 — postwar/six-pack pocket, though current listings skew newer.
+    { suburb: "Caulfield", addr: "1/3-5 Gerard Street", url: "https://www.realestate.com.au/property-unit-vic-caulfield-152231396", price: 735000, priceLabel: "$700k&ndash;$770k", type: "Unit", era: "Postwar six-pack (small block)", beds: 2, baths: 1, transport: "Caulfield stn (Frankston/Pakenham/Cranbourne) ~800m &middot; trams 3/3a/16/67", school: "Caulfield Junior College &middot; Mount Scopus / Bialik College (private)", shops: "Glen Huntly Rd, 450m &middot; Chadstone SC ~2km", rent: 560, safety: "Low" },
+
+    // Hawthorn 3122 — postwar six-pack heartland.
+    { suburb: "Hawthorn", addr: "18/175 Power Street", url: "https://www.realestate.com.au/property-apartment-vic-hawthorn-150825952", price: 810000, priceLabel: "$780k&ndash;$840k", type: "Unit", era: "Postwar six-pack", beds: 2, baths: 1, transport: "Hawthorn stn (Lilydale/Belgrave) ~700m &middot; tram 48/75", school: "Auburn South Primary &middot; Swinburne Senior Secondary College", shops: "Glenferrie Rd, 500m", rent: 600, safety: "Low" },
+    { suburb: "Hawthorn", addr: "204/6 Lisson Grove", url: "https://www.realestate.com.au/property-apartment-vic-hawthorn-150379988", price: 450000, priceLabel: "$450,000", type: "Unit", era: "Postwar six-pack (51m&sup2;)", beds: 1, baths: 1, transport: "Hawthorn stn ~600m &middot; tram 16/70", school: "Auburn South Primary &middot; Hawthorn West Primary", shops: "Glenferrie Rd, 700m", rent: 420, safety: "Low" },
+    { suburb: "Hawthorn", addr: "203/25 Lynch Street", url: "https://www.realestate.com.au/property-apartment-vic-hawthorn-150688340", price: 535000, priceLabel: "$520k&ndash;$550k", type: "Unit", era: "Postwar six-pack", beds: 2, baths: 1, transport: "Hawthorn stn ~500m &middot; tram 70", school: "Auburn South Primary", shops: "Glenferrie Rd, 600m", rent: 500, safety: "Low" },
+    { suburb: "Hawthorn", addr: "8/21 Elphin Grove", url: "https://www.realestate.com.au/property-apartment-vic-hawthorn-152393560", price: 550000, priceLabel: "$525k&ndash;$575k", type: "Unit", era: "Postwar six-pack (65m&sup2;)", beds: 2, baths: 1, transport: "Hawthorn stn ~900m &middot; tram 48/75", school: "Auburn South Primary", shops: "Glenferrie Rd, 800m", rent: 520, safety: "Low" },
+    { suburb: "Hawthorn", addr: "107/1A Launder Street", url: "https://www.realestate.com.au/property-apartment-vic-hawthorn-148013552", price: 412500, priceLabel: "$395k&ndash;$430k", type: "Unit", era: "Postwar six-pack (58m&sup2;)", beds: 1, baths: 1, transport: "Hawthorn stn ~600m &middot; tram 16", school: "Auburn South Primary", shops: "Glenferrie Rd, 650m", rent: 400, safety: "Low" },
+
+    // Carlton 3053 — Victorian terraces.
+    { suburb: "Carlton", addr: "101 Princes Street", url: "https://www.realestate.com.au/property-house-vic-carlton-152083688", price: 950000, priceLabel: "$950,000", type: "Terrace", era: "Victorian terrace", beds: 2, baths: 1, transport: "Trams 1/6 (Lygon/Swanston St) ~500m &middot; Melbourne Central stn ~1.6km", school: "Carlton Gardens Primary &middot; University High School (selective-entry)", shops: "Lygon St, 400m &middot; Queen Vic Market ~1km", rent: 650, safety: "Moderate" },
+    { suburb: "Carlton", addr: "169 Station Street", url: "https://www.realestate.com.au/property-house-vic-carlton-151969896", price: 1069000, priceLabel: "$1,069,000", type: "Terrace", era: "Victorian terrace (86m&sup2; land)", beds: 2, baths: 1, transport: "Tram 1 ~450m &middot; Parkville tram 19 ~600m", school: "Carlton Gardens Primary &middot; University High School", shops: "Lygon St, 500m", rent: 680, safety: "Moderate" },
+    { suburb: "Carlton", addr: "122 Cardigan Street", url: "https://www.realestate.com.au/property-house-vic-carlton-151842188", price: 1650000, priceLabel: "$1,650,000", type: "Terrace", era: "Victorian terrace", beds: 3, baths: 2, transport: "Tram 1/6 ~350m", school: "Carlton Gardens Primary &middot; University High School", shops: "Lygon St, 350m", rent: 850, safety: "Moderate" },
+    { suburb: "Carlton", addr: "120 Cardigan Street", url: "https://www.realestate.com.au/property-house-vic-carlton-151956664", price: 1950000, priceLabel: "$1,950,000", type: "Terrace", era: "Victorian terrace", beds: 3, baths: 1, transport: "Tram 1/6 ~350m", school: "Carlton Gardens Primary &middot; University High School", shops: "Lygon St, 350m", rent: 900, safety: "Moderate" },
+    { suburb: "Carlton", addr: "31 Keppel Street", url: "https://www.realestate.com.au/property-house-vic-carlton-151947268", price: 1275000, priceLabel: "$1,275,000", type: "Terrace", era: "Victorian terrace", beds: 2, baths: 2, transport: "Tram 1 ~500m", school: "Carlton Gardens Primary", shops: "Lygon St, 550m", rent: 780, safety: "Moderate" },
+
+    // Fitzroy 3065 — Victorian terraces, inner-city cafe strip.
+    { suburb: "Fitzroy", addr: "294 George Street", url: "https://www.realestate.com.au/property-house-vic-fitzroy-151966844", price: 1295000, priceLabel: "$1,295,000", type: "Terrace", era: "Victorian terrace", beds: 3, baths: 1, transport: "Trams 11/86 (Brunswick/Nicholson St) ~450m &middot; Collingwood stn ~1.1km", school: "Fitzroy Primary &middot; Collingwood College", shops: "Brunswick St, 500m", rent: 800, safety: "Moderate" },
+    { suburb: "Fitzroy", addr: "129 Kerr Street", url: "https://www.realestate.com.au/property-house-vic-fitzroy-151979060", price: 1550000, priceLabel: "$1,550,000", type: "Terrace", era: "Victorian terrace", beds: 3, baths: 1, transport: "Tram 96 (Gertrude St) ~400m &middot; Victoria Park stn ~1.2km", school: "Fitzroy Primary", shops: "Gertrude St, 400m", rent: 850, safety: "Moderate" },
+    { suburb: "Fitzroy", addr: "411 Napier Street", url: "https://www.realestate.com.au/property-house-vic-fitzroy-152341504", price: 1550000, priceLabel: "$1,500k&ndash;$1,600k", type: "Terrace", era: "Victorian terrace", beds: 3, baths: 1, transport: "Tram 96 ~500m &middot; Victoria Park stn ~900m", school: "Fitzroy Primary &middot; Collingwood College", shops: "Smith St, 450m", rent: 860, safety: "Moderate" },
+    { suburb: "Fitzroy", addr: "26 Spring Street", url: "https://www.realestate.com.au/property-house-vic-fitzroy-152320608", price: 1130000, priceLabel: "$1,080k&ndash;$1,180k", type: "Terrace", era: "Victorian terrace", beds: 2, baths: 1, transport: "Tram 11/86 ~500m", school: "Fitzroy Primary", shops: "Brunswick St, 600m", rent: 750, safety: "Moderate" },
+
+    // Northcote 3070 — current listings skew to newer mid-rise; genuinely older six-pack stock is thin right now.
+    { suburb: "Northcote", addr: "107/17 Robbs Parade", url: "https://www.realestate.com.au/property-apartment-vic-northcote-151970372", price: 380000, priceLabel: "$365k&ndash;$395k", type: "Unit", era: "Newer build (non-target)", beds: 1, baths: 1, transport: "Northcote stn (Mernda line) ~900m &middot; tram 86 (High St)", school: "Westgarth Primary &middot; Northcote High School", shops: "High St, 400m", rent: 410, safety: "Moderate" },
+    { suburb: "Northcote", addr: "305/1 Bent Street", url: "https://www.realestate.com.au/property-apartment-vic-northcote-150221440", price: 409000, priceLabel: "$399k&ndash;$419k", type: "Unit", era: "Newer build (non-target)", beds: 1, baths: 1, transport: "Northcote stn ~700m &middot; tram 86", school: "Westgarth Primary", shops: "High St, 500m", rent: 420, safety: "Moderate" },
+    { suburb: "Northcote", addr: "313/5 Beavers Road", url: "https://www.realestate.com.au/property-apartment-vic-northcote-151838900", price: 475000, priceLabel: "$475,000", type: "Unit", era: "Newer build (non-target)", beds: 1, baths: 1, transport: "Northcote stn ~1km &middot; tram 86", school: "Westgarth Primary &middot; Northcote High School", shops: "High St, 600m", rent: 430, safety: "Moderate" },
+    { suburb: "Northcote", addr: "401/5 Beavers Road", url: "https://www.realestate.com.au/property-apartment-vic-northcote-152222940", price: 645000, priceLabel: "$630k&ndash;$660k", type: "Unit", era: "Newer build (non-target)", beds: 2, baths: 1, transport: "Northcote stn ~1km &middot; tram 86", school: "Westgarth Primary", shops: "High St, 600m", rent: 560, safety: "Moderate" },
+    { suburb: "Northcote", addr: "404/17 Robbs Parade", url: "https://www.realestate.com.au/property-apartment-vic-northcote-152249540", price: 725000, priceLabel: "$700k&ndash;$750k", type: "Unit", era: "Newer build (non-target)", beds: 2, baths: 2, transport: "Northcote stn ~900m &middot; tram 86", school: "Westgarth Primary &middot; Northcote High School", shops: "High St, 400m", rent: 580, safety: "Moderate" },
+
+    // Essendon 3040.
+    { suburb: "Essendon", addr: "102/55 Collins Street", url: "https://www.realestate.com.au/property-apartment-vic-essendon-152240384", price: 315000, priceLabel: "$300k&ndash;$330k", type: "Unit", era: "Newer build (non-target)", beds: 1, baths: 1, transport: "Essendon stn (Craigieburn line) ~800m &middot; tram 59 (Mt Alexander Rd) ~600m", school: "Essendon Primary &middot; Penleigh &amp; Essendon Grammar (private)", shops: "Puckle St / Essendon village, 500m", rent: 380, safety: "Low" },
+    { suburb: "Essendon", addr: "218/24 Leake Street", url: "https://www.realestate.com.au/property-apartment-vic-essendon-152191944", price: 385000, priceLabel: "$370k&ndash;$400k", type: "Unit", era: "Newer build (non-target)", beds: 1, baths: 1, transport: "Essendon stn ~900m &middot; tram 59 ~700m", school: "Essendon Primary", shops: "Puckle St, 600m", rent: 400, safety: "Low" },
+    { suburb: "Essendon", addr: "3/225 Buckley Street", url: "https://www.realestate.com.au/property-apartment-vic-essendon-152114684", price: 480000, priceLabel: "$480,000", type: "Unit", era: "Postwar six-pack (small block)", beds: 2, baths: 1, transport: "Essendon stn ~1km &middot; tram 59 ~500m", school: "Essendon Primary &middot; Essendon Keilor College", shops: "Buckley St local strip, 200m", rent: 480, safety: "Low" },
+    { suburb: "Essendon", addr: "212/314 Pascoe Vale Road", url: "https://www.realestate.com.au/property-apartment-vic-essendon-149264176", price: 530000, priceLabel: "$530,000", type: "Unit", era: "Newer build (non-target)", beds: 2, baths: 2, transport: "Essendon stn ~1.1km &middot; tram 59 ~800m", school: "Essendon Primary", shops: "Pascoe Vale Rd local shops, on-site", rent: 510, safety: "Low" },
+    { suburb: "Essendon", addr: "304/314 Pascoe Vale Road", url: "https://www.realestate.com.au/property-apartment-vic-essendon-152085020", price: 550000, priceLabel: "$550,000", type: "Unit", era: "Newer build (non-target)", beds: 2, baths: 2, transport: "Essendon stn ~1.1km &middot; tram 59 ~800m", school: "Essendon Primary", shops: "Pascoe Vale Rd local shops, on-site", rent: 520, safety: "Low" },
+
+    // Preston 3072 — postwar six-pack, cheapest batch.
+    { suburb: "Preston", addr: "9/122 High Street", url: "https://www.realestate.com.au/property-apartment-vic-preston-152100400", price: 387500, priceLabel: "$380k&ndash;$395k", type: "Unit", era: "Postwar six-pack", beds: 1, baths: 1, transport: "Preston/Bell stn (Mernda line) ~900m &middot; tram 86 (High St) ~150m", school: "Preston North East Primary &middot; John Fawkner College", shops: "High St, 100m", rent: 400, safety: "Moderate" },
+    { suburb: "Preston", addr: "703/9 High Street", url: "https://www.realestate.com.au/property-apartment-vic-preston-151644588", price: 409500, priceLabel: "$390k&ndash;$429k", type: "Unit", era: "Postwar six-pack", beds: 1, baths: 1, transport: "Preston stn ~900m &middot; tram 86 ~150m", school: "Preston North East Primary", shops: "High St, 100m", rent: 410, safety: "Moderate" },
+    { suburb: "Preston", addr: "29/388 Murray Road", url: "https://www.realestate.com.au/property-apartment-vic-preston-152118180", price: 402500, priceLabel: "$385k&ndash;$420k", type: "Unit", era: "Postwar six-pack", beds: 2, baths: 1, transport: "Reservoir stn ~1.2km &middot; bus/tram interchange nearby", school: "Preston North East Primary &middot; Reservoir High", shops: "Murray Rd local strip, 200m", rent: 440, safety: "Moderate" },
+    { suburb: "Preston", addr: "109/14-18 Gilbert Road", url: "https://www.realestate.com.au/property-apartment-vic-preston-149952328", price: 464500, priceLabel: "$464,500", type: "Unit", era: "Postwar six-pack", beds: 2, baths: 1, transport: "Tram 86 (Gilbert Rd) ~200m &middot; Preston stn ~1km", school: "Preston North East Primary", shops: "High St, 500m", rent: 460, safety: "Moderate" },
+    { suburb: "Preston", addr: "108B/8 Clinch Avenue", url: "https://www.realestate.com.au/property-apartment-vic-preston-151552440", price: 539000, priceLabel: "$539,000", type: "Unit", era: "Postwar-era block (83m&sup2;)", beds: 2, baths: 2, transport: "Preston stn ~800m &middot; tram 86 ~400m", school: "Preston North East Primary", shops: "High St, 500m", rent: 490, safety: "Moderate" },
+    { suburb: "Preston", addr: "42/93-103 High Street", url: "https://www.realestate.com.au/property-apartment-vic-preston-151700424", price: 590000, priceLabel: "$590,000", type: "Unit", era: "Postwar-era block", beds: 2, baths: 2, transport: "Tram 86 ~100m &middot; Preston stn ~900m", school: "Preston North East Primary", shops: "High St, on-site", rent: 510, safety: "Moderate" },
+    { suburb: "Preston", addr: "3/35 Newcastle Street", url: "https://www.realestate.com.au/property-unit-vic-preston-149827336", price: 710000, priceLabel: "$695k&ndash;$725k", type: "Unit", era: "Postwar six-pack (small block)", beds: 2, baths: 1, transport: "Preston stn ~1.1km &middot; tram 86 ~600m", school: "Preston North East Primary", shops: "High St, 700m", rent: 560, safety: "Moderate" },
+
+    // Coburg 3058.
+    { suburb: "Coburg", addr: "217/146 Bell Street", url: "https://www.realestate.com.au/property-apartment-vic-coburg-152321784", price: 414750, priceLabel: "$395k&ndash;$434.5k", type: "Unit", era: "Postwar six-pack", beds: 2, baths: 1, transport: "Coburg stn (Upfield line) ~1.1km &middot; tram 19 (Sydney Rd) ~500m", school: "Coburg Primary &middot; Coburg High School", shops: "Sydney Rd, 500m", rent: 440, safety: "Moderate" },
+    { suburb: "Coburg", addr: "202/37-41 Munro Street", url: "https://www.realestate.com.au/property-apartment-vic-coburg-151825532", price: 420000, priceLabel: "$400k&ndash;$440k", type: "Unit", era: "Postwar six-pack", beds: 2, baths: 1, transport: "Coburg stn ~900m &middot; tram 19 ~400m", school: "Coburg Primary", shops: "Sydney Rd, 400m", rent: 440, safety: "Moderate" },
+    { suburb: "Coburg", addr: "1309A/21 Pentridge Boulevard", url: "https://www.realestate.com.au/property-apartment-vic-coburg-151973696", price: 595000, priceLabel: "$595,000", type: "Unit", era: "Newer build (non-target)", beds: 2, baths: 1, transport: "Coburg stn ~1km &middot; tram 19 ~500m", school: "Coburg Primary", shops: "Pentridge Village / Sydney Rd, 400m", rent: 520, safety: "Low" },
+    { suburb: "Coburg", addr: "5/2 Loch Street", url: "https://www.realestate.com.au/property-unit-vic-coburg-151834980", price: 859000, priceLabel: "$859,000", type: "Unit", era: "Small block, likely older stock", beds: 3, baths: 3, transport: "Coburg stn ~700m &middot; tram 19 ~600m", school: "Coburg Primary &middot; Coburg High School", shops: "Sydney Rd, 600m", rent: 650, safety: "Moderate" },
+
+    // Ivanhoe 3079.
+    { suburb: "Ivanhoe", addr: "608/443 Upper Heidelberg Road", url: "https://www.realestate.com.au/property-apartment-vic-ivanhoe-151833444", price: 380000, priceLabel: "$380,000", type: "Unit", era: "Postwar/mid-rise block", beds: 1, baths: 1, transport: "Ivanhoe stn (Hurstbridge line) ~1.2km &middot; bus routes on Upper Heidelberg Rd", school: "Ivanhoe Primary &middot; Ivanhoe Grammar (private)", shops: "Upper Heidelberg Rd strip, on-site", rent: 400, safety: "Low" },
+    { suburb: "Ivanhoe", addr: "2/16 Elphin Street", url: "https://www.realestate.com.au/property-unit-vic-ivanhoe-152395040", price: 525000, priceLabel: "$500k&ndash;$550k", type: "Unit", era: "Postwar six-pack (small block)", beds: 1, baths: 1, transport: "Ivanhoe stn ~600m", school: "Ivanhoe Primary &middot; Melbourne Girls College", shops: "Upper Heidelberg Rd, 500m", rent: 430, safety: "Low" },
+    { suburb: "Ivanhoe", addr: "206/443 Upper Heidelberg Road", url: "https://www.realestate.com.au/property-apartment-vic-ivanhoe-150692644", price: 525000, priceLabel: "$525,000", type: "Unit", era: "Postwar/mid-rise block", beds: 2, baths: 2, transport: "Ivanhoe stn ~1.2km &middot; bus on Upper Heidelberg Rd", school: "Ivanhoe Primary &middot; Ivanhoe Grammar", shops: "Upper Heidelberg Rd, on-site", rent: 480, safety: "Low" },
+
+    // Albert Park 3206 — premium bayside Victorian terraces.
+    { suburb: "Albert Park", addr: "69 Little Page Street", url: "https://www.realestate.com.au/property-house-vic-albert+park-152127260", price: 990000, priceLabel: "$960k&ndash;$1,020k", type: "Terrace", era: "Victorian terrace", beds: 2, baths: 1, transport: "Trams 1/96 ~500m &middot; Middle Park/South Melbourne trams nearby", school: "Albert Park Primary &middot; Albert Park College (public, selective arts/music)", shops: "Bridport St, 400m", rent: 750, safety: "Low" },
+    { suburb: "Albert Park", addr: "10 Durham Street", url: "https://www.realestate.com.au/property-house-vic-albert+park-152075528", price: 1470000, priceLabel: "$1,470,000", type: "Terrace", era: "Victorian terrace", beds: 3, baths: 2, transport: "Tram 96 ~450m", school: "Albert Park Primary &middot; Albert Park College", shops: "Bridport St, 500m", rent: 980, safety: "Low" },
+    { suburb: "Albert Park", addr: "24 Neville Street", url: "https://www.realestate.com.au/property-house-vic-albert+park-151947288", price: 1650000, priceLabel: "$1,650,000", type: "Terrace", era: "Victorian terrace", beds: 3, baths: 2, transport: "Tram 1 ~400m", school: "Albert Park Primary &middot; Albert Park College", shops: "Victoria Ave, 500m", rent: 1050, safety: "Low" },
+    { suburb: "Albert Park", addr: "49 Barrett Street", url: "https://www.realestate.com.au/property-house-vic-albert+park-152364184", price: 2200000, priceLabel: "$2,100k&ndash;$2,300k", type: "Terrace", era: "Victorian terrace (177m&sup2; land)", beds: 3, baths: 1, transport: "Tram 1/96 ~450m", school: "Albert Park Primary &middot; Albert Park College", shops: "Bridport St, 450m", rent: 1200, safety: "Low" },
+    { suburb: "Albert Park", addr: "10 Kerferd Road", url: "https://www.realestate.com.au/property-house-vic-albert+park-152363540", price: 2300000, priceLabel: "$2,200k&ndash;$2,400k", type: "Terrace", era: "Victorian terrace (222m&sup2; land)", beds: 4, baths: 1, transport: "Tram 1 ~400m", school: "Albert Park Primary &middot; Albert Park College", shops: "Victoria Ave, 400m", rent: 1250, safety: "Low" },
+  ];
+
+  properties.forEach(p => { p.yieldPct = (p.rent * 52 / p.price * 100); });
+
+  // Schematic suburb coordinates (viewBox 0..700 x 0..620) — approximate bearing/distance from CBD, not geocoded.
+  const suburbCoords = {
+    "Carlton":       { x: 350, y: 285 },
+    "Fitzroy":       { x: 400, y: 270 },
+    "Northcote":     { x: 400, y: 195 },
+    "Coburg":        { x: 375, y: 140 },
+    "Preston":       { x: 390, y: 85 },
+    "Essendon":      { x: 235, y: 165 },
+    "Ivanhoe":       { x: 470, y: 175 },
+    "Hawthorn":      { x: 465, y: 335 },
+    "Caulfield":     { x: 425, y: 425 },
+    "Balaclava":     { x: 375, y: 420 },
+    "St Kilda":      { x: 350, y: 465 },
+    "Elwood":        { x: 355, y: 510 },
+    "Albert Park":   { x: 295, y: 440 },
+  };
+  const CBD = { x: 350, y: 350 };
+
+  const state = { suburbs: new Set(), types: new Set(), eras: new Set(), search: "", sortKey: "price", sortDir: "asc", view: "list" };
+
+  const suburbList = Object.keys(suburbCoords);
+  const typeList = [...new Set(properties.map(p => p.type))];
+  const eraGroup = e => {
+    if (e.startsWith("Newer build")) return "Newer build";
+    if (e.startsWith("Victorian")) return "Victorian terrace";
+    if (e.startsWith("Interwar")) return "Interwar/Art Deco";
+    if (e.startsWith("Postwar")) return "Postwar six-pack";
+    if (e.startsWith("Boutique")) return "Boutique/uncertain";
+    return "Postwar/mid-rise";
+  };
+  properties.forEach(p => { p.eraGroup = eraGroup(p.era); });
+  const eraList = [...new Set(properties.map(p => p.eraGroup))];
+
+  function money(n) { return "$" + Math.round(n).toLocaleString("en-AU"); }
+
+  function renderChips() {
+    const sEl = document.getElementById("suburb-chips");
+    sEl.innerHTML = "";
+    suburbList.forEach(s => {
+      const b = document.createElement("button");
+      b.className = "chip";
+      b.type = "button";
+      b.textContent = s;
+      b.setAttribute("aria-pressed", state.suburbs.has(s));
+      b.addEventListener("click", () => { toggleSuburb(s); });
+      sEl.appendChild(b);
+    });
+    const tEl = document.getElementById("type-chips");
+    tEl.innerHTML = "";
+    typeList.forEach(t => {
+      const b = document.createElement("button");
+      b.className = "chip";
+      b.type = "button";
+      b.textContent = t;
+      b.setAttribute("aria-pressed", state.types.has(t));
+      b.addEventListener("click", () => {
+        state.types.has(t) ? state.types.delete(t) : state.types.add(t);
+        render();
+      });
+      tEl.appendChild(b);
+    });
+    const eEl = document.getElementById("era-chips");
+    eEl.innerHTML = "";
+    eraList.forEach(e => {
+      const b = document.createElement("button");
+      b.className = "chip";
+      b.type = "button";
+      b.textContent = e;
+      b.setAttribute("aria-pressed", state.eras.has(e));
+      b.addEventListener("click", () => {
+        state.eras.has(e) ? state.eras.delete(e) : state.eras.add(e);
+        render();
+      });
+      eEl.appendChild(b);
+    });
+  }
+
+  function toggleSuburb(s) {
+    state.suburbs.has(s) ? state.suburbs.delete(s) : state.suburbs.add(s);
+    render();
+  }
+
+  function renderStats(filtered) {
+    const prices = filtered.map(p => p.price);
+    const bestYield = filtered.length ? filtered.reduce((a, b) => b.yieldPct > a.yieldPct ? b : a, filtered[0]) : null;
+    const stats = [
+      { label: "Properties shown", value: filtered.length, sub: `of ${properties.length} total` },
+      { label: "Price range", value: filtered.length ? `${money(Math.min(...prices))}–${money(Math.max(...prices))}` : "—", sub: "listed guides" },
+      { label: "Suburbs", value: new Set(filtered.map(p => p.suburb)).size, sub: `of ${suburbList.length} covered` },
+      { label: "Best est. yield", value: bestYield ? bestYield.yieldPct.toFixed(1) + "%" : "—", sub: bestYield ? `${bestYield.addr}, ${bestYield.suburb}` : "" },
+    ];
+    document.getElementById("stats").innerHTML = stats.map(s =>
+      `<div class="stat"><span class="label">${s.label}</span><span class="value">${s.value}</span><span class="sub">${s.sub}</span></div>`
+    ).join("");
+  }
+
+  function renderTable(filtered) {
+    filtered = filtered.slice().sort((a, b) => {
+      const dir = state.sortDir === "asc" ? 1 : -1;
+      const av = state.sortKey === "yield" ? a.yieldPct : a[state.sortKey];
+      const bv = state.sortKey === "yield" ? b.yieldPct : b[state.sortKey];
+      return (av - bv) * dir;
+    });
+    document.getElementById("rows").innerHTML = filtered.map(p => `
+      <tr>
+        <td>
+          ${p.url ? `<a class="addr" href="${p.url}" target="_blank" rel="noopener">${p.addr}</a>` : `<span class="addr">${p.addr}</span>`}
+          <span class="addr-suburb">${p.suburb}</span>
+          <span class="era-badge${p.eraGroup === 'Newer build' ? ' non-target' : ''}">${p.era}</span><span class="type-badge">${p.type}</span>
+        </td>
+        <td class="num">${p.priceLabel}</td>
+        <td class="num">${p.beds} / ${p.baths}</td>
+        <td><span class="amenity-text">${p.transport}</span></td>
+        <td><span class="amenity-text">${p.school}</span></td>
+        <td><span class="amenity-text">${p.shops}</span></td>
+        <td class="num">${money(p.rent)}/wk</td>
+        <td class="num yield-cell">${p.yieldPct.toFixed(1)}%</td>
+        <td><span class="badge ${p.safety.toLowerCase()}">${p.safety}</span></td>
+      </tr>
+    `).join("");
+  }
+
+  function updateSortHeaders() {
+    document.querySelectorAll("th.sortable").forEach(th => {
+      const key = th.dataset.key;
+      th.querySelector(".arrow")?.remove();
+      if (key === state.sortKey) {
+        th.setAttribute("aria-sort", state.sortDir === "asc" ? "ascending" : "descending");
+        const arrow = document.createElement("span");
+        arrow.className = "arrow";
+        arrow.textContent = state.sortDir === "asc" ? "↑" : "↓";
+        th.appendChild(arrow);
+      } else {
+        th.removeAttribute("aria-sort");
+      }
+    });
+  }
+
+  const svgNS = "http://www.w3.org/2000/svg";
+  function renderMap(filtered) {
+    const nodesG = document.getElementById("map-nodes");
+    const linesG = document.getElementById("map-lines");
+    nodesG.innerHTML = "";
+    linesG.innerHTML = "";
+
+    // CBD marker
+    const cbd = document.createElementNS(svgNS, "g");
+    cbd.setAttribute("class", "map-cbd");
+    cbd.innerHTML = `<circle cx="${CBD.x}" cy="${CBD.y}" r="5"></circle><text x="${CBD.x + 10}" y="${CBD.y + 4}">CBD</text>`;
+    nodesG.appendChild(cbd);
+
+    const counts = {};
+    suburbList.forEach(s => { counts[s] = properties.filter(p => p.suburb === s).length; });
+    const shownCounts = {};
+    suburbList.forEach(s => { shownCounts[s] = filtered.filter(p => p.suburb === s).length; });
+
+    suburbList.forEach(s => {
+      const c = suburbCoords[s];
+      const line = document.createElementNS(svgNS, "line");
+      line.setAttribute("x1", CBD.x); line.setAttribute("y1", CBD.y);
+      line.setAttribute("x2", c.x); line.setAttribute("y2", c.y);
+      line.setAttribute("stroke-dasharray", "3,4");
+      linesG.appendChild(line);
+
+      const r = 12 + Math.sqrt(counts[s]) * 6;
+      const active = state.suburbs.size === 0 || state.suburbs.has(s);
+      const g = document.createElementNS(svgNS, "g");
+      g.setAttribute("class", "map-node");
+      g.setAttribute("tabindex", "0");
+      g.setAttribute("role", "button");
+      g.setAttribute("aria-pressed", state.suburbs.has(s));
+      g.style.opacity = active ? "1" : "0.35";
+      g.innerHTML = `
+        <circle cx="${c.x}" cy="${c.y}" r="${r}" fill="${state.suburbs.has(s) ? 'var(--accent)' : 'var(--accent-soft)'}" stroke="var(--accent)" stroke-width="${state.suburbs.has(s) ? 2 : 1}"></circle>
+        <text class="node-label" x="${c.x}" y="${c.y - r - 8}" text-anchor="middle">${s}</text>
+        <text class="node-count" x="${c.x}" y="${c.y + r + 16}" text-anchor="middle">${shownCounts[s]}/${counts[s]} shown</text>
+      `;
+      g.addEventListener("click", () => toggleSuburb(s));
+      g.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleSuburb(s); } });
+      g.addEventListener("mouseenter", () => showMapDetail(s));
+      nodesG.appendChild(g);
+    });
+  }
+
+  function showMapDetail(s) {
+    const inSuburb = properties.filter(p => p.suburb === s);
+    const prices = inSuburb.map(p => p.price);
+    const avgYield = (inSuburb.reduce((a, p) => a + p.yieldPct, 0) / inSuburb.length).toFixed(1);
+    document.getElementById("map-detail").innerHTML =
+      `<strong>${s}</strong> &mdash; ${inSuburb.length} listing${inSuburb.length === 1 ? '' : 's'}, ${money(Math.min(...prices))}–${money(Math.max(...prices))}, avg. est. yield ${avgYield}%. ${inSuburb[0].transport.split(' &middot; ')[0]}.`;
+  }
+
+  function render() {
+    renderChips();
+    let filtered = properties.filter(p => {
+      if (state.suburbs.size && !state.suburbs.has(p.suburb)) return false;
+      if (state.types.size && !state.types.has(p.type)) return false;
+      if (state.eras.size && !state.eras.has(p.eraGroup)) return false;
+      if (state.search) {
+        const q = state.search.toLowerCase();
+        if (!(p.addr.toLowerCase().includes(q) || p.suburb.toLowerCase().includes(q))) return false;
+      }
+      return true;
+    });
+    renderStats(filtered);
+    document.getElementById("result-count").textContent = `Showing ${filtered.length} of ${properties.length} properties`;
+    renderTable(filtered);
+    updateSortHeaders();
+    renderMap(filtered);
+  }
+
+  document.getElementById("search").addEventListener("input", e => {
+    state.search = e.target.value;
+    render();
+  });
+  document.getElementById("reset").addEventListener("click", () => {
+    state.suburbs.clear();
+    state.types.clear();
+    state.eras.clear();
+    state.search = "";
+    document.getElementById("search").value = "";
+    render();
+  });
+  document.querySelectorAll("th.sortable").forEach(th => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.key;
+      if (state.sortKey === key) {
+        state.sortDir = state.sortDir === "asc" ? "desc" : "asc";
+      } else {
+        state.sortKey = key;
+        state.sortDir = key === "price" ? "asc" : "desc";
+      }
+      render();
+    });
+  });
+
+  document.getElementById("tab-list").addEventListener("click", () => setView("list"));
+  document.getElementById("tab-map").addEventListener("click", () => setView("map"));
+  function setView(v) {
+    state.view = v;
+    document.getElementById("view-list").hidden = v !== "list";
+    document.getElementById("view-map").hidden = v !== "map";
+    document.getElementById("tab-list").classList.toggle("active", v === "list");
+    document.getElementById("tab-map").classList.toggle("active", v === "map");
+    if (v === "map") render();
+  }
+
+  render();
+</script>

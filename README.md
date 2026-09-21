@@ -31,3 +31,11 @@ Much bigger sale than the one two weeks earlier (352 lots total vs. 188; 93 in-s
 - **Regional pattern (consistent across all three reviews):** Manchester/Birmingham lots clear ~6–9% gross on fair value; London lots only reach that on discounted guides and otherwise sit in the 4–6.5% band — high London "yields" in these catalogues usually flag a pricing/tenure anomaly rather than a strong rental market.
 - Area and comparable-price research is from web search plus Zoopla / Rightmove / OnTheMarket / Land Registry postcode price pages and council/developer regeneration pages. No single consistent scoring formula was applied across all lots; batches were researched independently, so cross-batch comparisons are informal judgement calls.
 - These are desk-based screening notes, **not** valuations or advice — every shortlisted lot still needs the legal pack, a survey and independent local pricing before bidding.
+
+## Other research
+
+| Location | Scope | Page |
+|---|---|---|
+| **Melbourne, Australia** — September 2026 | 58 older-build units and Victorian terraces for sale across 13 suburbs (interwar/Art Deco, postwar six-pack, Victorian terrace), compared on price, transport, schools, shops, estimated yield and area safety | [Melbourne_2026-09/README.md](Melbourne_2026-09/README.md) |
+
+Not an auction catalogue like the reviews above — this is open-market listings gathered suburb by suburb from realestate.com.au. Includes a self-contained, offline-capable comparison page with a sortable table and a schematic suburb map.
