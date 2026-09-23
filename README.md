@@ -37,5 +37,6 @@ Much bigger sale than the one two weeks earlier (352 lots total vs. 188; 93 in-s
 | Location | Scope | Page |
 |---|---|---|
 | **Melbourne, Australia** — September 2026 | 58 older-build units and Victorian terraces for sale across 13 suburbs (interwar/Art Deco, postwar six-pack, Victorian terrace), compared on price, transport, schools, shops, estimated yield and area safety | [Melbourne_2026-09/README.md](Melbourne_2026-09/README.md) |
+| **Hong Kong** — September 2026 | 1,418 resale apartment listings, HK$5M–16M, ≥900 sq ft saleable, scraped from 28Hse across all districts | [HongKong_2026-09/README.md](HongKong_2026-09/README.md) |
 
-Not an auction catalogue like the reviews above — this is open-market listings gathered suburb by suburb from realestate.com.au. Includes a self-contained, offline-capable comparison page with a sortable table and a schematic suburb map.
+Not an auction catalogue like the reviews above — this is open-market listings gathered suburb by suburb from realestate.com.au. Includes a self-contained, offline-capable comparison page with a sortable table and a schematic suburb map. The Hong Kong entry is a separate, larger-scale portal scrape (raw + structured CSV/JSON) rather than a curated comparison.
