@@ -144,7 +144,7 @@
     max-height:64vh;
     overflow:auto;
   }
-  table{border-collapse:collapse; width:100%; min-width:920px;}
+  table{border-collapse:collapse; width:100%; min-width:1180px;}
   thead th{
     position:sticky; top:0; z-index:2;
     background:var(--surface-2);
@@ -174,6 +174,8 @@
   .price{color:var(--gold); font-weight:700;}
   .tags{color:var(--muted); font-size:12px; max-width:260px; display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
   .agent{font-size:12.5px;}
+  .dim{color:var(--muted);}
+  .yield{color:var(--accent-2); font-size:11px; font-weight:600;}
   a.viewlink{
     color:var(--accent); text-decoration:none; font-weight:600; font-size:12.5px;
     white-space:nowrap;
@@ -250,6 +252,9 @@
           <option value="size-desc">Size: largest first</option>
           <option value="size-asc">Size: smallest first</option>
           <option value="area-asc">Area: A&ndash;Z</option>
+          <option value="age-desc">Building age: oldest first</option>
+          <option value="age-asc">Building age: newest first</option>
+          <option value="yield-desc">Est. yield: high to low</option>
         </select>
       </div>
       <button id="resetBtn" type="button">Reset filters</button>
@@ -271,6 +276,8 @@
             <th class="num" data-sort="pricePerSqft">HK$/sqft</th>
             <th class="num" data-sort="priceHKDMillions">Price (HK$M)</th>
             <th data-sort="bedrooms">Bed/Bath</th>
+            <th class="num" data-sort="buildingAge">Building age</th>
+            <th class="num" data-sort="estGrossYieldPct">Est. rent / yield</th>
             <th data-sort="agent">Agent</th>
             <th>Tags</th>
             <th></th>
@@ -334,12 +341,348 @@ const DISTRICT_MAP = {
 };
 function districtFor(area){ return DISTRICT_MAP[area] || "Other"; }
 
+// Building age for 310 of the dataset's 354 unique estates (all districts) — sourced directly from
+// each estate's own 28Hse listing page ("Occupation Date" / "Building age" fields), cross-checked
+// against Wikipedia for two of the largest Hong Kong Island estates. The remaining ~44 estates (mostly
+// standalone village houses without a formal estate record) had no age field on their listing page and
+// are left out rather than guessed — see README for the full list and methodology.
+const BUILDING_AGE = {
+  "Shatin Lakeview Garden": {age:32, occ:"1994", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Paris Garden": {age:33, occ:"Jan 1993", conf:"High", src:"28Hse listing"},
+  "Kowloon Tong Sheffield Garden": {age:52, occ:"1974", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Harrison Court": {age:54, occ:"Sep 1963 (source date/age inconsistent)", conf:"Medium", src:"28Hse listing"},
+  "Yuen Long Crescent Green": {age:5, occ:"2021", conf:"High", src:"28Hse listing"},
+  "Yuen Long Park Yoho": {age:10, occ:"Jun 2015", conf:"High", src:"28Hse listing"},
+  "Tai Po Villa Castell": {age:34, occ:"Jul 1992", conf:"High", src:"28Hse listing"},
+  "Tsuen Wan Sham Tseng Rhine Terrace": {age:34, occ:"Jul 1992", conf:"High", src:"28Hse listing"},
+  "Tai Po Constellation Cove": {age:24, occ:"2002", conf:"High", src:"28Hse listing"},
+  "Tsim Sha Tsui Mercantile House": {age:63, occ:"1963", conf:"High", src:"28Hse listing"},
+  "Tai Po Mont Vert": {age:12, occ:"Mar 2014", conf:"High", src:"28Hse listing"},
+  "Kwai Chung Wonderland Villas": {age:41, occ:"Oct 1984", conf:"High", src:"28Hse listing"},
+  "Sai Kung Rise Park Villa": {age:47, occ:"1979", conf:"High", src:"28Hse listing"},
+  "Clear Water Bay Mount Pavilia": {age:8, occ:"2018", conf:"High", src:"28Hse listing"},
+  "Shatin Pictorial Garden": {age:35, occ:"Apr 1991", conf:"High", src:"28Hse listing"},
+  "Yuen Long The Reach": {age:12, occ:"Oct 2013", conf:"High", src:"28Hse listing"},
+  "Fortress Hill Cornell Court": {age:40, occ:"Dec 1984", conf:"Medium", src:"28Hse listing"},
+  "North Point Mid Ho King View": {age:55, occ:"Jan 1971", conf:"Medium", src:"28Hse listing"},
+  "Pak Shek Kok Centra Horizon": {age:6, occ:"2020", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Village": {age:12, occ:"c. 2014 (not explicitly dated)", conf:"Medium", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Aqua Blue": {age:24, occ:"Dec 2002", conf:"High", src:"28Hse listing"},
+  "Yuen Long The Hampstead Reach": {age:7, occ:"2019", conf:"High", src:"28Hse listing"},
+  "Kwun Tong Nam Hong Building": {age:50, occ:"Jun 1976", conf:"High", src:"28Hse listing"},
+  "Tai Wai Hill Paramount": {age:17, occ:"Jun 2009", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road The Bloomsway": {age:8, occ:"Jul 2017", conf:"High", src:"28Hse listing"},
+  "Yau Yat Tsuen Grandeur Villa": {age:35, occ:"Dec 1991", conf:"High", src:"28Hse listing"},
+  "Fanling Lakeland": {age:16, occ:"c.2010", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Dragon Inn Court": {age:35, occ:"Nov 1991", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Belvedere Heights": {age:52, occ:"Oct 1974", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Star Court": {age:60, occ:"Apr 1966", conf:"High", src:"28Hse listing"},
+  "Kowloon Tong Merryland Court": {age:40, occ:"1986", conf:"High", src:"28Hse listing"},
+  "Kowloon Tong Violet Court": {age:62, occ:"Mar 1964", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Palatial Coast": {age:27, occ:"1999", conf:"High", src:"28Hse listing"},
+  "Sheung Shui Eden Manor": {age:7, occ:"2019", conf:"High", src:"28Hse listing"},
+  "Happy Valley Blue Pool Mansion": {age:67, occ:"Mar 1959", conf:"Medium", src:"28Hse listing"},
+  "Shatin Greenfield Court": {age:43, occ:"Jul 1983", conf:"High", src:"28Hse listing"},
+  "Tsuen Wan Chelsea Court": {age:20, occ:"Jun 2005", conf:"High", src:"28Hse listing"},
+  "Yuen Long Maple Garden": {age:39, occ:"Apr 1983", conf:"High", src:"28Hse listing"},
+  "Yuen Long Yoho Midtown": {age:16, occ:"2010", conf:"High", src:"28Hse listing"},
+  "North Point City Garden": {age:43, occ:"Dec 1982 (phased 1983–86)", conf:"High", src:"28Hse listing + Chinese Wikipedia (城市花園)"},
+  "Kowloon Tong Crystal Mansion": {age:55, occ:"Jan 1971", conf:"Medium", src:"28Hse listing"},
+  "Sai Kung Sai Keng Tsuen": {age:28, occ:"c.1998", conf:"High", src:"28Hse listing"},
+  "Tin Hau Kiu Hing Mansion": {age:60, occ:"Jan 1966", conf:"Medium", src:"28Hse listing"},
+  "Ho Man Tin Cambridge Mansion": {age:42, occ:"c.1962 (source inconsistent)", conf:"Medium", src:"28Hse listing (stated age/occupation year discrepancy)"},
+  "Western Mid-levels Minerva House": {age:67, occ:"Sep 1959", conf:"Medium", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Tsing Yung Terrace": {age:37, occ:"Nov 1989", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin 1 Perth Street": {age:62, occ:"Aug 1963", conf:"High", src:"28Hse listing"},
+  "Sheung Shui Woodland Crest": {age:30, occ:"Apr 1996", conf:"High", src:"28Hse listing"},
+  "Tai Wo Parc Versailles": {age:30, occ:"Apr 1996", conf:"High", src:"28Hse listing"},
+  "Tsim Sha Tsui Winston Mansion": {age:61, occ:"Sep 1963", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Le Pont": {age:5, occ:"Mar 2020", conf:"High", src:"28Hse listing"},
+  "Yau Tong Peninsula East": {age:9, occ:"2017", conf:"High", src:"28Hse listing"},
+  "Yuen Long Royal Palms": {age:30, occ:"Oct 1995", conf:"High", src:"28Hse listing"},
+  "Clear Water Bay Green Park": {age:37, occ:"May 1988", conf:"High", src:"28Hse listing"},
+  "Yuen Long Residence 88": {age:12, occ:"2014", conf:"High", src:"28Hse listing"},
+  "Tai Po Hong Lok Yuen": {age:46, occ:"Mar 1980", conf:"Medium", src:"28Hse listing"},
+  "Ho Man Tin The Arcadia": {age:37, occ:"Apr 1989", conf:"High", src:"28Hse listing"},
+  "Hung Shui Kiu The Eldorado": {age:33, occ:"1993", conf:"High", src:"28Hse listing"},
+  "Sai Kung Rise Park Villas": {age:47, occ:"May 1979", conf:"Medium", src:"28Hse listing"},
+  "Quarry Bay Elegance House": {age:65, occ:"1961", conf:"Medium", src:"28Hse listing"},
+  "Tuen Mun Lung Kwu Tan": {age:20, occ:"c.2006 (implied)", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Villa Pinada House": {age:23, occ:"Apr 2003", conf:"High", src:"28Hse listing"},
+  "Tai Wo Winnye Tower": {age:34, occ:"Feb 1992", conf:"High", src:"28Hse listing"},
+  "Sham Shui Po Chak Kwan House": {age:60, occ:"Jan 1966", conf:"High", src:"28Hse listing"},
+  "The Lohas Hemera": {age:11, occ:"Dec 2014", conf:"High", src:"28Hse listing"},
+  "Shatin Dragons Range": {age:10, occ:"Jun 2015", conf:"High", src:"28Hse listing"},
+  "Tsuen Wan Long Beach Gardens": {age:30, occ:"Jan 1996", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin The Astrid": {age:31, occ:"Mar 1995", conf:"High", src:"28Hse listing"},
+  "Kowloon City Bright View Court": {age:53, occ:"Mar 1973", conf:"High", src:"28Hse listing"},
+  "Pak Shek Kok The Horizon": {age:7, occ:"2019", conf:"High", src:"28Hse listing"},
+  "Tai Po Grand Palisades": {age:29, occ:"Dec 1997", conf:"High", src:"28Hse listing"},
+  "Shatin Ha Wo Che": {age:30, occ:"c.1996 (implied)", conf:"High", src:"28Hse listing"},
+  "Tai Po Deerhill Bay": {age:28, occ:"Aug 1998", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin May Moon House": {age:67, occ:"Jun 1959", conf:"High", src:"28Hse listing"},
+  "Hung Shui Kiu Uptown": {age:14, occ:"2012", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Kowloon Tong Mansion": {age:62, occ:"Mar 1964", conf:"High", src:"28Hse listing"},
+  "Fotan The Palazzo": {age:17, occ:"Dec 2008 (occupied 2009)", conf:"High", src:"28Hse listing"},
+  "Tsuen Wan Sham Tseng Hong Kong Garden": {age:40, occ:"Jun 1986", conf:"High", src:"28Hse listing"},
+  "Kwun Tong Chiu Kwan Building": {age:60, occ:"1965", conf:"High", src:"28Hse listing"},
+  "Wan Chai Miramar Villa": {age:56, occ:"Jul/Oct 1969", conf:"Medium", src:"28Hse listing"},
+  "Tai Po The Balmoral": {age:16, occ:"2010", conf:"High", src:"28Hse listing"},
+  "Hung Shui Kiu Meadowlands": {age:31, occ:"Sep 1995", conf:"High", src:"28Hse listing"},
+  "Yuen Long Seasons Palace": {age:20, occ:"Mar 2006", conf:"High", src:"28Hse listing"},
+  "Shatin Garden Vista": {age:36, occ:"Feb 1990", conf:"High", src:"28Hse listing"},
+  "Kowloon City Wayne Place": {age:28, occ:"Dec 1998", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Perth Apartments": {age:52, occ:"Dec 1974", conf:"High", src:"28Hse listing"},
+  "Shatin Mount Arcadia": {age:5, occ:"2021", conf:"High", src:"28Hse listing"},
+  "Causeway Bay Lunar Building": {age:63, occ:"1963", conf:"Medium", src:"28Hse listing"},
+  "Ho Man Tin Yee Yuen Mansion": {age:62, occ:"Jun 1964", conf:"High", src:"28Hse listing"},
+  "Tin Shui Wai Wetland Seasons Park": {age:5, occ:"Nov 2020", conf:"High", src:"28Hse listing"},
+  "Fotan The Grandville": {age:20, occ:"Jan 2006", conf:"High", src:"28Hse listing"},
+  "Fotan Greenwood Terrace": {age:39, occ:"Aug 1987", conf:"High", src:"28Hse listing"},
+  "Tai Wai Julimount Garden": {age:39, occ:"Jun 1987", conf:"Medium", src:"28Hse listing"},
+  "Ho Man Tin Harita Court": {age:63, occ:"1963", conf:"High", src:"28Hse listing"},
+  "Happy Valley 18 Tung Shan Terrace": {age:29, occ:"Nov 1996", conf:"Medium", src:"28Hse listing"},
+  "Pak Shek Kok Mayfair By The Sea 8": {age:5, occ:"2021", conf:"High", src:"28Hse listing"},
+  "Tai Wai The Riverpark": {age:13, occ:"2013", conf:"High", src:"28Hse listing"},
+  "Yuen Long Fairview Park": {age:46, occ:"Feb 1979", conf:"High", src:"28Hse listing"},
+  "Ma On Shan Sausalito": {age:18, occ:"Nov 2007", conf:"High", src:"28Hse listing"},
+  "The Lohas Le Prime Of Le Prestige": {age:15, occ:"2011", conf:"High", src:"28Hse listing"},
+  "Pak Shek Kok Solaria": {age:6, occ:"2020", conf:"High", src:"28Hse listing"},
+  "Kowloon Tong Westland Heights": {age:50, occ:"Nov 1976", conf:"High", src:"28Hse listing"},
+  "Pok Fu Lam 22 Crown Terrace": {age:61, occ:"Jan 1965", conf:"Medium", src:"28Hse listing"},
+  "Yuen Long La Grove": {age:17, occ:"2009", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Crown By The Sea": {age:14, occ:"2012", conf:"High", src:"28Hse listing"},
+  "Hung Shui Kiu Casa De Oro": {age:27, occ:"Nov 1999", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Alpine Garden": {age:35, occ:"Mar 1991", conf:"High", src:"28Hse listing"},
+  "Tai Po Savanna Garden": {age:37, occ:"Sep 1988", conf:"High", src:"28Hse listing"},
+  "Hung Hom Laguna Verde": {age:28, occ:"Mar 1998", conf:"High", src:"28Hse listing"},
+  "Tuen Mun South Hillcrest": {age:21, occ:"Dec 2004", conf:"High", src:"28Hse listing"},
+  "Quarry Bay Mount Parker Lodge": {age:37, occ:"Oct 1989", conf:"Medium", src:"28Hse listing"},
+  "Fotan Royal Ascot": {age:31, occ:"Sep 1995", conf:"High", src:"28Hse listing"},
+  "Tsim Sha Tsui Chungking Mansion": {age:65, occ:"Nov 1961", conf:"High", src:"28Hse listing"},
+  "Pak Shek Kok Mayfair By The Sea": {age:11, occ:"Jun 2015", conf:"High", src:"28Hse listing"},
+  "Kowloon Tong Grand Court": {age:61, occ:"Apr 1965", conf:"High", src:"28Hse listing"},
+  "Tai Wai Festival City": {age:16, occ:"Feb 2010", conf:"High", src:"28Hse listing"},
+  "Shatin Castello": {age:26, occ:"Oct 1999", conf:"High", src:"28Hse listing"},
+  "Sham Shui Po Tung Shing Building": {age:62, occ:"Feb 1964", conf:"High", src:"28Hse listing"},
+  "Yuen Long Park Signature": {age:12, occ:"Jun 2014", conf:"High", src:"28Hse listing"},
+  "Tsim Sha Tsui Hanyee Building": {age:66, occ:"May 1960", conf:"Medium", src:"28Hse listing"},
+  "Yau Yat Tsuen Monte Carlton": {age:25, occ:"Mar 2001", conf:"High", src:"28Hse listing"},
+  "The Lohas Le Prestige": {age:16, occ:"2010", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road South Crest": {age:16, occ:"Sep 2010", conf:"High", src:"28Hse listing"},
+  "Mong Kok Kiu Yuen Mansion": {age:62, occ:"1964", conf:"High", src:"28Hse listing"},
+  "Causeway Bay Lei Shun Court": {age:67, occ:"Dec 1958", conf:"Medium", src:"28Hse listing"},
+  "Tuen Mun Sun Fung Wai": {age:13, occ:"c.2013 (age-derived)", conf:"Medium", src:"28Hse listing"},
+  "Ho Man Tin Waterloo Road": {age:70, occ:"", conf:"Medium", src:"28Hse listing (age only, no explicit occupation year)"},
+  "Shatin Forest Hill": {age:31, occ:"Nov 1995", conf:"High", src:"28Hse listing"},
+  "Yau Yat Tsuen Havsun Garden": {age:35, occ:"1991", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Spring Seaview Terrace": {age:36, occ:"Nov 1990", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Cheerbond Court": {age:34, occ:"Aug 1991", conf:"High", src:"28Hse listing"},
+  "Tsuen Wan The Cliveden": {age:23, occ:"Sep 2003", conf:"High", src:"28Hse listing"},
+  "Yau Yat Tsuen Caldecott Hill": {age:21, occ:"Oct 2004", conf:"High", src:"28Hse listing"},
+  "Western Mid-levels Hoover Mansion": {age:62, occ:"Nov 1964", conf:"Medium", src:"28Hse listing"},
+  "Fanling Dawning Views": {age:27, occ:"Jun 1999", conf:"High", src:"28Hse listing"},
+  "Kowloon Tong Eugene Terrace": {age:16, occ:"2010", conf:"High", src:"28Hse listing"},
+  "Quarry Bay Kornhill": {age:39, occ:"1985–88 (phased)", conf:"High", src:"28Hse listing + Chinese Wikipedia (康怡花園)"},
+  "Happy Valley Yuk Sing Building": {age:50, occ:"Sep 1976", conf:"Medium", src:"28Hse listing"},
+  "Yuen Long Scenic Heights": {age:24, occ:"Nov 2001", conf:"High", src:"28Hse listing"},
+  "Tai Po The Paragon": {age:28, occ:"Oct 1997", conf:"High", src:"28Hse listing"},
+  "Tung Chung Coastal Skyline": {age:24, occ:"Sep 2002", conf:"High", src:"28Hse listing"},
+  "Sheung Shui Golf Parkview": {age:22, occ:"Jun 2004", conf:"High", src:"28Hse listing"},
+  "Tsuen Wan Sham Tseng Bellagio": {age:24, occ:"May 2002", conf:"High", src:"28Hse listing"},
+  "Causeway Bay Bay View Mansion": {age:60, occ:"Dec 1966", conf:"Medium", src:"28Hse listing"},
+  "Ho Man Tin Princess Terrace": {age:59, occ:"May 1967", conf:"High", src:"28Hse listing"},
+  "Tung Chung The Visionary": {age:11, occ:"Sep 2015", conf:"High", src:"28Hse listing"},
+  "Sheung Shui Eden Garden": {age:33, occ:"Dec 1992", conf:"High", src:"28Hse listing"},
+  "Causeway Bay Waldorf Mansion": {age:62, occ:"Jul 1964", conf:"Medium", src:"28Hse listing"},
+  "Ho Man Tin Valiant Court": {age:63, occ:"Jun 1963", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Verdant Villa": {age:27, occ:"Jan 1999", conf:"High", src:"28Hse listing"},
+  "Sheung Shui Miami Crescent": {age:21, occ:"2005", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Pearl Garden": {age:36, occ:"Nov 1990", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Arkadia": {age:13, occ:"", conf:"Medium", src:"28Hse listing"},
+  "Kwun Tong Park Metropolitan": {age:12, occ:"Jul 2014", conf:"Medium", src:"28Hse listing"},
+  "Ho Man Tin Wing Ying Mansion": {age:62, occ:"Feb 1964", conf:"High", src:"28Hse listing"},
+  "Pak Shek Kok Providence Bay": {age:14, occ:"Sep 2012", conf:"High", src:"28Hse listing"},
+  "Whampoa Whampoa Garden": {age:40, occ:"Dec 1985", conf:"High", src:"28Hse listing"},
+  "Kowloon City Kaiser's Mansion": {age:62, occ:"1964", conf:"High", src:"28Hse listing"},
+  "Yuen Long Riva": {age:13, occ:"Sep 2013", conf:"High", src:"28Hse listing"},
+  "Happy Valley Zenith Mansion": {age:66, occ:"Nov 1959", conf:"Medium", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Palm Beach": {age:27, occ:"1999", conf:"High", src:"28Hse listing"},
+  "Fotan Rosary Villas": {age:41, occ:"Aug 1984", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Oriental Gardens": {age:59, occ:"Feb 1967", conf:"High", src:"28Hse listing"},
+  "Ma On Shan Symphony Bay": {age:28, occ:"Jul 1998", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Kerin Court": {age:62, occ:"Sep 1964", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Regal Court": {age:37, occ:"Mar 1989", conf:"High", src:"28Hse listing"},
+  "Tai Hang Green Villa": {age:59, occ:"Jun 1967", conf:"Medium", src:"28Hse listing"},
+  "Yuen Long Grand Yoho": {age:9, occ:"2017", conf:"High", src:"28Hse listing"},
+  "Happy Valley Pine Gardens": {age:62, occ:"Dec 1963", conf:"Medium", src:"28Hse listing"},
+  "Kwun Tong Yuet Wah Mansion": {age:61, occ:"Jul 1965", conf:"High", src:"28Hse listing"},
+  "Yuen Long Green Lodge": {age:16, occ:"2010", conf:"High", src:"28Hse listing"},
+  "Western Mid-levels Merry Court": {age:50, occ:"Jan 1971", conf:"Medium", src:"28Hse listing"},
+  "Yuen Long Rolling Hills": {age:26, occ:"Dec 1999", conf:"High", src:"28Hse listing"},
+  "Tai Po Richwood Park": {age:31, occ:"Feb 1995", conf:"High", src:"28Hse listing"},
+  "Kowloon Tong Avon Court": {age:52, occ:"Jan 1974", conf:"High", src:"28Hse listing"},
+  "Mei Foo Mei Foo Sun Chuen": {age:57, occ:"Oct 1968", conf:"High", src:"28Hse listing"},
+  "Yuen Long The Prestige": {age:14, occ:"c.2012", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Avignon": {age:15, occ:"Aug 2011", conf:"High", src:"28Hse listing"},
+  "To Kwa Wan Sunrise Villa": {age:25, occ:"Mar 2001", conf:"Medium", src:"28Hse listing"},
+  "Pak Shek Kok Providence Peak": {age:13, occ:"Dec 2012", conf:"High", src:"28Hse listing"},
+  "Tsim Sha Tsui Hilton Towers": {age:44, occ:"Sep 1981", conf:"High", src:"28Hse listing"},
+  "Tin Hau Dragon Court": {age:45, occ:"Jun 1980", conf:"Medium", src:"28Hse listing"},
+  "Causeway Bay Towning Mansion": {age:68, occ:"1958", conf:"Medium", src:"28Hse listing"},
+  "Kowloon City Le Billionnaire": {age:20, occ:"Dec 2006", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Happy Court": {age:60, occ:"Jan 1966", conf:"High", src:"28Hse listing"},
+  "Happy Valley Sing Woo Building": {age:65, occ:"Apr 1961", conf:"Medium", src:"28Hse listing"},
+  "Tsuen Wan Sham Tseng Royal Sea Crest": {age:29, occ:"Dec 1997", conf:"High", src:"28Hse listing"},
+  "Mong Kok Kingland Apartments": {age:68, occ:"Nov 1958", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Peridot Court": {age:35, occ:"Mar 1991", conf:"High", src:"28Hse listing"},
+  "Tai Wai Shatin Heights": {age:43, occ:"Oct 1983", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Yee On Court": {age:49, occ:"Mar 1977", conf:"High", src:"28Hse listing"},
+  "Sheung Wan Nam Pak Hong Building": {age:56, occ:"1970", conf:"Medium", src:"28Hse listing"},
+  "Shatin Mantex Villa": {age:37, occ:"Jan/Sep 1989", conf:"High", src:"28Hse listing"},
+  "Yau Yat Tsuen Marigold Court": {age:48, occ:"Feb 1978", conf:"High", src:"28Hse listing"},
+  "Tai Po Casa Marina": {age:26, occ:"Mar 1999", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Nin Fung Building": {age:53, occ:"Jan 1973", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Tuen Mun Court": {age:43, occ:"Oct 1983", conf:"High", src:"28Hse listing"},
+  "Hung Hom Hunghom Bay Centre": {age:47, occ:"Sep 1979", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Castle Peak Villas": {age:46, occ:"Dec 1975", conf:"High", src:"28Hse listing"},
+  "Yuen Long Emerald Green": {age:16, occ:"2010", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin The Astoria": {age:35, occ:"Jun 1991", conf:"High", src:"28Hse listing"},
+  "Tai Po Emerald Palace": {age:26, occ:"Aug 2000", conf:"High", src:"28Hse listing"},
+  "Tin Hau Victoria Tower": {age:36, occ:"Oct 1990", conf:"Medium", src:"28Hse listing"},
+  "North Point Comfort Gardens": {age:52, occ:"Nov 1974", conf:"Medium", src:"28Hse listing"},
+  "Ma On Shan Villa Athena": {age:32, occ:"Aug 1994", conf:"High", src:"28Hse listing"},
+  "Tsuen Wan The Cairnhill": {age:22, occ:"Sep 2004", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Grand Court": {age:45, occ:"Oct 1981", conf:"High", src:"28Hse listing"},
+  "Fotan Shatin 33": {age:42, occ:"c.1983–84 (source inconsistent)", conf:"Medium", src:"28Hse listing (internally inconsistent dates)"},
+  "Kowloon Tong South Court": {age:53, occ:"Oct 1973", conf:"High", src:"28Hse listing"},
+  "Sai Kung Villa Royale": {age:22, occ:"Oct 2003", conf:"High", src:"28Hse listing"},
+  "Hung Shui Kiu La Mansion": {age:10, occ:"2016", conf:"High", src:"28Hse listing"},
+  "Kowloon City Springvale": {age:61, occ:"1965 (entry date; listing's 'occupation date' text conflicts at 1963)", conf:"Low", src:"28Hse listing (internally inconsistent dates)"},
+  "Ho Man Tin Tip Top Mansion": {age:53, occ:"Jan 1973", conf:"High", src:"28Hse listing"},
+  "Tai Kok Tsui Chinese Mansion": {age:66, occ:"c.1960 (implied)", conf:"High", src:"28Hse listing"},
+  "Ma On Shan Sunshine City": {age:33, occ:"Feb 1993", conf:"High", src:"28Hse listing"},
+  "Kwun Tong Chi Hang Building": {age:64, occ:"1962", conf:"High", src:"28Hse listing"},
+  "Fanling The Green": {age:13, occ:"2013", conf:"High", src:"28Hse listing"},
+  "Yau Ma Tei Kiu Kin Mansion": {age:62, occ:"1964", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Ellery Terrace": {age:26, occ:"Apr 2000", conf:"High", src:"28Hse listing"},
+  "North Point Bedford Gardens": {age:45, occ:"Mar 1981", conf:"Medium", src:"28Hse listing"},
+  "Yuen Long Bellevue Court": {age:28, occ:"1998", conf:"High", src:"28Hse listing"},
+  "Hung Hom Royal Peninsula": {age:26, occ:"Dec 2000", conf:"High", src:"28Hse listing"},
+  "Clear Water Bay Hillview Court": {age:27, occ:"Jan 1999", conf:"High", src:"28Hse listing"},
+  "Tung Chung Tung Chung Crescent": {age:27, occ:"Dec 1998", conf:"High", src:"28Hse listing"},
+  "Tung Chung Caribbean Coast": {age:21, occ:"Dec 2002", conf:"High", src:"28Hse listing"},
+  "Kowloon Tong Jumbo Court": {age:50, occ:"Jun 1976", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Imperial Court": {age:67, occ:"Jun 1960", conf:"High", src:"28Hse listing"},
+  "Fotan Richmond Court": {age:43, occ:"Sep 1983", conf:"High", src:"28Hse listing"},
+  "Tsim Sha Tsui Burlington House": {age:62, occ:"Jul 1964", conf:"High", src:"28Hse listing"},
+  "Yuen Long Seasons Villas": {age:21, occ:"Nov 2003", conf:"High", src:"28Hse listing"},
+  "Mong Kok Sun Hing Building": {age:60, occ:"1966", conf:"High", src:"28Hse listing"},
+  "Tai Po The Beverly Hills": {age:24, occ:"Jul 2002", conf:"High", src:"28Hse listing"},
+  "Tai Po Forest Hill": {age:30, occ:"May 1996", conf:"High", src:"28Hse listing"},
+  "Yau Yat Tsuen Villa Carlton": {age:25, occ:"Jun 2000", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Nos.1-3 Perth Street": {age:63, occ:"c.1963 (age-derived)", conf:"Medium", src:"28Hse listing"},
+  "Fanling Royal Knoll": {age:27, occ:"May 1999", conf:"High", src:"28Hse listing"},
+  "Tai Wai Parc Royale": {age:31, occ:"Oct 1995", conf:"High", src:"28Hse listing"},
+  "Kwai Chung Regency Park": {age:30, occ:"Oct 1991", conf:"High", src:"28Hse listing"},
+  "North Point Mid Maiden Court": {age:45, occ:"Oct 1980", conf:"Medium", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Elegant Villa": {age:43, occ:"Aug 1983", conf:"High", src:"28Hse listing"},
+  "Ma On Shan Monte Vista": {age:26, occ:"Feb 2000", conf:"High", src:"28Hse listing"},
+  "Hung Shui Kiu Hong Ping Villa": {age:32, occ:"1994", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Greenfield Terrace": {age:48, occ:"Nov 1978", conf:"High", src:"28Hse listing"},
+  "Quarry Bay Ritz Garden Apartments": {age:68, occ:"Mar 1957", conf:"Medium", src:"28Hse listing"},
+  "Tin Hau Gordon House": {age:68, occ:"Jun 1959", conf:"Medium", src:"28Hse listing"},
+  "Yuen Long Villa Camellia": {age:31, occ:"Apr 1995", conf:"High", src:"28Hse listing"},
+  "Sai Ying Pun Hing Wah Mansion": {age:63, occ:"Mar 1963", conf:"Medium", src:"28Hse listing"},
+  "Kowloon Tong 10-16 Lancashire Road": {age:65, occ:"Jun 1961", conf:"High", src:"28Hse listing"},
+  "Ma On Shan Seanorama": {age:8, occ:"2018", conf:"High", src:"28Hse listing"},
+  "Yuen Long Palm Springs": {age:33, occ:"Aug 1993", conf:"High", src:"28Hse listing"},
+  "Lai Chi Kok One West Kowloon": {age:13, occ:"Nov 2013", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Perth Garden": {age:46, occ:"Jul 1980", conf:"High", src:"28Hse listing"},
+  "Shatin 116 Ha Wo Che Tsuen": {age:40, occ:"not stated", conf:"Medium", src:"28Hse listing (age only, no date)"},
+  "Ho Man Tin Duchy Heights": {age:54, occ:"May 1972", conf:"High", src:"28Hse listing"},
+  "Kowloon Tong Kowloon Tong Court": {age:61, occ:"Jun 1965", conf:"High", src:"28Hse listing"},
+  "Tai Po Lincun Sheshan Village": {age:6, occ:"c.2020 (implied)", conf:"High", src:"28Hse listing"},
+  "Tseung Kwan O Oscar By The Sea": {age:24, occ:"Mar 2001", conf:"High", src:"28Hse listing"},
+  "The Lohas La Splendeur Of Le Prestige": {age:13, occ:"2013", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Prince Edward Towers": {age:53, occ:"1973", conf:"High", src:"28Hse listing"},
+  "Yuen Long Parkside Villa": {age:29, occ:"May 1997", conf:"High", src:"28Hse listing"},
+  "Kowloon Tong Fairyland Garden": {age:53, occ:"Jul 1973", conf:"High", src:"28Hse listing"},
+  "Tsuen Wan City Point": {age:11, occ:"Sep 2014", conf:"High", src:"28Hse listing"},
+  "Kowloon Tong Nga Yuen Building": {age:63, occ:"1963", conf:"High", src:"28Hse listing"},
+  "Discovery Bay": {age:44, occ:"Jun 1982", conf:"Medium", src:"28Hse listing (age inferred from occupation date, not an explicit 'Building age' field)"},
+  "Fotan Shatin Lodge": {age:45, occ:"1981", conf:"High", src:"28Hse listing"},
+  "Yau Yat Tsuen Beacon Heights": {age:41, occ:"Aug 1985", conf:"High", src:"28Hse listing"},
+  "The Lohas Lp6": {age:6, occ:"May 2020", conf:"High", src:"28Hse listing"},
+  "Ma On Shan Lake Silver": {age:17, occ:"2009", conf:"High", src:"28Hse listing"},
+  "Shatin Belair Gardens": {age:44, occ:"Jun 1982", conf:"High", src:"28Hse listing"},
+  "Causeway Bay Leigyinn Building": {age:65, occ:"1961", conf:"Medium", src:"28Hse listing"},
+  "Mong Kok Kwok Chai Building": {age:61, occ:"1965", conf:"High", src:"28Hse listing"},
+  "Sheung Shui Tsiu Keng Tsuen": {age:27, occ:"c.1999", conf:"Medium", src:"28Hse listing"},
+  "Tai Po Springdale Garden": {age:35, occ:"Nov 1991", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Faraday House": {age:45, occ:"1981", conf:"High", src:"28Hse listing"},
+  "Ma On Shan Baycrest": {age:26, occ:"Jun 2000", conf:"High", src:"28Hse listing"},
+  "Tai Po Tolo Ridge": {age:34, occ:"1992", conf:"High", src:"28Hse listing"},
+  "Tsim Sha Tsui Hankow Centre": {age:57, occ:"Feb 1968", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Miami Mansion": {age:51, occ:"Mar 1975", conf:"High", src:"28Hse listing"},
+  "Western Mid-levels Hanwin Mansion": {age:59, occ:"Sep 1965", conf:"Medium", src:"28Hse listing"},
+  "Tsuen Wan Golden Villa": {age:30, occ:"Sep 1995", conf:"High", src:"28Hse listing"},
+  "Fanling Mount One": {age:12, occ:"Jul 2014", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Viva Court": {age:53, occ:"1973", conf:"High", src:"28Hse listing"},
+  "Tsim Sha Tsui Champagne Court": {age:69, occ:"Jan 1957", conf:"High", src:"28Hse listing"},
+  "Tai Po The Paramount": {age:27, occ:"Nov 1998", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road The Hillgrove": {age:24, occ:"Jul 2002", conf:"High", src:"28Hse listing"},
+  "Pak Shek Kok The Graces Providence Bay": {age:13, occ:"2013", conf:"High", src:"28Hse listing"},
+  "Prince Edward Kenwood Mansion": {age:61, occ:"May 1965", conf:"High", src:"28Hse listing"},
+  "Tai Wai World-Wide Gardens": {age:46, occ:"Oct 1977", conf:"High", src:"28Hse listing"},
+  "Sai Kung Kambridge Garden": {age:32, occ:"Oct 1993", conf:"High", src:"28Hse listing"},
+  "Tuen Mun Castle Peak Road Beaulieu Peninsula": {age:44, occ:"1982", conf:"High", src:"28Hse listing"},
+  "Hung Shui Kiu Kisland Villa": {age:24, occ:"Jun 2003", conf:"High", src:"28Hse listing"},
+  "Hung Shui Kiu Ka On Garden": {age:29, occ:"Mar 1996", conf:"High", src:"28Hse listing"},
+  "Tin Shui Wai Kingswood Villas": {age:34, occ:"Dec 1991", conf:"High", src:"28Hse listing"},
+  "Shatin Ascot Villa": {age:52, occ:"1974", conf:"High", src:"28Hse listing"},
+  "Tai Po Villa Lucca": {age:3, occ:"Jun 2023", conf:"High", src:"28Hse listing"},
+  "Baguio Villa": {age:47, occ:"1979", conf:"High", src:"Wikipedia"},
+  "Yuen Long Casa Paradizo": {age:29, occ:"1997", conf:"High", src:"28Hse listing"},
+  "Ho Man Tin Prince's Heights": {age:53, occ:"Feb 1972", conf:"High", src:"28Hse listing"},
+  "Yuen Long Seasons Monarch": {age:17, occ:"2009", conf:"High", src:"28Hse listing"},
+  "Causeway Bay Lai Chi Building": {age:67, occ:"c.1956–58 (source inconsistent)", conf:"Low", src:"28Hse listing (internally inconsistent dates)"},
+  "Tuen Mun Castle Peak Road Oma Oma": {age:5, occ:"2021", conf:"High", src:"28Hse listing"},
+  "Kowloon Tong Beverly Villas": {age:46, occ:"Dec 1980", conf:"High", src:"28Hse listing"},
+  "North Point Mid Kent Mansion": {age:65, occ:"1961", conf:"Medium", src:"28Hse listing"},
+  "Sai Kung Royal Garden": {age:20, occ:"Dec 2005", conf:"High", src:"28Hse listing"},
+  "Fanling Casas Domingo": {age:30, occ:"Dec 1995", conf:"High", src:"28Hse listing"},
+  "Kowloon City Billionnaire Royale": {age:16, occ:"2010", conf:"High", src:"28Hse listing"},
+  "Ma On Shan Vista Paradiso": {age:28, occ:"Jun 1998", conf:"High", src:"28Hse listing"},
+  "Tai Wai Village": {age:42, occ:"", conf:"Medium", src:"28Hse listing"},
+  "Tin Hau Ernest Court": {age:62, occ:"1964", conf:"Medium", src:"28Hse listing"},
+  "Kowloon Tong Ava Court": {age:53, occ:"Sep 1973", conf:"High", src:"28Hse listing"},
+};
+
+
+// Estimated rent rate, HK$ per saleable sqft per month, by HK Island district — an informed general-market
+// estimate (NOT scraped from live rental listings, which 28Hse's JS-driven rental search doesn't expose in
+// bulk). See README for methodology and caveats.
+const HK_ISLAND_RENT_RATE_PSF = {
+  "Central and Western": 29,
+  "Wan Chai": 32,
+  "Eastern": 30,
+  "Southern": 27,
+};
+
 const DATA = ROWS.map(r => {
   const area = extractArea(r[0]);
+  const district = districtFor(area);
+  const ageInfo = BUILDING_AGE[r[0]];
+  const rentRate = HK_ISLAND_RENT_RATE_PSF[district];
+  const estMonthlyRent = (ageInfo && rentRate) ? Math.round(r[2] * rentRate) : null;
+  const estGrossYieldPct = (estMonthlyRent && r[4]) ? Math.round((estMonthlyRent * 12 / (r[4] * 1000000)) * 10000) / 100 : null;
   return {
     location: r[0], floorTower: r[1], netSqft: r[2], pricePerSqft: r[3],
     priceHKDMillions: r[4], bedrooms: r[5], bathrooms: r[6], agent: r[7],
-    tags: r[8], link: r[9], area, district: districtFor(area)
+    tags: r[8], link: r[9], area, district,
+    buildingAge: ageInfo ? ageInfo.age : null, ageInfo: ageInfo || null,
+    estMonthlyRent, estGrossYieldPct
   };
 });
 
@@ -394,11 +737,16 @@ const SORTERS = {
   'size-desc': (a,b) => b.netSqft - a.netSqft,
   'size-asc': (a,b) => a.netSqft - b.netSqft,
   'area-asc': (a,b) => a.area.localeCompare(b.area) || a.location.localeCompare(b.location),
+  'age-desc': (a,b) => (b.buildingAge ?? -1) - (a.buildingAge ?? -1),
+  'age-asc': (a,b) => (a.buildingAge ?? 9999) - (b.buildingAge ?? 9999),
+  'yield-desc': (a,b) => (b.estGrossYieldPct ?? -1) - (a.estGrossYieldPct ?? -1),
+  'yield-asc': (a,b) => (a.estGrossYieldPct ?? 9999) - (b.estGrossYieldPct ?? 9999),
 };
 
 const HEADER_SORT_MAP = {
   area: 'area-asc', netSqft: 'size-desc', pricePerSqft: 'psf-asc',
-  priceHKDMillions: 'price-asc', floorTower: null, bedrooms: null, agent: null
+  priceHKDMillions: 'price-asc', floorTower: null, bedrooms: null, agent: null,
+  buildingAge: 'age-desc', estGrossYieldPct: 'yield-desc'
 };
 
 function render(){
@@ -429,12 +777,18 @@ function render(){
   els.countNow.textContent = filtered.length.toLocaleString();
 
   if (filtered.length === 0){
-    els.tbody.innerHTML = '<tr class="empty-row"><td colspan="9">No listings match these filters. Try widening the price or size range.</td></tr>';
+    els.tbody.innerHTML = '<tr class="empty-row"><td colspan="11">No listings match these filters. Try widening the price or size range.</td></tr>';
     return;
   }
 
   const rowsHtml = filtered.map(d => {
     const bedBath = (d.bedrooms ? d.bedrooms+'bd' : '&ndash;') + ' / ' + (d.bathrooms ? d.bathrooms+'ba' : '&ndash;');
+    const ageCell = d.buildingAge
+      ? `<span title="Occupied ${escapeHtml(d.ageInfo.occ)} &middot; confidence: ${escapeHtml(d.ageInfo.conf)} &middot; source: ${escapeHtml(d.ageInfo.src)}">${d.buildingAge}&nbsp;yrs</span>`
+      : '<span class="dim">&ndash;</span>';
+    const rentCell = d.estMonthlyRent
+      ? `<span title="Est. HK$${d.estMonthlyRent.toLocaleString()}/mo &middot; district-level estimate, not a scraped rent">~HK$${d.estMonthlyRent.toLocaleString()}/mo<br><span class="yield">${d.estGrossYieldPct.toFixed(2)}% gross</span></span>`
+      : '<span class="dim">&ndash;</span>';
     return `<tr>
       <td><span class="area-badge" title="District: ${escapeHtml(d.district)}">${escapeHtml(d.area)}</span><br><span class="loc">${escapeHtml(d.location)}</span></td>
       <td class="floor">${escapeHtml(d.floorTower)}</td>
@@ -442,6 +796,8 @@ function render(){
       <td class="num">${d.pricePerSqft.toLocaleString()}</td>
       <td class="num price">${d.priceHKDMillions.toFixed(2)}</td>
       <td>${bedBath}</td>
+      <td class="num">${ageCell}</td>
+      <td class="num">${rentCell}</td>
       <td class="agent">${escapeHtml(d.agent)}</td>
       <td><span class="tags" title="${escapeHtml(d.tags)}">${escapeHtml(d.tags)}</span></td>
       <td><a class="viewlink" href="${escapeHtml(d.link)}" target="_blank" rel="noopener">View &rarr;</a></td>
