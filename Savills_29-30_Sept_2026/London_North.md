@@ -1,15 +1,17 @@
 # Savills Auction — 29 & 30 September 2026 (Catalogue #243) — London North Batch
 
-Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 — UK-wide sale. This batch covers the **16 North London residential lots** across Camden, Islington, Haringey, Hackney (north), Brent (north), Barnet and Enfield. Remote bidding only. Unless noted, lots are listed **"To be offered on Tuesday 29 September 2026."**
+Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 — UK-wide sale. This batch covers the **16 North London residential lots** originally identified, plus **1 new lot (Lot 24, Cricklewood) added to the catalogue after this review's initial research pass** — 17 total, 2 now withdrawn — across Camden, Islington, Haringey, Hackney (north), Brent (north), Barnet and Enfield. Remote bidding only. Unless noted, lots are listed **"To be offered on Tuesday 29 September 2026."**
 
 **Site accessibility:** lot descriptions here are taken directly from the catalogue text supplied for this review (no live Savills-account detail-page fetch was available this session), plus independent research — HM Land Registry / Zoopla / Rightmove / OnTheMarket / PrimeLocation sold-price and rent pages, council regeneration pages, Ofsted, and web search for local comparables. Where the catalogue text states a confirmed passing rent it is used as **CONFIRMED**; everywhere else the rent is an independent estimate.
 
 **Method:** gross yield = annual rent ÷ **guide price** (an upper bound — guides are sellers' minimums and auction lots typically sell above guide), plus a second **fair-value** yield against the researched local comparable price. Ratings: 1 (weak) – 5 (strong).
 
+**⚠ Catalogue re-checked 23 September 2026 (auction is 29 Sept):** **Lot 94 (Kingsbury) and Lot 113 (Clerkenwell/Amwell Street) — this batch's #1 and #2 top picks — are both now marked "Withdrawn Prior."** **Lot 52 (Camden, Rossendale Way)** is also withdrawn but not dead — the catalogue now reads "Now being offered on 20th October." **Lot 367 (Somers Town)**'s previously-unconfirmed auction day is now confirmed as **Wednesday 30 September**. A new in-scope lot has also appeared in the catalogue: **Lot 24, 27a Temple Road, Cricklewood NW2 6PJ (Brent) — £225,000** — added below. **Lot numbers elsewhere in this catalogue have been reassigned between properties (confirmed for at least one East London pair) — always confirm by address before bidding, not by lot number alone.**
+
 **Cross-cutting flags for this batch:**
 - **N16 (Stoke Newington/Shacklewell) appears four times in this batch (Lots 28, 31, 81, 351)** and three of the four (31, 81, 351) guide at roughly **50–60% of a normal comparable value** on their respective streets — a pattern strongly associated with short unexpired leases or unstated ex-local-authority tenure in this stock. None of the four has a confirmed lease length in the catalogue text; all need the legal pack read before the yields below are treated as real.
 - **Lot 31 (Flat B, 58 Leswin Road, N16 7NH, guide £220,000) is the identical address and identical guide price to Lot 130 in the previous Savills catalogue (15–16 September 2026, #242)** — see the note under that lot below. This is the single most important finding in this batch.
-- **Two lots carry brand-new long leases with peppercorn/nil ground rent (Lots 94 and 113)** — this is a genuinely clean tenure position, the opposite of the risk above, and is called out explicitly where relevant.
+- **Two lots carried brand-new long leases with peppercorn/nil ground rent (Lots 94 and 113) — both now withdrawn (see above).**
 - **Lot 79 (Worlds End Lane) is the only lot in this batch with a confirmed passing rent** (£26,400 p.a.); every other rental figure is an estimate.
 
 ---
@@ -86,7 +88,7 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 
 ---
 
-## 4. Camden (Rossendale Way, Elm Village) — NW1 0XB
+## 4. Camden (Rossendale Way, Elm Village) — NW1 0XB — ⚠ Lot 52 withdrawn, deferred to 20 October
 
 ### Area Rating
 
@@ -104,7 +106,7 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 52 | 31 Rossendale Way, Camden, London NW1 0XB | £390,000 | Two bedroom mid terrace house; rear garden; in need of modernisation; extension potential subject to requisite consents; well located for Camden High Street | Catalogue text only — tenure not stated | Vacant |
+| 52 | 31 Rossendale Way, Camden, London NW1 0XB | £390,000 | Two bedroom mid terrace house; rear garden; in need of modernisation; extension potential subject to requisite consents; well located for Camden High Street | Catalogue text only — tenure not stated | **Withdrawn Prior (29 Sept) — now being offered 20 October 2026** |
 | 77 | 19 Rossendale Way, Camden, London NW1 0XB | TBA | One bedroom first floor flat; in need of modernisation; well located for Camden High Street | Catalogue text only — tenure not stated | Vacant |
 
 **Potential Rental:** the 2-bed house (Lot 52) would let for roughly **£2,300–£2,500 pcm** — call it **£2,400 pcm (£28,800/yr)**. Gross yield on the £390,000 guide = **7.4%**; on a ~£650,000 fair value = **4.4%**. The 1-bed flat (Lot 77) would let for roughly **£1,850–£1,950 pcm (£22,800/yr)**; against a ~£375,000 fair value that is **~6.1%** — no guide-price yield is calculable until the guide is published.
@@ -231,7 +233,7 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 
 ---
 
-## 10. Kingsbury, Brent (Rookery Way) — NW9 6GB
+## 10. Kingsbury, Brent (Rookery Way) — NW9 6GB — ⚠ WITHDRAWN PRIOR
 
 ### Area Rating
 
@@ -249,13 +251,13 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 94 | 78 Geneva Court, 2 Rookery Way, London NW9 6GB | £175,000 | One bedroom flat; first floor; in need of modernisation; **new 125 year lease, peppercorn ground rent**; vacant possession | Catalogue text only | Vacant |
+| 94 | 78 Geneva Court, 2 Rookery Way, London NW9 6GB | £175,000 | One bedroom flat; first floor; in need of modernisation; **new 125 year lease, peppercorn ground rent**; vacant possession | Catalogue text only | **Withdrawn Prior (checked 23 Sept 2026)** |
 
 **Potential Rental:** ~**£1,150–£1,250 pcm** — call it **£1,200 pcm (£14,400/yr)**. Gross yield on the £175,000 guide = **8.2%**; on a ~£220,000 fair value = **6.5%**.
 
 ---
 
-## 11. Clerkenwell / Islington (Amwell Street) — EC1R 1XU
+## 11. Clerkenwell / Islington (Amwell Street) — EC1R 1XU — ⚠ WITHDRAWN PRIOR
 
 ### Area Rating
 
@@ -273,7 +275,7 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 113 | Flat 6, Charles Allen House, 22 Amwell Street, Clerkenwell, London EC1R 1XU | £700,000 | Second floor flat; three bedrooms; in need of modernisation; gas central heating (not tested); allocated parking space; **new 150 year lease, nil ground rent**; vacant possession | Catalogue text only | Vacant |
+| 113 | Flat 6, Charles Allen House, 22 Amwell Street, Clerkenwell, London EC1R 1XU | £700,000 | Second floor flat; three bedrooms; in need of modernisation; gas central heating (not tested); allocated parking space; **new 150 year lease, nil ground rent**; vacant possession | Catalogue text only | **Withdrawn Prior (checked 23 Sept 2026)** |
 
 **Potential Rental:** ~**£3,200–£3,400 pcm** — call it **£3,300 pcm (£39,600/yr)**. Gross yield on the £700,000 guide = **5.7%**; on a ~£900,000 fair value = **4.4%**. The allocated parking space is a meaningfully rare amenity for this postcode and should support both rent and resale value beyond the numbers above.
 
@@ -351,7 +353,7 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 
 ---
 
-## 15. Somers Town — NW1 1LB — ⚠ auction date unconfirmed
+## 15. Somers Town — NW1 1LB — auction day now confirmed: Wednesday 30 September
 
 ### Area Rating
 
@@ -363,25 +365,49 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 | Proximity to shops/amenities | 4/5 | Euston Road, Euston station and King's Cross/St Pancras amenities all within easy walking distance. |
 | Proximity to schools | 3/5 | Average Camden provision. |
 
-**⚠ Date flag:** this lot appears in the catalogue numbering after the commercial section (Lots 201–300+), which in the previous Savills catalogue corresponded to the **second auction day**. **The specific auction day (Tuesday 29 vs. Wednesday 30 September 2026) is not explicitly confirmed for this lot** — verify directly with Savills before planning to bid.
+**✓ Date flag resolved (checked 23 Sept 2026):** the catalogue now explicitly confirms this lot is offered **"To be offered on Wednesday 30 September 2026."**
 
-**Verdict:** A real discount to comparable value in a location with genuine (if slow-moving) long-term regeneration upside on its doorstep, offset by Somers Town's current deprivation profile, an unstated lease position, and an unconfirmed auction date/day. Worth pursuing only once all three are resolved.
+**Verdict:** A real discount to comparable value in a location with genuine (if slow-moving) long-term regeneration upside on its doorstep, offset by Somers Town's current deprivation profile and an unstated lease position. Worth pursuing once the lease term is confirmed.
 
 ### Property
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 367 | Flat 60A, St Marys, Doric Way, Somers Town, London NW1 1LB | £230,000 | One bedroom fourth floor flat; well located for Euston and Kings Cross; in need of modernisation | Catalogue text only — tenure not stated; **auction day unconfirmed** | Vacant |
+| 367 | Flat 60A, St Marys, Doric Way, Somers Town, London NW1 1LB | £230,000 | One bedroom fourth floor flat; well located for Euston and Kings Cross; in need of modernisation | Catalogue text only — tenure not stated | **Auction day confirmed: Wednesday 30 September 2026** — Vacant |
 
 **Potential Rental:** ~**£1,700–£1,800 pcm** — call it **£1,750 pcm (£21,000/yr)**. Gross yield on the £230,000 guide = **9.1%**; on a ~£340,000 fair value = **6.2%**.
 
 ---
 
+## 16. Cricklewood, Brent (Temple Road) — NW2 6PJ — ⚠ new lot, added to catalogue after initial research (checked 23 Sept 2026)
+
+### Area Rating
+
+| Metric | Rating | Notes |
+|---|---|---|
+| Growth potential | 4/5 | Cricklewood sits at the southern edge of the **Brent Cross Cricklewood regeneration scheme** — one of London's largest regeneration programmes, targeting roughly 7,500 new homes over 20 years alongside new parkland and a town centre. **Brent Cross West station (Thameslink) opened in October 2023**, a delivered catalyst rather than a promise, giving fast rail access toward St Pancras; Cricklewood's own Thameslink station is also within reach. |
+| Avg. cost of comparable property | — | NW2 postcode average for flats over the last 12 months is **£477,000–£480,000** (Rightmove/Zoopla, both sources broadly agree); 3-bed flats specifically are thinly traded but the one directly comparable sale found was **£500,000**. **Lot 24's £225,000 guide is roughly 45% of that** — a large gap, consistent with this batch's recurring pattern of unstated tenure on steep discounts; the catalogue text does not state lease length. |
+| Social status / desirability | 3/5 | Solid, diverse, unremarkable inner-Brent suburb — improving on the back of Brent Cross Cricklewood but not yet transformed. |
+| Proximity to shops/amenities | 3/5 | Cricklewood Broadway (A5) has a reasonable everyday retail offer; the new Brent Cross Town centre will add substantially more over the coming decade. |
+| Proximity to schools | 3/5 | Average Brent primary/secondary provision in this pocket; nothing standout identified nearby. |
+
+**Verdict:** A newly-added lot with a real, delivered regeneration catalyst next door (Brent Cross West station already open) and a large discount to the NW2 flat average — but, as with several other lots in this batch, the size of the gap and the unstated tenure mean this needs the legal pack read before the headline yield is trusted. Added to the catalogue after this review's initial research pass; treat the figures below as a first look, not a verified case.
+
+### Property
+
+| Lot | Address | Guide | Description | Detail page | Status |
+|---|---|---|---|---|---|
+| 24 | 27a Temple Road, Cricklewood, London NW2 6PJ | £225,000 | Three bedroom first floor flat; in need of modernisation; conveniently located for the amenities of Cricklewood | Catalogue text only — tenure not stated | Vacant |
+
+**Potential Rental:** a 3-bed flat in this part of NW2 would likely let for roughly **£2,000–£2,200 pcm** — call it **£2,100 pcm (£25,200/yr)**. Gross yield on the £225,000 guide = **11.2%** — high enough to be a pricing/tenure anomaly flag in its own right, consistent with this batch's pattern; on a ~£520,000 fair value = **4.8%**.
+
+---
+
 ## Summary / Standout Picks
 
-- **Cleanest tenure, cheapest entry: Kingsbury (Lot 94, £175,000).** Brand-new 125-year lease with peppercorn ground rent, priced at (not below) recent block comparables, next to the fast-growing Colindale corridor. Low drama, ~6.5% fair-value yield.
-- **Best quality-of-area: Clerkenwell/Islington (Lot 113, £700,000).** Prime Amwell Street address, Outstanding primary school around the corner, a genuinely clean new 150-year lease with nil ground rent, allocated parking, and a real ~20–25% discount to comparable value — bought into Islington's current price dip.
-- **Lowest-risk family house: North Finchley (Lot 345, £565,000).** Outstanding-school catchment, garage and garden, settled Barnet suburb, ~30% discount to street comparables — the "ordinary and safe" pick of the batch.
+- ~~**Cleanest tenure, cheapest entry: Kingsbury (Lot 94, £175,000).**~~ **WITHDRAWN PRIOR (checked 23 Sept 2026).** Was brand-new 125-year lease with peppercorn ground rent, priced at recent block comparables — the batch's cleanest low-risk pick is no longer available.
+- ~~**Best quality-of-area: Clerkenwell/Islington (Lot 113, £700,000).**~~ **WITHDRAWN PRIOR (checked 23 Sept 2026).** Was prime Amwell Street address, Outstanding primary school around the corner, clean new 150-year lease with nil ground rent — this batch's #1 and #2 picks are both now gone.
+- **With both top picks withdrawn, the new best low-drama option is: Lowest-risk family house: North Finchley (Lot 345, £565,000).** Outstanding-school catchment, garage and garden, settled Barnet suburb, ~30% discount to street comparables — the "ordinary and safe" pick of the batch.
 - **Only confirmed income + best schools: Enfield (Lot 79, £470,000).** Confirmed £26,400/yr passing rent, an Outstanding secondary school on the same road, and additional-dwelling potential — modest yield but the most certain income in the batch.
 - **Highest fair-value yield: Harlesden (Lot 75, £220,000)** at ~6.7%, riding the (partly de-risked) Old Oak Common growth corridor — but tenure is unstated and needs checking.
 
@@ -394,21 +420,24 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 | Rank | Lot | Property | Rent (pcm) | Fair-value gross yield | Guide-price gross yield |
 |---|---|---|---|---|---|
 | 1 | 75 | Longstone Avenue, Harlesden | £1,900 | **6.7%** | 10.4% |
-| 2 | 94 | Geneva Court, Rookery Way, Kingsbury | £1,200 | **6.5%** | 8.2% |
-| 3 | 367 | St Marys, Doric Way, Somers Town | £1,750 | **6.2%** | 9.1% |
-| 4 | 77 | 19 Rossendale Way, Camden | £1,900 | **6.1%** | — (guide TBA) |
-| 5 | 31 | Flat B, 58 Leswin Road, Stoke Newington | £1,850 | **4.9%*** | 10.1%* |
-| 6 | 84 | 15 The Avenue, Tottenham | £3,400 | **5.8%** | 8.2% |
-| 7 | 10 | 64 Dukes Avenue, Muswell Hill | £6,000 | **5.5%** | 7.2% |
-| 8 | 52 | 31 Rossendale Way, Camden | £2,400 | **4.4%** | 7.4% |
-| 9 | 81 | Flat C, 1 Prince George Road, Hackney | £1,950 | **5.2%** | 9.4% |
-| 10 | 351 | Solomon House, Rectory Road, Stoke Newington | £2,800 | **4.9%*** | 8.6%* |
-| 11 | 28 | 57C St Kilda's Road, Stoke Newington | £2,100 | **4.8%** | 6.5% |
-| 12 | 63 | Goldhurst Terrace, South Hampstead | £2,500 | **4.7%** | 6.5% |
-| 13 | 113 | Amwell Street, Clerkenwell | £3,300 | **4.4%** | 5.7% |
-| 14 | 119 | Ribblesdale Road, Hornsey | £2,000 | **4.4%** | 5.6% |
-| 15 | 345 | Netherfield Road, North Finchley | £2,700 | **4.1%** | 5.7% |
-| 16 | 79 | Worlds End Lane, Enfield | £2,200 (**confirmed**) | **3.7%** | 5.6% |
+| — | 94 | Geneva Court, Rookery Way, Kingsbury — **WITHDRAWN PRIOR** | £1,200 | 6.5% | 8.2% |
+| 2 | 367 | St Marys, Doric Way, Somers Town | £1,750 | **6.2%** | 9.1% |
+| 3 | 77 | 19 Rossendale Way, Camden | £1,900 | **6.1%** | — (guide TBA) |
+| 4 | 31 | Flat B, 58 Leswin Road, Stoke Newington | £1,850 | **4.9%*** | 10.1%* |
+| 5 | 84 | 15 The Avenue, Tottenham | £3,400 | **5.8%** | 8.2% |
+| 6 | 10 | 64 Dukes Avenue, Muswell Hill | £6,000 | **5.5%** | 7.2% |
+| — | 52 | 31 Rossendale Way, Camden — **WITHDRAWN, re-offered 20 Oct** | £2,400 | 4.4% | 7.4% |
+| 7 | 81 | Flat C, 1 Prince George Road, Hackney | £1,950 | **5.2%** | 9.4% |
+| 8 | 24 | 27a Temple Road, Cricklewood | £2,100 | **4.8%** | 11.2% |
+| 9 | 351 | Solomon House, Rectory Road, Stoke Newington | £2,800 | **4.9%*** | 8.6%* |
+| 10 | 28 | 57C St Kilda's Road, Stoke Newington | £2,100 | **4.8%** | 6.5% |
+| 11 | 63 | Goldhurst Terrace, South Hampstead | £2,500 | **4.7%** | 6.5% |
+| — | 113 | Amwell Street, Clerkenwell — **WITHDRAWN PRIOR** | £3,300 | 4.4% | 5.7% |
+| 12 | 119 | Ribblesdale Road, Hornsey | £2,000 | **4.4%** | 5.6% |
+| 13 | 345 | Netherfield Road, North Finchley | £2,700 | **4.1%** | 5.7% |
+| 14 | 79 | Worlds End Lane, Enfield | £2,200 (**confirmed**) | **3.7%** | 5.6% |
+
+*Withdrawn rows (marked "—") are kept for reference but excluded from the active ranking; Lot 52 may reappear at the 20 October auction.*
 
 \* Implausibly high guide-price yields (Lots 31, 351) are pricing/tenure anomalies, not rental-market strength — both sit inside the N16 short-lease-risk cluster flagged above.
 

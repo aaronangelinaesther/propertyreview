@@ -1,12 +1,14 @@
 # Savills Auction — 29 & 30 September 2026 (Catalogue #243) — London East Batch
 
 Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243
-Batch scope: **14 East London residential lots** across Newham, Waltham Forest, Redbridge, east Hackney and Tower Hamlets (Stratford/Forest Gate border, Forest Gate, Woodford Green, Leytonstone, Canning Town, Ilford/Goodmayes, Manor Park, Walthamstow, East Ham, Bow, Dalston). All 14 lots below are listed as "to be offered on Tuesday 29 September 2026," remote bidding only, except Lot 337 (see flag below). Guide prices are sellers' minimums; auction lots typically sell above guide.
+Batch scope: **14 East London residential lots** originally identified, plus **2 new lots (76 Stratford, 191 Leytonstone) added to the catalogue after this file's initial research** — 16 total. Across Newham, Waltham Forest, Redbridge, east Hackney and Tower Hamlets (Stratford/Forest Gate border, Forest Gate, Woodford Green, Leytonstone, Canning Town, Ilford/Goodmayes, Manor Park, Walthamstow, East Ham, Bow, Dalston). All lots below are listed as "to be offered on Tuesday 29 September 2026," remote bidding only, except Lot 337 (confirmed Wednesday 30 September — see flag below). Guide prices are sellers' minimums; auction lots typically sell above guide. **Lot numbers for two properties in this file (Manor Park, Walthamstow) were swapped in the live catalogue between this review's original research and the 23 September 2026 re-check — see the update note below.**
 
 **Site accessibility / method:** built from the catalogue lot descriptions supplied plus independent research — Zoopla / Rightmove / OnTheMarket sold-price and rent pages (via web search and direct page fetches), council/TfL regeneration material, and general knowledge of borough schools. No Savills account access was available for this batch, so **no lot detail pages were fetched** — tenure, EPC and full accommodation for every lot rely on the catalogue text plus street-level comparables; treat every "presumed" tenure note below as unconfirmed until the legal pack is read. Gross yield = annual rent ÷ **guide price** (upper bound); a second **fair-value** yield is given against the researched local comparable. Ratings 1 (weak) – 5 (strong).
 
+**⚠ Catalogue update — checked 23 September 2026 (auction is 29 Sept):** **Lot numbers for Manor Park and Walthamstow have been swapped in the live catalogue.** 333 Church Road, Manor Park (the confirmed-94-year-lease pick) was **Lot 86**, is now **Lot 165**. 249 & 251 Edward Road, Walthamstow (the 46-year short-lease flag) was **Lot 165**, is now **Lot 86**. This file has been updated to the current numbering — **match by address, not by lot number, before bidding, since other swaps elsewhere in the catalogue haven't all been checked.** Lot 337 (Dalston)'s previously-unconfirmed auction day is now confirmed **Wednesday 30 September**. Two new in-scope lots have also appeared and are added at the end: **Lot 76, 11 Heyworth Road, Stratford E15 — £400,000**, and **Lot 191, 199 Norman Road, Leytonstone E11 — £450,000**.
+
 **Cross-cutting flags for this batch:**
-- **Confirmed short lease / reversionary structure:** Lot 165, Edward Road, Walthamstow — the ground-floor flat has **46 years unexpired**. Below 80 years, marriage value applies; the buyer acquires the freehold and the reversionary interest in that flat, not vacant possession or day-one rent from it.
+- **Confirmed short lease / reversionary structure:** Lot 86 (formerly Lot 165), Edward Road, Walthamstow — the ground-floor flat has **46 years unexpired**. Below 80 years, marriage value applies; the buyer acquires the freehold and the reversionary interest in that flat, not vacant possession or day-one rent from it.
 - **Likely re-offered lot:** Lot 337, 3 Evergreen Square, Dalston E8 3XD, is **the same address, same guide price (£480,000) and same description** as Lot 170 in the *previous* Savills catalogue (#242, 15–16 Sept 2026), which this repo's earlier review flagged as needing tenure/S106 verification. Re-appearing unsold two weeks later at an identical guide is itself a signal — see the Dalston section below.
 - **Guides well below street comparables** (Lots 50, 90, 165, 337, and to a lesser extent 70) — the usual explanations are short lease, ex-local-authority/resale-restricted tenure, condition, or (for Lot 90) a guide that is oddly *below* the flat's own historic sale prices. Verify in the legal pack before trusting any yield.
 - **Repeat lot from the prior catalogue:** Lot 70, Flat B, 55 Colworth Road, Leytonstone, appears to be the identical lot (same address, same £225,000 guide) offered as Lot 70 in catalogue #242 two weeks earlier — also apparently unsold/re-offered.
@@ -167,14 +169,14 @@ Batch scope: **14 East London residential lots** across Newham, Waltham Forest, 
 
 ---
 
-## 7. Manor Park — E12 — Newham
+## 7. Manor Park — E12 — Newham — ⚠ now Lot 165 (was Lot 86)
 
 ### Area Rating
 
 | Metric | Rating | Notes |
 |---|---|---|
 | Growth potential | 4/5 | Manor Park has its own **Elizabeth Line (Crossrail) station**, opened 2022 — a delivered catalyst, not a promise — plus Forest Gate-adjacent gentrification spillover. |
-| Avg. cost of comparable property | — | Church Road itself: recent 2-bed flat sales of £260,000 (160a) and £180,000 (213b), averaging ~£220,000. **Lot 86's £200,000 guide is ~91% of that** — a fair, not deeply discounted, price, consistent with a genuinely good lease term and useful features (own entrance, garden). |
+| Avg. cost of comparable property | — | Church Road itself: recent 2-bed flat sales of £260,000 (160a) and £180,000 (213b), averaging ~£220,000. **This lot's £200,000 guide is ~91% of that** — a fair, not deeply discounted, price, consistent with a genuinely good lease term and useful features (own entrance, garden). |
 | Social status / desirability | 3/5 | Diverse, improving on the back of Crossrail; still a relatively low price base. |
 | Proximity to shops/amenities | 3/5 | Romford Road shops, station parade, Wanstead Flats nearby. |
 | Proximity to schools | 3/5 | Newham "Good"-rated provision, improving. |
@@ -185,20 +187,20 @@ Batch scope: **14 East London residential lots** across Newham, Waltham Forest, 
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 86 | Ground Floor Flat, 333 Church Road, Manor Park, London E12 6HT | £200,000 | Ground-floor flat; two bedrooms; own street entrance; rear garden. **94-year lease (confirmed in catalogue text) — comfortably above the marriage-value threshold, the cleanest tenure position in this batch.** | Catalogue text only | Vacant |
+| 165 | Ground Floor Flat, 333 Church Road, Manor Park, London E12 6HT | £200,000 | Ground-floor flat; two bedrooms; own street entrance; rear garden. **94-year lease (confirmed in catalogue text) — comfortably above the marriage-value threshold, the cleanest tenure position in this batch.** | Catalogue text only | **Lot number was 86 in the earlier catalogue snapshot — now Lot 165; address is unchanged and confirms the same property** — Vacant |
 
 **Potential Rental:** ~£1,700 pcm (£20,400/yr). Gross yield on the £200,000 guide = **10.2%**; on the ~£220,000 fair value = **9.3%** — the best fair-value yield in the whole batch, with none of the usual tenure caveats attached.
 
 ---
 
-## 8. Walthamstow — E17 — Waltham Forest
+## 8. Walthamstow — E17 — Waltham Forest — ⚠ now Lot 86 (was Lot 165)
 
 ### Area Rating
 
 | Metric | Rating | Notes |
 |---|---|---|
 | Growth potential | 4/5 | Victoria line + Overground at Walthamstow Central, sustained "mini-Holland" cycling investment, ongoing strong price growth over the decade. |
-| Avg. cost of comparable property | — | Edward Road itself: 12-month average sold price **£597,275** (mixed types); recent individual 2-bed *flat* sales of £537,600–£660,000, and a 2-bed detached house at £407,500. **Lot 165's £350,000 guide covers a freehold parcel containing two flats** — dramatically below the sum of two individually-sold 2-bed flats on the same street, but this reflects the part-let structure and the short lease, not a simple bargain (see Verdict). |
+| Avg. cost of comparable property | — | Edward Road itself: 12-month average sold price **£597,275** (mixed types); recent individual 2-bed *flat* sales of £537,600–£660,000, and a 2-bed detached house at £407,500. **This lot's £350,000 guide covers a freehold parcel containing two flats** — dramatically below the sum of two individually-sold 2-bed flats on the same street, but this reflects the part-let structure and the short lease, not a simple bargain (see Verdict). |
 | Social status / desirability | 3/5 (this stretch) / 4/5 (Walthamstow overall) | Solidly residential, a step below Walthamstow Village but still desirable. |
 | Proximity to shops/amenities | 4/5 | Walthamstow Market (Europe's longest daily street market), the Mall Walthamstow. |
 | Proximity to schools | 3/5 | Waltham Forest "Good"-rated schools generally. |
@@ -209,7 +211,7 @@ Batch scope: **14 East London residential lots** across Newham, Waltham Forest, 
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 165 | 249 & 251 Edward Road, Walthamstow, London E17 6NU | £350,000 | **Freehold**; vacant first-floor flat with garden and potential extra bedroom; ground-floor flat has **46 years unexpired** (offering reversionary value); popular residential location. **Confirmed short lease / reversionary risk on the ground-floor unit — flagged explicitly.** | Catalogue text only | First-floor flat vacant; ground-floor flat let on the existing 46-year lease |
+| 86 | 249 & 251 Edward Road, Walthamstow, London E17 6NU | £350,000 | **Freehold**; vacant first-floor flat with garden and potential extra bedroom; ground-floor flat has **46 years unexpired** (offering reversionary value); popular residential location. **Confirmed short lease / reversionary risk on the ground-floor unit — flagged explicitly.** | Catalogue text only | **Lot number was 165 in the earlier catalogue snapshot — now Lot 86; address is unchanged and confirms the same property** — First-floor flat vacant; ground-floor flat let on the existing 46-year lease |
 
 **Potential Rental:** only the vacant first-floor flat produces day-one income — ~£1,800 pcm (£21,600/yr) for a 2-bed (post-conversion) flat with a garden. Gross yield on the **full £350,000 guide** (which buys both units) = **7.4%**; on a conservative ~£600,000 combined fair value (well below the ~£1m+ sum of two long-lease market flats, reflecting the short lease and refurbishment needs) = **3.6%**. The uncounted upside is the ground-floor reversion itself — a separate capital asset with real but hard-to-price value, not reflected in either yield figure.
 
@@ -275,30 +277,78 @@ Batch scope: **14 East London residential lots** across Newham, Waltham Forest, 
 | Proximity to shops/amenities | 5/5 | Ridley Road Market, Dalston high streets, Gillett Square. |
 | Proximity to schools | 3/5 | Hackney schools mixed but generally improving. |
 
-**Verdict:** This is the batch's single biggest open question. **3 Evergreen Square, E8 3XD appears to be the exact same lot (address, guide price, description) offered as Lot 170 in the previous Savills catalogue (#242, 15–16 Sept 2026)** — that earlier review flagged the guide-to-comparable gap and recommended verifying tenure/S106 restrictions before bidding. Two weeks later it is back at an unchanged guide, and the complete absence of any resold Land Registry transaction across the entire 20-unit development supports the restriction theory rather than a simple pricing quirk. **Separately, its exact auction day (29 vs 30 September) is not explicitly stated in the source text, since it is numbered after the commercial section — confirm both the date and the tenure position before bidding.**
+**Verdict:** This is the batch's single biggest open question. **3 Evergreen Square, E8 3XD appears to be the exact same lot (address, guide price, description) offered as Lot 170 in the previous Savills catalogue (#242, 15–16 Sept 2026)** — that earlier review flagged the guide-to-comparable gap and recommended verifying tenure/S106 restrictions before bidding. Two weeks later it is back at an unchanged guide, and the complete absence of any resold Land Registry transaction across the entire 20-unit development supports the restriction theory rather than a simple pricing quirk. **The auction day is now confirmed as Wednesday 30 September (checked 23 Sept 2026)** — resolve the tenure position before bidding.
 
 ### Property
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 337 | 3 Evergreen Square, Dalston, London E8 3XD | £480,000 | Four-bedroom mid-terrace house; rear garden; needs modernisation. **Tenure/resale-restriction unconfirmed — apparent re-offer of Lot 170 from catalogue #242 at an unchanged guide. Auction day (29 vs 30 Sept) not explicitly confirmed in the source text.** | Catalogue text only | Vacant |
+| 337 | 3 Evergreen Square, Dalston, London E8 3XD | £480,000 | Four-bedroom mid-terrace house; rear garden; needs modernisation. **Tenure/resale-restriction unconfirmed — apparent re-offer of Lot 170 from catalogue #242 at an unchanged guide.** | Catalogue text only | **Auction day confirmed: Wednesday 30 September 2026** — Vacant |
 
 **Potential Rental:** a modernised 4-bed in this specific development ~£3,300 pcm (£39,600/yr) — kept conservative relative to premium period-house E8 comparables (£6,750–£7,000 pcm), which are a different, larger stock type. Gross yield on the £480,000 guide = **8.25%**; on an unrestricted ~£900,000 fair value = **4.4%** — but if a resale restriction genuinely caps this development's value nearer the guide itself, the "true" fair-value yield could be closer to **7–8%** and the exit value correspondingly capped. This uncertainty, not the yield math, is the central issue with this lot.
 
 ---
 
+## 12. Stratford — E15 1ST (Lot 76) — ⚠ new lot, added after initial research (checked 23 Sept 2026)
+
+### Area Rating
+
+| Metric | Rating | Notes |
+|---|---|---|
+| Growth potential | 4/5 | Same strong Stratford-adjacent transport story as Lot 7 above (Elizabeth Line, Jubilee, Central, Overground, DLR, Westfield Stratford City, East Bank/Olympic Park). Heyworth Road sits a little further from the core hub than Carnarvon Road but still well within walking/short-bus reach. |
+| Avg. cost of comparable property | — | E15 postcode-wide terraced average is **£568,863** (Rightmove), spanning a wide mix of sizes and condition; a realistic fair value for a 3-bed mid-terrace needing modernisation is **£480,000–£520,000**. **Lot 76's £400,000 guide is roughly 77–83% of that** — a moderate, believable discount; tenure is presumed freehold (house type) but not explicitly stated. |
+| Social status / desirability | 2/5 | Dense inner-Newham terraced streets, similar profile to Lot 7's pocket. |
+| Proximity to shops/amenities | 4/5 | Stratford town centre and Westfield Stratford City within reach. |
+| Proximity to schools | 3/5 | Newham primaries have improved markedly; several "Good"-rated options within a mile. |
+
+**Verdict:** A newly-added lot with a believable, moderate discount in a strong transport-led location — one of the less dramatic guide-to-value gaps in this batch, which is itself a point in its favour. Added to the catalogue after this review's initial research pass; treat as a first look.
+
+### Property
+
+| Lot | Address | Guide | Description | Detail page | Status |
+|---|---|---|---|---|---|
+| 76 | 11 Heyworth Road, Stratford, London E15 1ST | £400,000 | Three-bedroom mid-terrace house; needs modernisation; potential to extend (subject to requisite consents); conveniently located for Stratford. **Tenure not stated — presumed freehold (house type).** | Catalogue text only | Vacant |
+
+**Potential Rental:** a modernised 3-bed terrace here would likely let for roughly **£2,200 pcm (£26,400/yr)**. Gross yield on the £400,000 guide = **6.6%**; on a ~£500,000 fair value = **5.3%**.
+
+---
+
+## 13. Leytonstone — E11 4RJ (Lot 191) — ⚠ new lot, added after initial research (checked 23 Sept 2026)
+
+### Area Rating
+
+| Metric | Rating | Notes |
+|---|---|---|
+| Growth potential | 4/5 | Same Central line / Leytonstone gentrification story as Lots 27 and 70 above. |
+| Avg. cost of comparable property | — | E11 postcode-wide terraced average is **£752,871** (Rightmove), with specific 3-bed comparables (Napier Road £755,000, Michael Road £910,000) at the higher end; Norman Road is a more ordinary street than those, so a realistic fair value for a 3-bed terrace needing modernisation here is **£600,000–£650,000**. **Lot 191's £450,000 guide is roughly 69–75% of that** — a solid discount for a confirmed freehold. |
+| Social status / desirability | 3/5 | Solidly gentrifying inner-Waltham-Forest/Leytonstone terraced streets, similar profile to Lots 27/70. |
+| Proximity to shops/amenities | 3/5 | Leytonstone High Road within reach. |
+| Proximity to schools | 3/5 | Waltham Forest "Good"-rated primaries generally. |
+
+**Verdict:** A newly-added, confirmed-freehold 3-bed terrace at a solid discount in the same strong Leytonstone pocket as this batch's other picks. Added to the catalogue after this review's initial research pass; treat as a first look, not a verified case.
+
+### Property
+
+| Lot | Address | Guide | Description | Detail page | Status |
+|---|---|---|---|---|---|
+| 191 | 199 Norman Road, Leytonstone, London E11 4RJ | £450,000 | **Freehold** terraced three-bedroom house; rear garden; needs modernisation; well located for the amenities of Leytonstone High Road. | Catalogue text only | Vacant |
+
+**Potential Rental:** a modernised 3-bed terrace here would likely let for roughly **£2,300 pcm (£27,600/yr)**. Gross yield on the £450,000 guide = **7.4%**; on a ~£620,000 fair value = **5.3%**.
+
+---
+
 ## Summary / Standout Picks
 
-- **Cleanest, lowest-risk pick: Manor Park (Lot 86).** Confirmed 94-year lease, own entrance, rear garden, priced close to (not suspiciously below) a tight street comparable, and the best fair-value yield in the batch at 9.3% — genuine Elizabeth Line access with none of the usual tenure caveats.
+- **Cleanest, lowest-risk pick: Manor Park (Lot 165, was Lot 86 — see catalogue update above).** Confirmed 94-year lease, own entrance, rear garden, priced close to (not suspiciously below) a tight street comparable, and the best fair-value yield in the batch at 9.3% — genuine Elizabeth Line access with none of the usual tenure caveats.
 - **Best clean discount: Bow (Lot 208).** Already in clean decorative order (no refurb capex), ~63% of a tight, recent street comparable, balcony, improving Tower Hamlets schools — 6.9% fair-value / 11.0% guide yield.
 - **Best freehold-structure value: Forest Gate (Lot 15).** Freehold building with two vacant self-contained flats near an Elizabeth Line station — the same "buy one house, get two lettable units" logic that was the standout pick in the previous catalogue's East London review — 7.2% fair-value yield with no lease/service-charge drag.
 - **Confirmed income, tightest comparable: East Ham (Lot 184).** The only lot with an already-flowing, confirmed £19,200/yr rent, against a street with five recent comparable sales all in a narrow £412k–£517k band — check the tenancy type before assuming the rent is reversionary.
-- **Specialist reversion play, not a standard buy-to-let: Walthamstow (Lot 165).** A genuinely interesting freeholder/enfranchisement opportunity — vacant first-floor flat for immediate letting, plus the freehold reversion on a 46-year ground-floor lease — but needs specialist advice, not a simple yield calculation.
+- **Specialist reversion play, not a standard buy-to-let: Walthamstow (Lot 86, was Lot 165 — see catalogue update above).** A genuinely interesting freeholder/enfranchisement opportunity — vacant first-floor flat for immediate letting, plus the freehold reversion on a 46-year ground-floor lease — but needs specialist advice, not a simple yield calculation.
 
 **Major unresolved risk — handle with real caution:**
-- **Lot 337 (Dalston, Evergreen Square)** — apparently the identical lot unsold from the previous catalogue at an unchanged guide, no resale transaction data anywhere in its 20-unit development (pointing to a resale restriction), and its own auction day is not clearly confirmed in the source text. Do not bid without resolving all three points first.
+- **Lot 337 (Dalston, Evergreen Square)** — apparently the identical lot unsold from the previous catalogue at an unchanged guide, no resale transaction data anywhere in its 20-unit development (pointing to a resale restriction). Auction day now confirmed Wednesday 30 September; tenure position still needs resolving before bidding.
 - **Lot 90 (Canning Town, Hermit Road)** — the guide sits at or below the flat's own 2008 and 2015 sale prices in an area that has otherwise appreciated sharply; get the legal pack and a survey before trusting the headline yield.
-- **Lot 165 (Walthamstow, Edward Road)** — confirmed 46-year lease on the ground-floor flat; structurally different from a normal buy-to-let and needs specialist lease-extension/enfranchisement advice.
+- **Lot 86, Edward Road, Walthamstow (was Lot 165 — see catalogue update above)** — confirmed 46-year lease on the ground-floor flat; structurally different from a normal buy-to-let and needs specialist lease-extension/enfranchisement advice.
 - **Lot 70 (Leytonstone, Colworth Road)** — appears to be a re-offer of the identical lot from the prior catalogue at an unchanged guide; treat the re-offer itself as a signal of an unresolved legal-pack issue.
 
 **Comparable data hardest to find:** Evergreen Square, Dalston (Lot 337) had no resold Land Registry transactions at all for its street; Eric Road, Forest Gate (Lot 62) showed inconsistent comparables (2-bed listings priced similarly to what a 3-bed would normally cost, possibly reflecting loft extensions on nearby houses); and every lot in this batch lacked a Savills detail-page confirmation of tenure/EPC, so lease-length risk flags below are inferred from guide-to-comparable gaps rather than confirmed in a legal pack.
@@ -307,7 +357,7 @@ Batch scope: **14 East London residential lots** across Newham, Waltham Forest, 
 
 | Rank | Lot | Property | Rent (pcm) | Fair-value gross yield | Guide-price gross yield |
 |---|---|---|---|---|---|
-| 1 | 86 | Church Road, Manor Park E12 | £1,700 | **9.3%** | 10.2% |
+| 1 | 165 | Church Road, Manor Park E12 (was Lot 86) | £1,700 | **9.3%** | 10.2% |
 | 2 | 16 | Durham Avenue, Woodford Green IG8 | £1,800 | **7.7%** | 9.8% |
 | 3 | 15 | Green Street, Forest Gate E7 | £3,350 (combined) | **7.2%** | 8.9% |
 | 4 | 50 | Eastwood Road, Ilford IG3 | £1,250 | **7.1%** | 12.5%* |
@@ -317,10 +367,12 @@ Batch scope: **14 East London residential lots** across Newham, Waltham Forest, 
 | 8 | 70 | Colworth Road, Leytonstone E11 | £1,750 | **6.8%** | 9.3% |
 | 9 | 7 | Carnarvon Road, Stratford/Forest Gate E15 | £2,200 | **5.9%** | 8.8% |
 | 9 | 33 | Leonard Street, Canning Town E16 | £2,000 | **5.9%** | 8.0% |
-| 11 | 337 | Evergreen Square, Dalston E8 | £3,300 | **4.4%** (unrestricted scenario; ~7–8% if resale-restricted) | 8.25% |
-| 12 | 184 | St Olaves Road, East Ham E6 | £1,600 (**confirmed**) | **4.2%** | 5.5% |
-| 13 | 62 | Eric Road, Forest Gate E7 | £2,400 | **4.4%** | 6.4% |
-| 14 | 165 | Edward Road, Walthamstow E17 | £1,800 (first-floor unit only) | **3.6%** (excludes uncounted reversion value) | 7.4% |
+| 11 | 76 | Heyworth Road, Stratford E15 | £2,200 | **5.3%** | 6.6% |
+| 11 | 191 | Norman Road, Leytonstone E11 | £2,300 | **5.3%** | 7.4% |
+| 13 | 337 | Evergreen Square, Dalston E8 | £3,300 | **4.4%** (unrestricted scenario; ~7–8% if resale-restricted) | 8.25% |
+| 14 | 62 | Eric Road, Forest Gate E7 | £2,400 | **4.4%** | 6.4% |
+| 15 | 184 | St Olaves Road, East Ham E6 | £1,600 (**confirmed**) | **4.2%** | 5.5% |
+| 16 | 86 | Edward Road, Walthamstow E17 (was Lot 165) | £1,800 (first-floor unit only) | **3.6%** (excludes uncounted reversion value) | 7.4% |
 
 \* Implausibly high guide-price yields (Lots 50, 90) are pricing/tenure anomalies rather than rental-market strength — see the risk flags above.
 

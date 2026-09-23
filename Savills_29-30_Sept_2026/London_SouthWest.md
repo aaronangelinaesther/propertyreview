@@ -1,9 +1,11 @@
 # Savills Auction — 29 & 30 September 2026 (Catalogue #243) — London South-West Batch
 
 Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243
-Batch scope: **20 lots** across South-West London — Lambeth, Wandsworth, Merton, Sutton, Croydon and Bromley (SW-postcode / CR / SM / BR territory). A companion file, `London_SouthEast.md`, covers the SE-postcode half of South London separately. All 20 lots below are listed **"To be offered on Tuesday 29 September 2026," remote bidding only, guide prices are seller minimums.**
+Batch scope: **20 lots** originally identified, plus **2 new lots (154 Belvedere/Bexley, 346A Croydon) added to the catalogue after this file's initial research** — 22 total, 1 now withdrawn — across South-West London: Lambeth, Wandsworth, Merton, Sutton, Croydon, Bromley and Bexley (SW-postcode / CR / SM / BR / DA territory). A companion file, `London_SouthEast.md`, covers the SE-postcode half of South London separately. Unless noted, lots below are listed **"To be offered on Tuesday 29 September 2026," remote bidding only, guide prices are seller minimums.**
 
 **Method:** individual Savills lot detail pages were not reachable this pass, so this batch is built from the catalogue index descriptions plus independent research — Rightmove house-price (sold-price) postcode pages, general market/rental knowledge, and area context. Where a Rightmove postcode page returned a **postcode-wide average across all property types/sizes**, a size-adjusted "fair value" for the specific unit type was estimated rather than using the raw average uncritically (flagged inline). Gross yield = annual rent ÷ **guide price** (an upper bound — auction lots typically sell above guide); a second **fair-value** yield is given against the researched comparable. Ratings 1 (weak) – 5 (strong).
+
+**⚠ Catalogue update — checked 23 September 2026 (auction is 29 Sept):** **Lot 145 (Plough Road, Battersea) is now "Withdrawn"** — see its section below. Two new in-scope lots have appeared in the catalogue since this file's initial research and are added at the end: **Lot 154, 90 Shortlands Close, Belvedere DA17 (Bexley) — £120,000**, and **Lot 346A, Flat 4, 93 Outram Road, Croydon CR0 — £90,000**.
 
 **Cross-cutting flags for this batch:**
 - **Lot 21 (Boundaries Road, Balham) is an explicit six-studio-room HMO** — this is the batch's single biggest risk lot; see below for the large-HMO planning/licensing angle, the same pattern that made Lot 12 (187 Balham High Road) the standout risk lot in the *previous* Savills catalogue's South London review.
@@ -400,7 +402,7 @@ Batch scope: **20 lots** across South-West London — Lambeth, Wandsworth, Merto
 
 ---
 
-## 17. Plough Road, Battersea — SW11 2BJ (Lot 145) — LIKELY REPEAT LISTING
+## 17. Plough Road, Battersea — SW11 2BJ (Lot 145) — LIKELY REPEAT LISTING — ⚠ NOW WITHDRAWN
 
 ### Area Rating
 
@@ -418,7 +420,7 @@ Batch scope: **20 lots** across South-West London — Lambeth, Wandsworth, Merto
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 145 | 89a and 89b Plough Road, Battersea, London SW11 2BJ | £325,000 | Freehold; ground floor self-contained flat; first and second floor flat sold on a long lease; one bedroom; close to Clapham Junction Station; in need of modernisation; approximately 522 sq ft | Not fetched — catalogue index only | Vacant |
+| 145 | 89a and 89b Plough Road, Battersea, London SW11 2BJ | £325,000 | Freehold; ground floor self-contained flat; first and second floor flat sold on a long lease; one bedroom; close to Clapham Junction Station; in need of modernisation; approximately 522 sq ft | Not fetched — catalogue index only | **Withdrawn (checked 23 Sept 2026) — failed to sell for a second time now** |
 
 **Potential Rental:** the conveyed ground-floor flat (89a) would let for roughly **£1,900 pcm (£22,800/yr)**; the upper flat (89b) is already sold on a long lease and contributes only a small ground-rent income, not market rent, to this purchase. Gross yield on the £325,000 guide = **7.0%**; on a ~£470,000 combined fair value = **4.9%**.
 
@@ -496,6 +498,54 @@ Batch scope: **20 lots** across South-West London — Lambeth, Wandsworth, Merto
 
 ---
 
+## 21. Shortlands Close, Belvedere — DA17 5QY (Lot 154) — ⚠ new lot, added after initial research (checked 23 Sept 2026)
+
+### Area Rating
+
+| Metric | Rating | Notes |
+|---|---|---|
+| Growth potential | 3/5 | Belvedere (Bexley) sits on the Erith/Abbey Wood riverside corridor; not itself inside the Abbey Wood/Elizabeth Line catchment (that's the neighbouring #242/#243 Abbey Wood pick, Lot 138, in `London_SouthEast.md`), but benefits at the margin from the same wider Thamesmead/riverside regeneration momentum. Belvedere has its own Southeastern rail station into London Bridge/Cannon Street. |
+| Avg. cost of comparable property | — | DA17 postcode-wide flat average is **£235,132** (Rightmove, mixed 1–2 bed stock); a realistic fair value for a 1-bed flat needing updating is **£190,000–£210,000**. **Lot 154's £120,000 guide is roughly 57–63% of that** — a meaningful discount; tenure is not stated in the catalogue text. |
+| Social status / desirability | 2/5 | Solid but unremarkable outer-Bexley riverside suburb. |
+| Proximity to shops/amenities | 3/5 | Belvedere's local parade and Erith town centre both within reach. |
+| Proximity to schools | 3/5 | Average Bexley provision. |
+
+**Verdict:** A newly-added lot with a real discount to the DA17 flat average — but, as with several lots in this batch, the size of the gap and unstated tenure mean the legal pack needs reading before the yield is trusted. Added to the catalogue after this review's initial research pass; treat as a first look, not a verified case.
+
+### Property
+
+| Lot | Address | Guide | Description | Detail page | Status |
+|---|---|---|---|---|---|
+| 154 | 90 Shortlands Close, Belvedere DA17 5QY | £120,000 | One bedroom first floor flat; in need of updating; conveniently located for the amenities of Belvedere | Not fetched — catalogue index only | Vacant |
+
+**Potential Rental:** ~**£1,150 pcm (£13,800/yr)**. Gross yield on the £120,000 guide = **11.5%** — high enough to be a pricing/tenure anomaly flag; on a ~£200,000 fair value = **6.9%**.
+
+---
+
+## 22. Outram Road, Croydon — CR0 6XJ (Lot 346A) — ⚠ new lot, added after initial research (checked 23 Sept 2026)
+
+### Area Rating
+
+| Metric | Rating | Notes |
+|---|---|---|
+| Growth potential | 3/5 | Same central-Croydon fundamentals as Lots 190, 201 and 216 above — Tramlink/East Croydon rail connectivity is the real structural strength; the Westfield/Whitgift redevelopment remains a stalled, uncertain long-term prospect rather than a funded catalyst. |
+| Avg. cost of comparable property | — | CR0 flat average is **£259,436** (postcode-wide, established elsewhere in this file); a realistic fair value for a 1-bed second-floor flat needing updating is **£210,000–£230,000**. **Lot 346A's £90,000 guide is only ~39–43% of that** — a gap in the same extreme range as Lot 190 (Borough Hill, ~50–57%) — tenure is not stated in the catalogue text. |
+| Social status / desirability | 2/5 | Mixed, inner-Croydon residential pocket. |
+| Proximity to shops/amenities | 3/5 | Conveniently located for the amenities of Croydon per the catalogue text. |
+| Proximity to schools | 3/5 | Mixed Croydon provision. |
+
+**Verdict:** The steepest guide-to-value gap of this file's Croydon cluster alongside Lot 190 — treat the very high headline yield as a likely symptom of short lease / ex-local-authority tenure or a condition issue rather than a genuine bargain until the legal pack is read. Added to the catalogue after this review's initial research pass.
+
+### Property
+
+| Lot | Address | Guide | Description | Detail page | Status |
+|---|---|---|---|---|---|
+| 346A | Flat 4, 93 Outram Road, Croydon, CR0 6XJ | £90,000 | One bedroom second floor flat; in need of updating; conveniently located for the amenities of Croydon | Not fetched — catalogue index only | Vacant |
+
+**Potential Rental:** ~**£1,150 pcm (£13,800/yr)**. Gross yield on the £90,000 guide = **15.3%** (pricing/tenure anomaly, not rental-market strength); on a ~£220,000 fair value = **6.3%**.
+
+---
+
 ## Summary / Standout Picks
 
 - **Best low-drama value: Raynes Park (Lot 51).** A freehold 4-bed semi with garage, parking and gardens at ~30% below a sensible fair value, extension potential, and no lease/estate complications — the cleanest large discount in the batch.
@@ -505,8 +555,8 @@ Batch scope: **20 lots** across South-West London — Lambeth, Wandsworth, Merto
 
 **Major unresolved risk — read before bidding:**
 - **Lot 21, Boundaries Road, Balham** — the six-studio HMO. Whether these are lawfully established self-contained units or an unlicensed HMO conversion determines whether this is an ~8% income asset or a forced de-conversion back to a single £1m+ house. This is a planning/legal bet, not a standard purchase — mirrors the previous catalogue's £1.4m Balham HMO risk lot exactly.
-- **Lot 145, Plough Road, Battersea** — same address and guide as a lot that appears to have failed to sell in the *previous* Savills catalogue two weeks earlier. Ask why before assuming the discount is genuine.
-- **Lot 18, Innes Gardens, Putney** and **Lot 190, Borough Hill, Croydon** — both guide at roughly half a reasonable fair value with no tenure detail disclosed; treat the headline yields as upper-bound anomalies pending the legal pack (lease term, service charge, possible age restriction or cladding/EWS1 exposure).
+- ~~**Lot 145, Plough Road, Battersea**~~ — **now confirmed Withdrawn (checked 23 Sept 2026)**, having already failed to sell once in the previous catalogue two weeks earlier.
+- **Lot 18, Innes Gardens, Putney** and **Lot 190, Borough Hill, Croydon** — both guide at roughly half a reasonable fair value with no tenure detail disclosed; treat the headline yields as upper-bound anomalies pending the legal pack (lease term, service charge, possible age restriction or cladding/EWS1 exposure). **Lot 346A, Outram Road, Croydon** (new, added after initial research) shows the same pattern.
 
 **Comparable data hardest to find:** none of this batch's individual streets (Nelsons Row, Woodmansterne Lane, Gosberton Road, Innes Gardens, Penrith Road, Boundaries Road, Beverley Way, Foxgrove Road, Arnold Road, Corrance Road, Morat Street, Inner Park Road, Cologne Road, Borough Hill, Elmwood Road, Longheath Gardens) had street-level sold-price data directly available — all fair values in this file are estimated by adjusting each postcode's Rightmove average for unit type/size/condition, which is inherently less precise than a direct street comparable. Postcode-wide averages were found for every outcode in scope (SW4, SM5, SW9, SW11, SW12, SW15, SW17, SW18, SW19, SW20, SW2, CR0, CR7, BR3), so no lot is entirely without a pricing anchor, but treat every "fair value" figure above as an estimate, not a valuation.
 
@@ -525,14 +575,18 @@ Batch scope: **20 lots** across South-West London — Lambeth, Wandsworth, Merto
 | 9 | 121 | Corrance Road, Brixton | £1,600 | **5.3%** | 6.5% |
 | 10 | 134 | Morat Street, Stockwell | £1,700 | **5.2%** | 6.2% |
 | 11 | 17 | Gosberton Road, Balham | £1,700 | **5.1%** | 6.3% |
-| 12 | 145 | Plough Road, Battersea (freehold + flat) | £1,900 | **4.9%** | 7.0% |
-| 13 | 34 | Revelstoke Road, Southfields | £2,500 | **4.8%** | 5.9% |
-| 14 | 144 | Cologne Road, Battersea | £1,750 | **4.8%** | 6.5% |
-| 15 | 38 | Laitwood Road, Balham | £2,050 | **4.6%** | 5.9% |
-| 16 | 2 | Nelsons Row, Clapham | £3,000 | **4.5%** | 6.4% |
-| 17 | 51 | Beverley Way, Raynes Park | £2,750 | **4.3%** | 6.0% |
-| 18 | 11 | Stansfield Road, Lambeth | £3,200 | **4.2%** | 5.3% |
-| 19 | 190 | Borough Hill, Croydon | £950 | **7.6%** (pricing/tenure anomaly — see flag) | 14.3% |
+| — | 145 | Plough Road, Battersea (freehold + flat) — **WITHDRAWN** | £1,900 | 4.9% | 7.0% |
+| 12 | 34 | Revelstoke Road, Southfields | £2,500 | **4.8%** | 5.9% |
+| 13 | 144 | Cologne Road, Battersea | £1,750 | **4.8%** | 6.5% |
+| 14 | 38 | Laitwood Road, Balham | £2,050 | **4.6%** | 5.9% |
+| 15 | 2 | Nelsons Row, Clapham | £3,000 | **4.5%** | 6.4% |
+| 16 | 51 | Beverley Way, Raynes Park | £2,750 | **4.3%** | 6.0% |
+| 17 | 11 | Stansfield Road, Lambeth | £3,200 | **4.2%** | 5.3% |
+| 18 | 154 | Shortlands Close, Belvedere | £1,150 | **6.9%** | 11.5% |
+| 19 | 346A | Outram Road, Croydon | £1,150 | **6.3%** (pricing/tenure anomaly) | 15.3% |
+| 20 | 190 | Borough Hill, Croydon | £950 | **7.6%** (pricing/tenure anomaly — see flag) | 14.3% |
 | — | 3 | Sunray Farm, Carshalton | n/a | **excluded — land/capital lot, not a yield comparable** | n/a |
+
+*Withdrawn row (marked "—") kept for reference but excluded from the active ranking. Lots 154 and 346A are newly added and ranked provisionally alongside the rest.*
 
 **Reading the two yield columns:** the guide-price column is inflated wherever the guide sits well below fair value (most visibly Lots 18, 190, 216) and should be treated as an upper bound; the fair-value column is the more realistic figure. On that basis this batch clusters in the **4.2–6.5% fair-value range typical of SW London**, with only the contingent HMO lot (21) reaching materially higher — and only if the planning/licensing question resolves favourably. Lot 190 is listed near the top of the fair-value column only because its guide is so extreme relative to comparable value; it is flagged as an anomaly, not a genuine standout, and should not be read as the batch's best yield.

@@ -1,7 +1,7 @@
 # Savills Auction — 29 & 30 September 2026 (Catalogue #243) — London South-East Batch
 
 Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243
-Batch scope: **South-East London residential lots only** — Southwark, Lewisham, Greenwich/Bexley (SE9/SE2) and the Crystal Palace/Norwood fringe (SE19). **14 lots.** The SW-postcode / Croydon half of South London is covered in the companion file `London_SouthWest.md`. All lots below are offered **Tuesday 29 September 2026**, remote bidding only; guide prices are seller minimums.
+Batch scope: **South-East London residential lots only** — Southwark, Lewisham, Greenwich/Bexley (SE9/SE2) and the Crystal Palace/Norwood fringe (SE19). **14 lots originally identified, plus 1 new lot (Lot 125, Loughborough Junction SE5) added to the catalogue after this file's initial research — 15 total.** The SW-postcode / Croydon half of South London is covered in the companion file `London_SouthWest.md`. All lots below are offered **Tuesday 29 September 2026**, remote bidding only; guide prices are seller minimums.
 
 **Method:** area and comparable-price research is from Rightmove sold-price postcode pages (last-12-months averages, current as of Sept 2026), plus web search and general market knowledge for regeneration/schools context. Gross yield = annual rent ÷ **guide price** (upper bound, since auction lots typically sell above guide); a second **fair-value** yield is given against the researched local comparable. Ratings 1 (weak) – 5 (strong).
 
@@ -351,6 +351,30 @@ Unchanged guide prices two auctions running strongly suggest all four failed to 
 
 ---
 
+## 15. Loughborough Junction — SE5 9PF (Lot 125) — ⚠ new lot, added after initial research (checked 23 Sept 2026)
+
+### Area Rating
+
+| Metric | Rating | Notes |
+|---|---|---|
+| Growth potential | 3/5 | Loughborough Junction sits on the Lambeth/Southwark border, with its own Thameslink station and easy reach of Brixton (Victoria line) and Herne Hill — benefits from Brixton/Camberwell gentrification spillover without a single dedicated regeneration scheme of its own. |
+| Avg. cost of comparable property | — | SE5 postcode-wide flat average is **£437,826** (Rightmove), skewed upward by larger period Camberwell conversions; a realistic fair value for a 1-bed flat needing modernisation in this specific pocket is **£260,000–£290,000**. This lot conveys the **freehold of the whole building** (with the ground- and second-floor flats already sold off on long leases, contributing ground rent) alongside the vacant first-floor flat — similar in structure to Lot 130 (Radford Road, Lewisham) elsewhere in this batch — which justifies a modest premium over a bare-flat valuation, call combined fair value **£300,000–£330,000**. **Lot 125's £250,000 guide is roughly 76–83% of that** — a believable discount; tenure/lease terms on the two sold-off flats are not stated in the catalogue text. |
+| Social status / desirability | 3/5 | Improving, diverse inner-Lambeth/Southwark pocket; still a step behind Brixton/Herne Hill prices. |
+| Proximity to shops/amenities | 3/5 | Herne Hill and Brixton town centres both a short walk/ride away; more limited immediate local retail. |
+| Proximity to schools | 3/5 | Mixed Lambeth/Southwark provision. |
+
+**Verdict:** A newly-added lot with the same "freehold + one vacant unit + others on long lease" structure as Lot 130 elsewhere in this batch — a believable discount, but the terms of the two already-sold long leases (ground rent, service charge apportionment) need checking before the freehold premium is taken at face value. Added to the catalogue after this review's initial research pass; treat as a first look.
+
+### Property
+
+| Lot | Address | Guide | Description | Detail page | Status |
+|---|---|---|---|---|---|
+| 125 | 65 Southwell Road, Loughborough Junction, London SE5 9PF | £250,000 | A first floor one bedroom flat together with the freehold interest in the building; ground floor and second floor flats sold on long leases; first floor flat needs modernisation | Catalogue text only — ground-/second-floor lease terms not stated | Vacant first-floor flat |
+
+**Potential Rental:** the vacant first-floor 1-bed would let for roughly **£1,550 pcm (£18,600/yr)**; the two sold-off flats contribute only ground rent, not market rent, to this purchase. Gross yield on the £250,000 guide = **7.4%**; on a ~£315,000 combined fair value = **5.9%**.
+
+---
+
 ## Summary / Standout Picks
 
 - **Best confirmed income: Abbey Wood (Lot 138).** A large (1,265 sq ft) 3-bed with a **confirmed £22,800/yr passing rent**, a genuinely strong Elizabeth Line growth story, and — crucially — a **999-year lease**, so the huge headline discount is explained by the forced LPA Receivers' sale rather than a tenure trap. Get the service-charge accounts before relying on the net figure.
@@ -368,15 +392,16 @@ Unchanged guide prices two auctions running strongly suggest all four failed to 
 | 2 | 74 | Thurlby Road, West Norwood SE27 | £1,400 | **6.7%** | 7.3% |
 | 3 | 138 | Hippersley Point, Abbey Wood SE2 | £1,900 (**confirmed**) | **6.5%** | 15.2% |
 | 4 | 41 | Norwood Road, Herne Hill SE24 | £1,550 | **6.0%** | 7.4% |
-| 5 | 130 | Radford Road, Lewisham SE13 | £1,700 | **5.8%** | 7.7% |
-| 6 | 372 | Colby Road, Upper Norwood SE19 | £1,850 | **5.7%** | 6.8% |
+| 5 | 125 | Southwell Road, Loughborough Junction SE5 | £1,550 | **5.9%** | 7.4% |
+| 6 | 130 | Radford Road, Lewisham SE13 | £1,700 | **5.8%** | 7.7% |
+| 7 | 372 | Colby Road, Upper Norwood SE19 | £1,850 | **5.7%** | 6.8% |
 | 7 | 142 | Asylum Road, Peckham SE15 | £2,850 | **5.7%** | 8.0% |
-| 8 | 32 | Thurlow Hill, West Dulwich SE21 | £1,500 | **5.5%** | 6.9% |
+| 9 | 32 | Thurlow Hill, West Dulwich SE21 | £1,500 | **5.5%** | 6.9% |
 | 9 | 92 | Anerley Grove, Anerley SE19 | £1,375 | **5.5%** | 6.6% |
-| 10 | 160 | Rye Hill Park, Nunhead SE15 | £2,100 | **5.3%** | 7.8% |
-| 11 | 60 | Oakley Drive, New Eltham SE9 | £1,700 | **5.1%** | 7.3% |
-| 12 | 71 | Church Terrace, Lewisham SE13 | £1,900 | **5.1%** | 5.7% |
-| 13 | 6 | Friern Road, East Dulwich SE22 | £2,050 | **4.8%** | 10.7% |
-| 13 | 139 | Fenwick Road, Peckham SE15 | £1,650 | **4.8%** | 7.9% |
+| 11 | 160 | Rye Hill Park, Nunhead SE15 | £2,100 | **5.3%** | 7.8% |
+| 12 | 60 | Oakley Drive, New Eltham SE9 | £1,700 | **5.1%** | 7.3% |
+| 13 | 71 | Church Terrace, Lewisham SE13 | £1,900 | **5.1%** | 5.7% |
+| 14 | 6 | Friern Road, East Dulwich SE22 | £2,050 | **4.8%** | 10.7% |
+| 14 | 139 | Fenwick Road, Peckham SE15 | £1,650 | **4.8%** | 7.9% |
 
 **Reading the two yield columns:** the guide-price column is inflated wherever the guide sits well below researched local value (most extreme for Lots 6, 138 and 139) and should be treated as an upper bound only. On a fair-value basis this batch clusters tightly in a **4.8–6.8%** band, consistent with inner/outer South-East London generally — no lot here reaches Greater Manchester/Birmingham-style yields. The confirmed-income lots (26, 138) rank highest with the least estimation risk; the widest gap between the two columns (6, 138, 139) marks the lots where the guide-to-value gap needs a legal-pack explanation before it can be trusted.

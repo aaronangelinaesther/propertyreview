@@ -4,6 +4,10 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 
 **Method:** built from the catalogue lot descriptions supplied plus independent research (Zoopla / Rightmove / OnTheMarket sold-price and rent pages, council/developer regeneration pages, Ofsted, web search for rental comparables). No Savills-account detail-page access was available this pass, so accommodation/lease/EPC detail is limited to what the catalogue text itself states — flagged "Catalogue text only" throughout except Lot 20, which carries confirmed detail inherited from the previous catalogue's identical listing (see below).
 
+## ⚠ Catalogue update — checked 23 September 2026 (auction is 29 Sept)
+
+Four lots covered in this file are now **withdrawn**: **Lot 5 (Shepherd's Bush)** — guide also changed, now shown as £300,000 (was £360,000); **Lot 8 (Westbourne Park)**; **Lot 101 (Hammersmith)** — guide now shown as £180,000 (was £440,000, a large enough swing to verify directly rather than trust either figure); **Lot 103 (Earls Court)**. **Lot 339 (Hillingdon, Charnwood Road)**'s previously-TBA guide is now published: **£200,000**. Individual sections below are marked accordingly; the Summary and Yield Ranking tables have not yet been fully reworked around these changes.
+
 ## Cross-cutting notes for this batch
 
 - **Four lots are re-offers of properties from the previous catalogue (#242, 15–16 Sept 2026)** — a materially higher share of repeat stock than the last review saw:
@@ -44,7 +48,7 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 
 ---
 
-## 2. Shepherd's Bush — W14 0BT (Lot 5)
+## 2. Shepherd's Bush — W14 0BT (Lot 5) — ⚠ WITHDRAWN PRIOR (guide also revised to £300,000)
 
 ### Area Rating
 
@@ -62,13 +66,13 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 5 | 36b Rockley Road, Shepherd's Bush, London W14 0BT | £360,000 | Second-floor flat; two bedrooms; in need of modernisation; **new 125-year lease, peppercorn ground rent**. | Catalogue text only | Vacant |
+| 5 | 36b Rockley Road, Shepherd's Bush, London W14 0BT | ~~£360,000~~ £300,000 (revised) | Second-floor flat; two bedrooms; in need of modernisation; **new 125-year lease, peppercorn ground rent**. | Catalogue text only | **Withdrawn Prior (checked 23 Sept 2026)** |
 
 **Potential Rental:** ~**£2,000 pcm (£24,000/yr)**. Gross yield on the £360,000 guide = **6.7%**; on a ~£550,000 fair value = **4.4%**.
 
 ---
 
-## 3. Westbourne Park — W9 3NN (Lot 8)
+## 3. Westbourne Park — W9 3NN (Lot 8) — ⚠ WITHDRAWN PRIOR
 
 **Re-offer note:** this is the **identical lot** (same address, floor, lease terms and £250,000 guide) as **Lot 41 in the previous catalogue (#242)**. That review's verdict stands and is reproduced/updated below.
 
@@ -88,7 +92,7 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 8 | Flat 11, 22-24 Great Western Road, Westbourne Park, London W9 3NN | £250,000 | One-bedroom flat; first floor; in need of modernisation; **new 125-year lease, peppercorn ground rent**. | Catalogue text only (re-offer of prior cat. Lot 41) | Vacant possession |
+| 8 | Flat 11, 22-24 Great Western Road, Westbourne Park, London W9 3NN | £250,000 | One-bedroom flat; first floor; in need of modernisation; **new 125-year lease, peppercorn ground rent**. | Catalogue text only (re-offer of prior cat. Lot 41) | **Withdrawn Prior (checked 23 Sept 2026) — failed to sell twice now** |
 
 **Potential Rental:** ~**£2,100 pcm (£25,200/yr)**. Gross yield on the £250,000 guide = **10.1%**; on a ~£480,000 fair value = **5.3%**.
 
@@ -270,7 +274,7 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 
 ---
 
-## 11. Hammersmith — W6 0JZ (Lot 101)
+## 11. Hammersmith — W6 0JZ (Lot 101) — ⚠ WITHDRAWN PRIOR (guide also shown revised to £180,000)
 
 ### Area Rating
 
@@ -288,13 +292,13 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 101 | 34c Leamore Street, Hammersmith, London W6 0JZ | £440,000 | First-floor self-contained flat; one bedroom; in need of modernisation; **new 125-year lease, peppercorn ground rent**. | Catalogue text only | Vacant possession |
+| 101 | 34c Leamore Street, Hammersmith, London W6 0JZ | ~~£440,000~~ £180,000 (as shown, unverified) | First-floor self-contained flat; one bedroom; in need of modernisation; **new 125-year lease, peppercorn ground rent**. | Catalogue text only | **Withdrawn Prior (checked 23 Sept 2026)** |
 
 **Potential Rental:** ~**£1,950 pcm (£23,400/yr)**. Gross yield on the £440,000 guide = **5.3%**; on a ~£470,000 fair value = **5.0%**.
 
 ---
 
-## 12. Earls Court — SW5 9BW (Lot 103)
+## 12. Earls Court — SW5 9BW (Lot 103) — ⚠ WITHDRAWN PRIOR
 
 ### Area Rating
 
@@ -312,7 +316,7 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
-| 103 | Flat 8, 3 The Mansions, Bramham Gardens, London SW5 9BW | £235,000 | One-bedroom flat; first floor; in need of modernisation; **new 125-year lease, peppercorn ground rent**. | Catalogue text only | Vacant possession |
+| 103 | Flat 8, 3 The Mansions, Bramham Gardens, London SW5 9BW | £235,000 | One-bedroom flat; first floor; in need of modernisation; **new 125-year lease, peppercorn ground rent**. | Catalogue text only | **Withdrawn Prior (checked 23 Sept 2026)** |
 
 **Potential Rental:** ~**£2,100 pcm (£25,200/yr)**. Gross yield on the £235,000 guide = **10.7%**; on a ~£500,000 fair value = **5.0%**.
 
@@ -325,23 +329,23 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 | Metric | Rating | Notes |
 |---|---|---|
 | Growth potential | 3/5 | Hillingdon; Uxbridge town centre (Metropolitan/Piccadilly lines) nearby — no Elizabeth Line reach here. Steady outer-London suburb, no major transformative scheme identified for either street. |
-| Avg. cost of comparable property | — | **Radnor Grove** (Lot 115) averages **£225,000** across all property types; the **£120,000 guide is ~53%** of that — a solid discount for a ground-floor 1-bed with private access. **Charnwood Road** (Lot 339) averages **£265,841–£383,490** depending on the exact postcode segment, with individual sales ranging £360,000–£700,000 (a mix of sizes); a 3-bed end-terrace needing modernisation here is realistically worth **~£400,000–£450,000**. **Lot 339's guide is TBA** — no seller floor has been published, which is itself a flag (often means the legal pack or vendor pricing isn't finalised). |
+| Avg. cost of comparable property | — | **Radnor Grove** (Lot 115) averages **£225,000** across all property types; the **£120,000 guide is ~53%** of that — a solid discount for a ground-floor 1-bed with private access. **Charnwood Road** (Lot 339) averages **£265,841–£383,490** depending on the exact postcode segment, with individual sales ranging £360,000–£700,000 (a mix of sizes); a 3-bed end-terrace needing modernisation here is realistically worth **~£400,000–£450,000**. **Lot 339's guide, previously TBA, has since been published at £200,000** — roughly 44–50% of that fair-value range, a large gap for a lot whose tenure is otherwise unremarked in the catalogue text. |
 | Social status / desirability | 3/5 | Settled, unremarkable Hillingdon suburbia. |
 | Proximity to shops/amenities | 3/5 | Uxbridge town centre and Uxbridge Road amenities within reach. |
 | Proximity to schools | 3/5 | Hillingdon provision is mixed. |
 
-**Verdict:** **Lot 115** is a straightforward, real discount on a small flat — the cheapest entry point in the whole batch at £120,000. **Lot 339** has genuine extension potential and gardens front and back, but the **guide TBA** means there is no floor to plan against yet; watch for the guide to be published closer to auction day and treat the fair-value yield below as indicative only until it is.
+**Verdict:** **Lot 115** is a straightforward, real discount on a small flat — the cheapest entry point in the whole batch at £120,000. **Lot 339**'s guide has since been published at £200,000 (was TBA) — genuine extension potential and gardens front and back, at a real discount now there's a floor to plan against, but tenure is still unstated in the catalogue text.
 
 ### Properties
 
 | Lot | Address | Guide | Description | Detail page | Status |
 |---|---|---|---|---|---|
 | 115 | 25 Radnor Grove, Hillingdon, Uxbridge, Middlesex UB10 0ET | £120,000 | One-bedroom ground-floor flat; private access; in need of modernisation. | Catalogue text only | Vacant |
-| 339 | 40 Charnwood Road, Hillingdon, Uxbridge, Middlesex UB10 0HD | **TBA** | Three-bedroom end-of-terrace house; front and rear gardens; in need of modernisation; well located for Uxbridge Road amenities; extension potential subject to consents. | Catalogue text only | Vacant |
+| 339 | 40 Charnwood Road, Hillingdon, Uxbridge, Middlesex UB10 0HD | £200,000 (guide published; was TBA) | Three-bedroom end-of-terrace house; front and rear gardens; in need of modernisation; well located for Uxbridge Road amenities; extension potential subject to consents. | Catalogue text only — tenure not stated | Vacant |
 
 **Potential Rental:**
 - **Lot 115** — ~£1,200 pcm (£14,400/yr). Gross yield on the £120,000 guide = **12.0%**; on a ~£210,000 fair value = **6.9%**.
-- **Lot 339** — ~£2,150 pcm (£25,800/yr). No guide-price yield computable (TBA); on a ~£420,000 fair value = **6.1%**.
+- **Lot 339** — ~£2,150 pcm (£25,800/yr). Gross yield on the £200,000 guide = **12.9%** — high enough to be a pricing/tenure anomaly flag in its own right; on a ~£420,000 fair value = **6.1%**.
 
 ---
 
@@ -452,6 +456,7 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 - **Best confirmed income (with a caveat): Lot 69, Jepson House, Fulham (£225,000).** Already let at a confirmed £25,800/yr (~6.9% fair-value yield), Crossrail-adjacent via Imperial Wharf — but sold **by order of Fixed Charge Receivers**, so read the legal pack closely.
 - **Strongest fundamentals, re-offered: Lot 20, 37 Gainsborough Road, Hayes (£300,000).** Confirmed freehold 4-bed end-terrace beside a Crossrail station and the Old Vinyl Factory regeneration — this review's read is that it is still a strong pick; no defect was identifiable to explain the earlier no-sale, most likely thin room demand or bidders wanting a lower reserve. Worth a second look, and worth asking Savills directly what happened first time.
 - **Pick of the Paddington pair: Lot 374, Flat 96 Forset Court (£295,000).** A modest, explicable discount on a studio in a well-known mansion block; the sibling 3-bed (Lot 373) carries an unconfirmed-lease flag the studio does not.
+- ~~**Lot 101, Hammersmith (£440,000)**~~ and ~~**Lot 103, Earls Court (£235,000)**~~ — both this batch's cleanest-tenure "pay for quality" picks — are now **Withdrawn Prior**, as are **Lot 5 (Shepherd's Bush)** and **Lot 8 (Westbourne Park)**, checked 23 September 2026.
 - **Highest yields, biggest caveat: Lots 83 & 223, Raccoon Way / Musquash Way, Hounslow (£65,000 / £60,000).** ~10.5% fair-value yields even after discounting for non-standard construction — but that construction type is a hard mortgageability constraint (cash/bridging buyers only), so treat the eye-catching guide-price yields (~21%) as a pricing anomaly, not a real return.
 
 ### Major unresolved risk flags
@@ -459,7 +464,7 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 - **Lot 161, Gloucester Street, Pimlico** — guide is only ~18% of a comparable 2-bed, with **no lease information disclosed at all**. The most likely explanation is a short unexpired lease; price a statutory extension before bidding.
 - **Lot 349, Oaklands Road, Hanwell** and **Lot 187, Elmstead Avenue, Wembley Park** — both have confirmed/strong rental appeal but disclose **no tenure information**, an unusual omission next to the several lots in this same catalogue that explicitly confirm fresh long leases.
 - **Lot 37, Holland Park** and **Lot 69, Fulham** — both **receiver sales** (forced sale); expect a tighter timeline and check the legal pack for shortcuts.
-- **Lot 339, Charnwood Road, Hillingdon** — **guide TBA**; no seller floor published yet.
+- **Lot 339, Charnwood Road, Hillingdon** — guide was TBA, now published at £200,000; tenure still unstated.
 
 ### Comparable data — hardest to pin down
 
@@ -478,20 +483,22 @@ Catalogue: https://auctions.savills.co.uk/auctions/29--30-september-2026-243 —
 | 4 | 115 | Radnor Grove, Hillingdon | £1,200 | **6.9%** | 12.0% |
 | 5 | 374 | Forset Court Flat 96, Paddington | £1,800 | **6.4%** | 7.3% |
 | 6 | 20 | Gainsborough Road, Hayes | £2,600 | **6.2%** | 10.4% |
-| 7 | 339 | Charnwood Road, Hillingdon | £2,150 | **6.1%** | n/a (TBA) |
+| 7 | 339 | Charnwood Road, Hillingdon | £2,150 | **6.1%** | 12.9% |
 | 8 | 46 | Seaforth Lodge, Barnes | £1,500 | **6.0%** | 6.7% |
 | 9 | 187 | Elmstead Avenue, Wembley Park | £1,800 | **5.9%** | 11.7% |
 | 10 | 72 | Uxbridge Road, Hanwell | £1,550 | **5.8%** | 9.8% |
-| 11 | 8 | Great Western Road, Westbourne Park | £2,100 | **5.3%** | 10.1% |
-| 12 | 161 | Gloucester Street, Pimlico | £1,950 | **5.2%** (tenure unresolved) | 21.3% |
-| 13 | 209 | Birkbeck Avenue, Acton | £1,950 | **5.2%** | 9.0% |
-| 14 | 373 | Forset Court Flat 97, Paddington | £3,900 | **5.1%** | 8.9% |
-| 15 | 101 | Leamore Street, Hammersmith | £1,950 | **5.0%** | 5.3% |
-| 16 | 103 | Bramham Gardens, SW5 | £2,100 | **5.0%** | 10.7% |
-| 17 | 4 | Antoneys Close, Pinner | £2,100 | **4.8%** | 8.4% |
-| 18 | 5 | Rockley Road, Shepherd's Bush | £2,000 | **4.4%** | 6.7% |
-| 19 | 349 | Oaklands Road, Hanwell | £1,900 (**confirmed**) | **4.1%** (tenure unresolved) | 7.6% |
-| 20 | 56 | Zetland House, Kensington | £6,000 | **2.6%** | 3.8% |
-| 21 | 37 | 89 Holland Park | £13,000 | **2.6%** | 3.2% |
+| — | 8 | Great Western Road, Westbourne Park — **WITHDRAWN PRIOR** | £2,100 | 5.3% | 10.1% |
+| 11 | 161 | Gloucester Street, Pimlico | £1,950 | **5.2%** (tenure unresolved) | 21.3% |
+| 12 | 209 | Birkbeck Avenue, Acton | £1,950 | **5.2%** | 9.0% |
+| 13 | 373 | Forset Court Flat 97, Paddington | £3,900 | **5.1%** | 8.9% |
+| — | 101 | Leamore Street, Hammersmith — **WITHDRAWN PRIOR** | £1,950 | 5.0% | 5.3% |
+| — | 103 | Bramham Gardens, SW5 — **WITHDRAWN PRIOR** | £2,100 | 5.0% | 10.7% |
+| 14 | 4 | Antoneys Close, Pinner | £2,100 | **4.8%** | 8.4% |
+| — | 5 | Rockley Road, Shepherd's Bush — **WITHDRAWN PRIOR** | £2,000 | 4.4% | 6.7%(→5.6% on revised £300k guide) |
+| 15 | 349 | Oaklands Road, Hanwell | £1,900 (**confirmed**) | **4.1%** (tenure unresolved) | 7.6% |
+| 16 | 56 | Zetland House, Kensington | £6,000 | **2.6%** | 3.8% |
+| 17 | 37 | 89 Holland Park | £13,000 | **2.6%** | 3.2% |
+
+*Withdrawn rows (marked "—") are kept for reference but excluded from the active 1–17 ranking.*
 
 **Reading the two yield columns:** guide-price yields are inflated wherever the guide sits well below local value and should be treated as an upper bound; the fair-value column is the more realistic figure. The pattern from prior reviews holds here — genuinely cheap London flats (Lots 83, 223) usually carry a structural reason (non-standard construction) rather than being free value, prime central-London assets (Lots 37, 56) show low single-digit yields as expected, and the cleanest, most straightforward value plays in this batch (Lots 20, 69, 115) combine a real discount with either confirmed income or confirmed freehold/long-lease tenure.
