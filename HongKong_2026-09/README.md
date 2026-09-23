@@ -19,9 +19,22 @@ The portal reported **1,812 matching listings** at the time of the pull (result 
 
 | File | Contents |
 |---|---|
+| **`hk-listings-explorer.html`** | **Self-contained, offline-capable filter page** — filter by area, estate name, price range and size range, sort by any column, click through to the live listing. Just double-click to open in a browser; no server or internet connection needed. |
 | `hk_listings_structured.csv` | 1,418 unique listings, one row each, structured fields (see below) |
 | `hk_listings_structured.json` | Same data as JSON |
 | `hk_listings_deduped.json` | Raw `{link, text}` pairs as scraped, deduplicated by listing URL — kept as an audit trail back to the source text |
+
+### Using the filter page
+
+Open `hk-listings-explorer.html` directly (double-click, or drag into a browser tab). All 1,418 listings are embedded in the file itself, so it works fully offline.
+
+- **District** — the 18 official Hong Kong districts (Yuen Long, Sha Tin, Kowloon City, etc.)
+- **Area** — a dropdown of ~50 finer-grained neighborhoods, derived by matching each listing's district+estate text against a known area-name list; the Area list narrows automatically to whichever District is selected (see caveat below on why this split is a best-effort heuristic, not official data)
+- **Estate / building name** — free-text search against the full location string
+- **Price** and **Saleable area** — min/max range filters
+- **Bedrooms** — exact match where the portal listed it
+- **Sort** — by price, HK$/sqft, or size in either direction; column headers are also clickable to sort/toggle
+- Every row links straight to the live 28Hse listing
 
 **Coverage: 1,418 of ~1,812 listings (~78%).** The gap is explained below under Methodology & limits — it's a result of the extraction technique, not a deliberate exclusion.
 
@@ -53,7 +66,7 @@ If useful, the practical next step is targeted enrichment: pick a shortlist (e.g
 - **Why not 100%**: the browser tab progressively slowed down over ~120 pages of repeated pagination (increasing memory/DOM/ad-script overhead with no cleanup between page loads), causing the automation to periodically time out. The page's own JavaScript kept running in the background after timeouts, which is how coverage kept climbing (1,020 → 1,418 unique) — but the last stretch of pages became too slow to reliably reach in this session.
 - **1,860 raw rows → 1,418 unique**: pagination restarted from page 1 more than once after timeouts, so ~24% of raw scraped rows were re-scraped duplicates of earlier pages, removed by de-duplicating on listing URL.
 - **"Net sq ft" caveat**: Hong Kong listings almost always quote *saleable* (net) area on portal search cards; this is what `netSqft` captures. Gross floor area (which includes a share of common areas) is typically 15–20% larger and is what's missing per the section above.
-- **`location` isn't split into District / Estate**: 28Hse concatenates them ("Yuen Long Palm Springs", "Tuen Mun Castle Peak Road Le Pont") without a consistent delimiter, and Hong Kong's informal neighborhood names don't map cleanly onto the 18 official districts. Splitting reliably would need a maintained estate-name lookup table, which wasn't built for this pass.
+- **`location` isn't split into District / Estate in the CSV/JSON**: 28Hse concatenates them ("Yuen Long Palm Springs", "Tuen Mun Castle Peak Road Le Pont") without a consistent delimiter, and Hong Kong's informal neighborhood names don't map cleanly onto the 18 official districts. The HTML explorer's "Area" filter does attempt a split — matching each `location` string against a ~50-entry list of known Hong Kong area names — but that's a heuristic built for this page, not a verified field, and a handful of small/unusual locations (e.g. standalone building names with no area prefix) fall back to just their first word.
 - **Occasional portal data glitches carried through as-is**: e.g. a small number of cards show a truncated price-per-sqft ("@1" instead of the full number) — this is how the source site displayed it, not a parsing error on this end.
 
 ## Quick stats (1,418 listings)
